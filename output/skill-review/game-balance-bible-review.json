@@ -1,0 +1,483 @@
+{
+  "date": "2026-10-12",
+  "skill": "game-balance-bible",
+  "skill_path": "<project-root>/.agents/skills/game-balance-bible",
+  "status": "PASS",
+  "scope": "프로젝트 스킬 8개 파일 보완. book-to-skill, 전역 스킬, UI/호출 정책 변경 없음.",
+  "findings_resolved": [
+    {
+      "finding": "전투 장에서 경제 내용을 2장으로 안내",
+      "fix": "경제는4장,수치검증은5장으로 수정하고 직접 링크 추가",
+      "files": [
+        "chapters/ch03-combat.md"
+      ]
+    },
+    {
+      "finding": "게임의 깊이 두 의미가 경제 관점으로만 연결",
+      "fix": "경험 관점2장과 경제 관점4장으로 분리",
+      "files": [
+        "SKILL.md"
+      ]
+    },
+    {
+      "finding": "짧은 개념 질문에도 전체 설계 답변 형식을 강제",
+      "fix": "설계·검증에만 적용하고 단일 질문은 해당 설명만 답변",
+      "files": [
+        "SKILL.md"
+      ]
+    },
+    {
+      "finding": "공격력+30%와 최종피해130%를 대체 가능하게 설명",
+      "fix": "비선형식의50/73.478/65계산 비교 및 독립 버프 공존 조건",
+      "files": [
+        "chapters/ch03-combat.md",
+        "references/combat-formulas.md"
+      ]
+    },
+    {
+      "finding": "생존 주기에서 타격·시간·분모0·음수 피해 구분 부족",
+      "fix": "고정타격올림,HP/DPS근사,첫타격시점,피해하한 명세 추가",
+      "files": [
+        "chapters/ch03-combat.md",
+        "references/combat-formulas.md",
+        "cheatsheet.md"
+      ]
+    },
+    {
+      "finding": "공유 재화를 모듈별 독립 매칭해 중복 사용 가능",
+      "fix": "총량 제약·배분/우선순위·조회표 정렬/경계 조건 추가",
+      "files": [
+        "chapters/ch05-validation.md",
+        "cheatsheet.md"
+      ]
+    },
+    {
+      "finding": "서로 다른 경제 예시 수량 혼합으로 소비가치121000계산",
+      "fix": "원문100000강화석 예시는101000가치,별도120000예시와 분리",
+      "source": "PDF193 / 인쇄163",
+      "files": [
+        "chapters/ch04-economy.md",
+        "references/economy-models.md"
+      ]
+    },
+    {
+      "finding": "레벨 차 보정식 누락 및 기호 미확정 표기",
+      "fix": "상위몬스터조건과 덧셈식 복원,150계산 예시",
+      "source": "PDF121 / 인쇄93",
+      "files": [
+        "references/combat-formulas.md",
+        "references/source-map.md"
+      ]
+    },
+    {
+      "finding": "란체스터 제곱근을 원문 기호 미확정으로 표기",
+      "fix": "페이지이미지 확인과표5.16검산 기록,근사조건 명시",
+      "source": "PDF230 / 인쇄200",
+      "files": [
+        "chapters/ch05-validation.md",
+        "references/source-map.md"
+      ]
+    },
+    {
+      "finding": "피해 감소율의 무조건 클램프로 원시 오류·증폭 효과를 숨길 수 있음",
+      "fix": "범위와 구현 정책을 분리하고 원시값 검증",
+      "files": [
+        "references/combat-formulas.md"
+      ]
+    }
+  ],
+  "tests": {
+    "initial_behavior": "PARTIAL: 6개 요청의 계산은 가능했으나 4개 요청에 필요한 조건 안내가 부족",
+    "final_independent_behavior": {
+      "status": "PASS",
+      "scenario_count": 8,
+      "scenarios": [
+        {
+          "id": 1,
+          "result": "5타격,2.5초근사;즉시타격2초;피해0처치불가"
+        },
+        {
+          "id": 2,
+          "result": "원시피해-200;하한정의후실제피해사용;음수시간금지"
+        },
+        {
+          "id": 3,
+          "result": "장비5+스킬10은200개소비로불가;공유100개총량제약"
+        },
+        {
+          "id": 4,
+          "result": "원탁10/30/50/10과순차10/27/31.5/31.5구별;초과확률은우선순위필요"
+        },
+        {
+          "id": 5,
+          "result": "조건부6개,시도당3개,시간연동소비270개"
+        },
+        {
+          "id": 6,
+          "result": "기본50,공격버프73.478,최종배율65,공존95.522"
+        },
+        {
+          "id": 7,
+          "result": "경험적깊이2장과경제적깊이4장 구별;단일개념간단응답"
+        },
+        {
+          "id": 8,
+          "result": "소비가치101000,레벨차보정150,원문근거확인"
+        }
+      ]
+    },
+    "source_audit": {
+      "status": "PASS",
+      "high_risk_claim_count": 8,
+      "corrections_rechecked": 3
+    },
+    "arithmetic": {
+      "scope": "Independent arithmetic ground truth; does not prove all prose or all game designs",
+      "status": "PASS",
+      "numeric_check_count": 20,
+      "checks": [
+        {
+          "name": "fixed_damage_hit_count",
+          "actual": 5,
+          "expected": 5,
+          "status": "PASS"
+        },
+        {
+          "name": "dps_approx_seconds",
+          "actual": 2.5,
+          "expected": 2.5,
+          "status": "PASS"
+        },
+        {
+          "name": "immediate_first_hit_seconds",
+          "actual": 2.0,
+          "expected": 2,
+          "status": "PASS"
+        },
+        {
+          "name": "raw_subtraction_damage",
+          "actual": -200,
+          "expected": -200,
+          "status": "PASS"
+        },
+        {
+          "name": "shared_infeasible_cost",
+          "actual": 200,
+          "expected": 200,
+          "status": "PASS"
+        },
+        {
+          "name": "exclusive_probability_sum",
+          "actual": 1.0,
+          "expected": 1,
+          "status": "PASS"
+        },
+        {
+          "name": "sequential_probability_sum",
+          "actual": 1.0,
+          "expected": 1,
+          "status": "PASS"
+        },
+        {
+          "name": "sequential_critical_probability",
+          "actual": 0.315,
+          "expected": 0.315,
+          "status": "PASS"
+        },
+        {
+          "name": "conditional_uniform_drop",
+          "actual": 6.0,
+          "expected": 6,
+          "status": "PASS"
+        },
+        {
+          "name": "expected_drop_per_attempt",
+          "actual": 3.0,
+          "expected": 3,
+          "status": "PASS"
+        },
+        {
+          "name": "time_cost_units",
+          "actual": 270,
+          "expected": 270,
+          "status": "PASS"
+        },
+        {
+          "name": "base_damage",
+          "actual": 50.0,
+          "expected": 50,
+          "status": "PASS"
+        },
+        {
+          "name": "attack_bonus_damage",
+          "actual": 73.47826086956522,
+          "expected": 73.47826086956522,
+          "status": "PASS"
+        },
+        {
+          "name": "final_bonus_damage",
+          "actual": 65.0,
+          "expected": 65,
+          "status": "PASS"
+        },
+        {
+          "name": "both_bonuses_damage",
+          "actual": 95.52173913043478,
+          "expected": 95.5217391304348,
+          "status": "PASS"
+        },
+        {
+          "name": "source_common_value",
+          "actual": 101000.0,
+          "expected": 101000,
+          "status": "PASS"
+        },
+        {
+          "name": "separate_source_cost",
+          "actual": 1200.0,
+          "expected": 1200,
+          "status": "PASS"
+        },
+        {
+          "name": "separate_source_efficiency",
+          "actual": 1.485,
+          "expected": 1.485,
+          "status": "PASS"
+        },
+        {
+          "name": "level_gap_adjusted_damage",
+          "actual": 150.0,
+          "expected": 150,
+          "status": "PASS"
+        },
+        {
+          "name": "lanchester_example_rounded",
+          "actual": 2.14,
+          "expected": 2.14,
+          "status": "PASS"
+        }
+      ],
+      "shared_budget_full_spend_combinations": [
+        [
+          0,
+          10
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          0
+        ]
+      ]
+    },
+    "structure": {
+      "status": "PASS",
+      "chapter_count": 8,
+      "markdown_links": 37,
+      "extra_reference_scan_files": 3,
+      "ui_metadata_unchanged": true,
+      "changed_skill_files": [
+        "cheatsheet.md",
+        "SKILL.md",
+        "chapters/ch05-validation.md",
+        "chapters/ch03-combat.md",
+        "chapters/ch04-economy.md",
+        "references/economy-models.md",
+        "references/source-map.md",
+        "references/combat-formulas.md"
+      ],
+      "after_sha256": {
+        "glossary.md": "d924022ca0bc474e7d2b1f1a88825eb065219ac0da5b8fa25541db1229609c65",
+        "cheatsheet.md": "4fcd1276c63dd11e8cf7cab6b480bc1cc2ed2ef7136d06fb41afd45507ac9b44",
+        "patterns.md": "62bbf6dfade27b9011e3ce69ccac9c0fb71b0f40c2d92ad75b8db8f43c46694e",
+        "SKILL.md": "54ccdf97d9226e49de79db3e50e584dda599284c45f721cfc3a1505b5cb9f328",
+        "chapters/ch01-process.md": "7103c11cf781f968d6e6f6d8aa4b30af1f5c09ad6adbce2424859f6832deb76a",
+        "chapters/ch05-validation.md": "8155b888ace0ff41cc90f291c5164b4df5a9af93ca60d76407ba52ea501f3872",
+        "chapters/ch03-combat.md": "8694c6576e57a7682c7ac3e78f67f023e514602bc3379b19e799f73eb70019e0",
+        "chapters/ch02-preparation.md": "7e460ae4f1fc7be2028703f05cc4abc59a524167e1d27f1274b57da5d552aa50",
+        "chapters/ch04-economy.md": "137e4155fe5f2971ef5a96adf5ec968101948321cd50d5d71ee6fa3de63a3b61",
+        "chapters/ch08-modularization.md": "d1639b8c2fb4dfa3ecae2b1ab87223769e324c87f87379aff01cad30d3e50ca2",
+        "chapters/ch07-visualization.md": "87047db0ad03c64a690eb3e3a3859a41bf62fb4473dd8b1bd61bd3950fb69d9d",
+        "chapters/ch06-monetization.md": "f6cfc404c8306e6f5286f39910f1b28e9ea0fc2175458d452a07e1934f6b47df",
+        "references/economy-models.md": "a105596f397b678fddb8e40cb60960c0c08be09ca0679b85d565bb4dabe5866e",
+        "references/source-map.md": "46d65ea7178322dcaf023d20124616abbcd22afbaddcc6bed402eae8a47f784e",
+        "references/combat-formulas.md": "ee5700d500cfe45dd1943640050ac2987dee47bb9c405157376818d96db5fe2b",
+        "agents/openai.yaml": "3c93c464247489358c3c4593137ce251999b3db187fb05ae2b138ec2b6c4ee41"
+      }
+    },
+    "security": {
+      "status": "PASS",
+      "standard_scan": "SKILL.md, supporting files, chapters",
+      "extra_reference_scan": 3,
+      "findings": 0
+    },
+    "regression_fixtures": [
+      {
+        "id": "ttk_units",
+        "input": {
+          "damage_per_hit": 20,
+          "hits_per_second": 2,
+          "hp": 100
+        },
+        "expected": {
+          "hits": 5,
+          "dps_approx_seconds": 2.5,
+          "immediate_first_hit_seconds": 2.0,
+          "delayed_first_hit_seconds": 2.5
+        },
+        "required_behavior": [
+          "fixed damage: ceil hits",
+          "first-hit timing distinguishes exact from approximation",
+          "nonpositive actual damage cannot divide; no other kill source implies unkillable"
+        ]
+      },
+      {
+        "id": "nonpositive_damage",
+        "input": {
+          "attack": 100,
+          "defense": 300,
+          "formula": "attack-defense"
+        },
+        "expected": {
+          "raw_damage": -200
+        },
+        "required_behavior": [
+          "ask/explicitly assume damage-floor policy",
+          "no negative survival duration",
+          "cannot determine numeric TTK without HP"
+        ]
+      },
+      {
+        "id": "shared_currency",
+        "input": {
+          "available": 100,
+          "equipment_cost_per_level": 20,
+          "skill_cost_per_level": 10
+        },
+        "expected": {
+          "infeasible_pair": [
+            5,
+            10
+          ],
+          "infeasible_cost": 200,
+          "full_spend_pairs": [
+            [
+              0,
+              10
+            ],
+            [
+              1,
+              8
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              0
+            ]
+          ]
+        },
+        "required_behavior": [
+          "allocate shared pool before lookup",
+          "sum consumption <= available",
+          "sorted cumulative cost thresholds for fuzzy lookup"
+        ]
+      },
+      {
+        "id": "exclusive_vs_sequential",
+        "input": {
+          "evasion": 0.1,
+          "penetration": 0.3,
+          "critical": 0.5
+        },
+        "expected": {
+          "round_table": [
+            0.1,
+            0.3,
+            0.5,
+            0.1
+          ],
+          "sequential": [
+            0.1,
+            0.27,
+            0.315,
+            0.315
+          ]
+        },
+        "required_behavior": [
+          "priority-dependent truncation for total>1",
+          "different exclusive/independent crit semantics"
+        ]
+      },
+      {
+        "id": "drop_cost_units",
+        "input": {
+          "drop_probability": 0.5,
+          "uniform_min": 4,
+          "uniform_max": 8,
+          "target_days": 2,
+          "daily_production": 120,
+          "resource_adjustment": 30
+        },
+        "expected": {
+          "conditional_quantity": 6,
+          "quantity_per_attempt": 3,
+          "cost": 270
+        },
+        "required_behavior": [
+          "conditional vs per-attempt expectation",
+          "cost units are resource units"
+        ]
+      },
+      {
+        "id": "nonlinear_bonus",
+        "input": {
+          "attack": 100,
+          "defense": 100,
+          "bonus": 0.3,
+          "formula": "attack_squared/(attack+defense)"
+        },
+        "expected": {
+          "base": 50,
+          "attack_bonus_damage": 73.47826086956522,
+          "final_bonus_damage": 65,
+          "both_damage": 95.52173913043478
+        },
+        "required_behavior": [
+          "attack bonus != final damage bonus",
+          "distinct authored bonuses may coexist",
+          "same bonus source not applied twice"
+        ]
+      }
+    ]
+  },
+  "limitations": [
+    "원문 감사는 고위험 주장8개에 집중했으며 책의 모든 문장을 전수 대조한 결과는 아니다.",
+    "LTV 본문 단어와 예시 표의 불일치는 원문에 남아 있어 기존 주석을 유지했다.",
+    "비양수 피해·첫 타격·재화 배분은 프로젝트별 구현 정책을 명시해야 한다."
+  ]
+}

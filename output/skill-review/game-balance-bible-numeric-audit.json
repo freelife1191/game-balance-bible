@@ -1,0 +1,2841 @@
+{
+  "status": "PASS",
+  "review_date": "2026-10-12",
+  "skill_path": "<project-root>/.agents/skills/game-balance-bible",
+  "source_sha256": "db8068221feed05d1f23e6e8de9cdc6d8614c6f401353e96048764e1df42c019",
+  "scope": {
+    "skill_markdown_files": 15,
+    "chapters": 8,
+    "candidate_numeric_formula_lines": 520,
+    "domain_claim_groups": {
+      "combat": 19,
+      "economy": 21,
+      "validation_monetization": 21,
+      "frameworks": 23
+    },
+    "total_domain_claim_groups": 84,
+    "note": "숫자 후보는 장번호·항목번호·중복도 포함. 주장 그룹은 묶음 검수 단위이며 개별 숫자 개수와 다름. 서지·페이지지도·보조파일 정의/중복 일관성은 주 에이전트가 별도 확인."
+  },
+  "result": {
+    "new_arithmetic_errors_in_existing_skill_examples": 0,
+    "changed_skill_files": [
+      "chapters/ch03-combat.md",
+      "chapters/ch06-monetization.md",
+      "chapters/ch07-visualization.md",
+      "chapters/ch08-modularization.md",
+      "references/combat-formulas.md",
+      "references/economy-models.md",
+      "references/source-map.md"
+    ],
+    "resolved_items": [
+      {
+        "id": "character-growth-level-mapping",
+        "files": [
+          "references/economy-models.md"
+        ],
+        "change": "L과Lc(L)을 분리해 캐릭터 레벨과 강화 레벨의 혼용 방지",
+        "verified_by": [
+          "final-case-1",
+          "time-cost-character-map"
+        ],
+        "status": "RESOLVED"
+      },
+      {
+        "id": "step-boundary",
+        "files": [
+          "references/economy-models.md"
+        ],
+        "change": "ceil, Excel ROUNDUP의 0자리 인수, L=2~6 경계와 k조건 명시",
+        "verified_by": [
+          "final-case-2",
+          "step-cost-L1..L7"
+        ],
+        "status": "RESOLVED"
+      },
+      {
+        "id": "saturation-domain",
+        "files": [
+          "references/combat-formulas.md"
+        ],
+        "change": "포화형 0~1의 입력 범위와0/0정의불가 명시",
+        "verified_by": [
+          "final-case-3"
+        ],
+        "status": "RESOLVED"
+      },
+      {
+        "id": "source-damage-retention",
+        "files": [
+          "references/combat-formulas.md",
+          "references/source-map.md"
+        ],
+        "change": "원문1−R 용어 혼용 기록; 감소율R과 피해잔존배율1−R 구별",
+        "verified_by": [
+          "final-case-4",
+          "damage-reduction"
+        ],
+        "status": "RESOLVED"
+      },
+      {
+        "id": "source-day100-production",
+        "files": [
+          "references/source-map.md"
+        ],
+        "change": "원문표의222168267 오기와 정합값22216827·원문교차근거 기록",
+        "verified_by": [
+          "final-case-5",
+          "production-day100-consistency"
+        ],
+        "status": "RESOLVED"
+      },
+      {
+        "id": "source-price-scale",
+        "files": [
+          "references/source-map.md"
+        ],
+        "change": "본문/표의10배 단가 차이 및1782 재현에쓸 표 단가 기록",
+        "verified_by": [
+          "final-case-6",
+          "cost-effectiveness-exact"
+        ],
+        "status": "RESOLVED"
+      },
+      {
+        "id": "ltv-assumptions",
+        "files": [
+          "chapters/ch06-monetization.md"
+        ],
+        "change": "ARPU와이탈률의주기당일정 가정으로정확화",
+        "verified_by": [
+          "final-case-7",
+          "ltv-source"
+        ],
+        "status": "RESOLVED"
+      },
+      {
+        "id": "precision-vs-source",
+        "files": [
+          "references/economy-models.md",
+          "references/source-map.md"
+        ],
+        "change": "원문7.1/7.3과재계산7.10/7.32 표시정밀도 구별",
+        "verified_by": [
+          "final-case-8",
+          "chest-old-2dp",
+          "chest-new-2dp"
+        ],
+        "status": "RESOLVED"
+      },
+      {
+        "id": "polynomial-and-depth",
+        "files": [
+          "chapters/ch07-visualization.md"
+        ],
+        "change": "다항식이주기성을보장하지않음과 과금깊이·결제부족액구별",
+        "verified_by": [
+          "final-case-9"
+        ],
+        "status": "RESOLVED"
+      },
+      {
+        "id": "artifact-four-level-branch",
+        "files": [
+          "chapters/ch08-modularization.md"
+        ],
+        "change": "부속성4개미만추가와4개완성후강화의분기 명시",
+        "verified_by": [
+          "final-case-10"
+        ],
+        "status": "RESOLVED"
+      },
+      {
+        "id": "lanchester-model-scope",
+        "files": [
+          "chapters/ch03-combat.md"
+        ],
+        "change": "책의다수유닛교전설명과 실제집중공격가능여부 모델가정 구별",
+        "verified_by": [
+          "forward-case-12"
+        ],
+        "status": "RESOLVED"
+      },
+      {
+        "id": "step9-source-purpose",
+        "files": [
+          "chapters/ch08-modularization.md"
+        ],
+        "change": "9단계는수익화전략집계·계산·수익예측이라는 원문 범위로정확화",
+        "verified_by": [
+          "frameworks-ch08-ten-step-model-order"
+        ],
+        "status": "RESOLVED"
+      },
+      {
+        "id": "source-page-map",
+        "files": [
+          "references/source-map.md"
+        ],
+        "change": "4~7장 마지막 본문쪽과 빈페이지 범위 구별",
+        "verified_by": [
+          "metadata-audit"
+        ],
+        "status": "RESOLVED"
+      }
+    ],
+    "remaining_blockers": []
+  },
+  "domain_audits": {
+    "combat": {
+      "audit": {
+        "scope": [
+          ".agents/skills/game-balance-bible/chapters/ch03-combat.md",
+          ".agents/skills/game-balance-bible/references/combat-formulas.md"
+        ],
+        "source": "게임 밸런스 수치 기획 바이블.pdf; PDF 쪽수는 1-based 추출 파일명과 같다.",
+        "method": "대상 파일의 모든 숫자·수식·수치성 주장을 줄 단위로 목록화해 PDF 053~133(인쇄 25~105)와 대조했다. 위첨자와 OCR이 모호한 나눗셈식(PDF 079) 및 고착 지점식(PDF 121)은 PyMuPDF 2x 렌더로 재확인했다. pass는 원문 일치 또는 원문 밖의 명시적 실무 예제가 수학·조건상 타당함을 뜻하며, 원문 일반론과 수학적 보편 명제는 구분했다.",
+        "result": {
+          "pass": 18,
+          "needs_revision": 1,
+          "source_original_issue": 1,
+          "rounding_only": 1,
+          "audited_claim_groups": 19
+        }
+      },
+      "numeric_inventory": [
+        {
+          "id": "ch03-4-stages",
+          "skillfile": ".agents/skills/game-balance-bible/chapters/ch03-combat.md",
+          "line": "5, 11-16",
+          "claim": "전투 수치의 4단계는 속성 정의, 전투 구조, 능력치 정량화, 인공지능이다.",
+          "numbers": [
+            4,
+            1,
+            2,
+            3,
+            4
+          ],
+          "sourcepage": [
+            "054 (인쇄 26)"
+          ],
+          "status": "pass",
+          "basis": "원문이 같은 순서와 네 항목을 명시한다.",
+          "recommendation": null
+        },
+        {
+          "id": "ch03-attribute-tiers-and-count",
+          "skillfile": ".agents/skills/game-balance-bible/chapters/ch03-combat.md",
+          "line": "22, 28",
+          "claim": "1·2·3단계 속성의 역할 및 일반적인 공격/방어 유형 1~3종 권고.",
+          "numbers": [
+            1,
+            2,
+            3,
+            "1~3"
+          ],
+          "sourcepage": [
+            "055-057 (인쇄 27-29)"
+          ],
+          "status": "pass",
+          "basis": "원문은 1단계=공격·방어·체력, 2단계=무작위성, 3단계=수정 속성 및 일반적으로 1~3가지를 제시한다.",
+          "recommendation": null
+        },
+        {
+          "id": "ch03-skill-130-vs-30",
+          "skillfile": ".agents/skills/game-balance-bible/chapters/ch03-combat.md",
+          "line": "36",
+          "claim": "스킬 대미지 130%를 공격력 +30% 버프로 구현하면 비선형 피해식에서 같은 최종 배율과 동등하지 않다.",
+          "numbers": [
+            130,
+            30
+          ],
+          "sourcepage": [
+            "067 (인쇄 39)"
+          ],
+          "status": "pass",
+          "basis": "원문도 스킬 대미지 130% 사례에서 공격력을 30% 올리는 버프를 먼저 적용하고 별도 대미지 증가를 중복 적용하지 않는다고 설명한다. '비선형식에서 비동등'은 원문 사례를 일반 수학으로 정확히 확장한 실무 설명이다.",
+          "recommendation": null
+        },
+        {
+          "id": "ch03-sequential-probability",
+          "skillfile": ".agents/skills/game-balance-bible/chapters/ch03-combat.md",
+          "line": "40-41, 93",
+          "claim": "명중 70%, 관통 30%, 치명 5%를 명중→관통→치명 순서의 배타적 결과로 판정하면 관통 21%, 치명 2.45%, 일반 46.55%이고, 원탁은 총 100% 칸을 배분한다.",
+          "numbers": [
+            70,
+            30,
+            5,
+            21,
+            2.45,
+            46.55,
+            100
+          ],
+          "sourcepage": [
+            "068-070 (인쇄 40-42)"
+          ],
+          "status": "pass",
+          "calculation": "0.70×0.30=0.21; (0.70-0.21)×0.05=0.0245; 0.70-0.21-0.0245=0.4655. 배타적 명중 결과 합계는 0.70이고 빗나감 0.30을 더하면 1이다.",
+          "recommendation": null
+        },
+        {
+          "id": "ch03-total-formula-tiers",
+          "skillfile": ".agents/skills/game-balance-bible/chapters/ch03-combat.md",
+          "line": "47-55",
+          "claim": "고정값 합산 뒤 백분율을 적용하고, 대공식/소공식 위치 및 4종 피해식의 성장 수익 차이를 구분한다.",
+          "numbers": [
+            1,
+            2,
+            4
+          ],
+          "sourcepage": [
+            "071-084 (인쇄 43-56)"
+          ],
+          "status": "pass",
+          "basis": "원문 속성 총합식, 10%/100% 위치 예시, 뺄셈·업그레이드 뺄셈·곱셈·나눗셈 비교와 결론에 부합한다.",
+          "recommendation": null
+        },
+        {
+          "id": "ch03-survival-and-minimum-ratio",
+          "skillfile": ".agents/skills/game-balance-bible/chapters/ch03-combat.md",
+          "line": "7, 57, 63, 79-81",
+          "claim": "생존 주기=HP/피해이며, 10턴·기본 뺄셈의 최소수 재구성은 피해 1, HP 10, 공격:방어:체력=2:1:10이다.",
+          "numbers": [
+            10,
+            1,
+            "2:1:10"
+          ],
+          "sourcepage": [
+            "086-087 (인쇄 58-59)",
+            "119 (인쇄 91)"
+          ],
+          "status": "pass",
+          "calculation": "D=ATK-DEF=2-1=1, HP/D=10/1=10턴. 타격 수는 이산 단위면 ceil(HP/D)여야 한다는 보완도 수학적으로 타당하다.",
+          "recommendation": null
+        },
+        {
+          "id": "ch03-lanchester",
+          "skillfile": ".agents/skills/game-balance-bible/chapters/ch03-combat.md",
+          "line": "64",
+          "claim": "1:1에는 란체스터 선형 법칙, 원거리 다수 교전에는 제곱 법칙을 참조한다.",
+          "numbers": [
+            "1:1"
+          ],
+          "sourcepage": [
+            "088-089 (인쇄 60-61)"
+          ],
+          "status": "needs_revision",
+          "basis": "원문은 1:1에는 선형, 여러 병사가 싸우는 게임에는 제곱 법칙이라고 한다. 원문의 현대 총기 교전 배경을 '원거리'로 한정한 것은 원문보다 좁은 해석이다.",
+          "recommendation": "'원거리 다수 교전'을 '다수 유닛 교전(원거리 집중사격 등, 모델 가정이 맞을 때)'으로 고쳐 범위와 가정을 보존한다."
+        },
+        {
+          "id": "ch03-template-60-percent",
+          "skillfile": ".agents/skills/game-balance-bible/chapters/ch03-combat.md",
+          "line": "67",
+          "claim": "실제 개방 비율과 목표 달성률의 저자 예시로 60% 참고치를 쓴다.",
+          "numbers": [
+            60
+          ],
+          "sourcepage": [
+            "117-118 (인쇄 89-90)"
+          ],
+          "status": "pass",
+          "basis": "원문이 실제 속성 비율의 60%(합격점)를 임시 템플릿 참고 비율로 제시하며, 검증 후 실제 데이터로 교체하라고 명시한다.",
+          "recommendation": "현 문구처럼 '참고치'로 한정해야 하며 보편 목표율로 승격하지 않는다."
+        },
+        {
+          "id": "ch03-npc-coefficients",
+          "skillfile": ".agents/skills/game-balance-bible/chapters/ch03-combat.md",
+          "line": "71-75, 112",
+          "claim": "NPC는 플레이어 레벨 인덱스와 공격·방어·체력 계수/보정을 곱해 만들며, 표준 10턴·보스 목표 20턴·플레이어 10턴이면 HP 계수 200%, 공격 계수 100%다.",
+          "numbers": [
+            10,
+            20,
+            200,
+            100
+          ],
+          "sourcepage": [
+            "119-120 (인쇄 91-92)"
+          ],
+          "status": "pass",
+          "calculation": "HP 계수=NPC 생존 주기/표준 생존 주기=20/10=2=200%; 공격 계수=표준 생존 주기/플레이어 생존 주기=10/10=1=100%.",
+          "recommendation": null
+        },
+        {
+          "id": "ch03-reconstruction-example",
+          "skillfile": ".agents/skills/game-balance-bible/chapters/ch03-combat.md",
+          "line": "105-114",
+          "claim": "10턴, 2:1:10, 70/30/5 확률, 20턴/10턴 NPC 계수의 압축 재구성 예시.",
+          "numbers": [
+            10,
+            "1:1",
+            2,
+            1,
+            70,
+            30,
+            5,
+            21,
+            2.45,
+            46.55,
+            20,
+            200,
+            100
+          ],
+          "sourcepage": [
+            "069 (인쇄 41)",
+            "086-087 (인쇄 58-59)",
+            "119 (인쇄 91)"
+          ],
+          "status": "pass",
+          "basis": "각 입력값과 계산은 앞선 원문 사례를 재배열한 것이다. '설명용 재구성' 표기가 있어 원문 표를 직접 인용한 것처럼 보이지 않는다.",
+          "recommendation": null
+        },
+        {
+          "id": "ref-attribute-total",
+          "skillfile": ".agents/skills/game-balance-bible/references/combat-formulas.md",
+          "line": "7-15",
+          "claim": "총속성 및 장비속성합의 고정합×(1+백분율합) 구조와 0.10=10% 저장 예시.",
+          "numbers": [
+            1,
+            0.1,
+            10
+          ],
+          "sourcepage": [
+            "071 (인쇄 43)"
+          ],
+          "status": "pass",
+          "basis": "두 식은 원문 식을 기호만 정리해 재현한다. 0.10 저장 규칙은 원문 외 구현 규약이지만 10%와 일관되고 안전하다.",
+          "recommendation": "'0.10 저장'은 책의 표기 규칙이 아니라 프로젝트 구현 규약임을 유지한다."
+        },
+        {
+          "id": "ref-attribute-conversion",
+          "skillfile": ".agents/skills/game-balance-bible/references/combat-formulas.md",
+          "line": "19-25",
+          "claim": "A=B×k, A=B/(B+k), A=B/(B+k1×level+k2), HP=인내×10, 근접 공격=직업계수×힘.",
+          "numbers": [
+            1,
+            2,
+            10,
+            "0~1"
+          ],
+          "sourcepage": [
+            "072-074 (인쇄 44-46)"
+          ],
+          "status": "pass",
+          "basis": "세 변환식은 원문의 순서만 바꾼 동치식이며, 원문은 HP 상수 10 및 특정 직업계수 사례를 제시한다. 포화식은 분모와 k의 유효 범위가 필요한 보편 수학 명제다.",
+          "recommendation": null
+        },
+        {
+          "id": "ref-skill-and-buff-formulas",
+          "skillfile": ".agents/skills/game-balance-bible/references/combat-formulas.md",
+          "line": "29-40",
+          "claim": "스킬/치유의 (1+비율합), 보호막·패링·출혈·점화의 k 배율, 130%=0.30 추가 비율의 해석.",
+          "numbers": [
+            1,
+            130,
+            0.3
+          ],
+          "sourcepage": [
+            "076-077 (인쇄 48-49)",
+            "067 (인쇄 39)"
+          ],
+          "status": "pass",
+          "basis": "원문은 같은 스킬식과 k 형태를 제시한다. 130%=1+0.30이라는 해석은 원문 버프 사례 및 식과 일치한다.",
+          "recommendation": null
+        },
+        {
+          "id": "ref-nonlinear-bonus-calculation",
+          "skillfile": ".agents/skills/game-balance-bible/references/combat-formulas.md",
+          "line": "40",
+          "claim": "ATK=100, DEF=100에서 D=ATK²/(ATK+DEF)의 +30% 공격과 최종 ×1.30 비교.",
+          "numbers": [
+            100,
+            50,
+            30,
+            130,
+            230,
+            73.478,
+            65,
+            95.522
+          ],
+          "sourcepage": [
+            "079 (인쇄 51; 제곱은 렌더 확인)"
+          ],
+          "status": "pass",
+          "calculation": "100²/(100+100)=50; 130²/(130+100)=73.47826087→73.478(소수 셋째 반올림); 50×1.30=65; 73.47826087×1.30=95.52173913→95.522.",
+          "rounding": "표시된 73.478, 95.522는 각각 절대오차 0.000261 및 0.000261의 정상 반올림이다.",
+          "recommendation": null
+        },
+        {
+          "id": "ref-probability-formulas",
+          "skillfile": ".agents/skills/game-balance-bible/references/combat-formulas.md",
+          "line": "44-59",
+          "claim": "P(관통)=h×p, P(치명)=(h-hp)×c, h=.70/p=.30/c=.05의 21%·2.45%·46.55%·30%.",
+          "numbers": [
+            0.7,
+            0.3,
+            0.05,
+            21,
+            2.45,
+            46.55,
+            30,
+            1
+          ],
+          "sourcepage": [
+            "067-070 (인쇄 39-42)"
+          ],
+          "status": "pass",
+          "calculation": "관통=.7×.3=.21; 치명=(.7-.21)×.05=.0245; 일반=.7-.21-.0245=.4655; 빗나감=1-.7=.3. 네 배타적 결과의 합=1.",
+          "recommendation": "p·c가 앞선 경로 통과 뒤의 조건부 확률이고 관통/치명을 배타적으로 모델링한다는 현 조건을 보존한다."
+        },
+        {
+          "id": "ref-four-damage-models",
+          "skillfile": ".agents/skills/game-balance-bible/references/combat-formulas.md",
+          "line": "63-77",
+          "claim": "D=ATK-DEF; D=ATK-(ATK×DEF)/(K+DEF); D=ATK×(1-R), R=SHIELD/(SHIELD+K1×LEVEL+K2); D=ATK²/(ATK+DEF); DR=(A-D)/A.",
+          "numbers": [
+            4,
+            "49~55",
+            1,
+            2,
+            "0≤D≤A",
+            "0~1",
+            0
+          ],
+          "sourcepage": [
+            "077-084 (인쇄 49-56); 특히 079 (인쇄 51) 렌더 확인"
+          ],
+          "status": "pass",
+          "basis": "네 피해식과 곱셈식의 R은 원문과 일치한다. 나눗셈의 ATK²는 PDF 079 이미지로 위첨자 2를 확인했다. DR 식과 범위는 A>0 및 감소만 있는 0≤D≤A라는 명시 조건에서 보편 수학적으로 정확하다.",
+          "recommendation": null
+        },
+        {
+          "id": "ref-survival-and-npc",
+          "skillfile": ".agents/skills/game-balance-bible/references/combat-formulas.md",
+          "line": "81-97",
+          "claim": "HP/피해, ceil(HP/피해), HP/DPS, 고정간격 처치시각, 전투력 합, NPC 속성식 및 10턴/20턴 계수.",
+          "numbers": [
+            1,
+            100,
+            20,
+            2,
+            5,
+            2.5,
+            0,
+            0.5,
+            10,
+            20,
+            200
+          ],
+          "sourcepage": [
+            "086-087 (인쇄 58-59)",
+            "119-120 (인쇄 91-92)"
+          ],
+          "status": "pass",
+          "calculation": "HP100÷20=5타격; DPS=20×2=40이므로 HP/DPS=2.5초; 2회/초일 때 마지막 타격은 첫 타격 0초면 0+(5-1)/2=2초, 0.5초면 2.5초. 보스 HP 계수=20/10=200%.",
+          "basis": "ceil, 초 단위 시각, 0 피해 처리와 전투력 합은 원문의 HP/피해 및 NPC 계수를 안전하게 이산 시간 모델로 확장한 수학·구현 규칙이다.",
+          "recommendation": null
+        },
+        {
+          "id": "ref-sticking-point-formulas",
+          "skillfile": ".agents/skills/game-balance-bible/references/combat-formulas.md",
+          "line": "102-112",
+          "claim": "보호막 감소율, 몬스터 레벨>유저 레벨 보정, 전투력 차 보정 및 피해100/20레벨/10레벨/0.05=150.",
+          "numbers": [
+            1,
+            2,
+            100,
+            20,
+            10,
+            0.05,
+            150
+          ],
+          "sourcepage": [
+            "121-122 (인쇄 93-94; PDF 121 렌더 확인)"
+          ],
+          "status": "pass",
+          "calculation": "100+100×(20-10)×0.05=150.",
+          "basis": "PDF 121 렌더에서 레벨차 항은 (몬스터 레벨-유저 레벨)임을 확인했다. PDF 122는 전투력 보정의 대상>유저 조건과 식을 제시한다.",
+          "recommendation": "전투력 보정에는 원문 기본값 K1=0.2, K2=0.5(대상>유저)와 K1=0, K2=0(대상<유저)가 있으므로, 프로젝트 기본값으로 채택할 경우 별도 명세에 명시한다."
+        },
+        {
+          "id": "ref-validation-matrix",
+          "skillfile": ".agents/skills/game-balance-bible/references/combat-formulas.md",
+          "line": "116-123",
+          "claim": "검증 행렬의 1pt 한계수익과 1:1·소수전·다수전 비교.",
+          "numbers": [
+            1,
+            "1:1"
+          ],
+          "sourcepage": [
+            "081-084 (인쇄 53-56)",
+            "088-089 (인쇄 60-61)"
+          ],
+          "status": "pass",
+          "basis": "원문의 공격/방어 1pt 수익 및 1:1·집단전 검토를 실무 검증 표로 정리한 것이다.",
+          "recommendation": null
+        }
+      ],
+      "reproducible_calculations": [
+        {
+          "id": "calc-nonlinear-30-percent",
+          "inputs": {
+            "ATK": 100,
+            "DEF": 100,
+            "attack_bonus": 0.3,
+            "final_damage_multiplier": 1.3
+          },
+          "formula": "D=A²/(A+DEF)",
+          "actual_result": {
+            "base": 50,
+            "ATK_130": 73.47826086956522,
+            "final_x1_30": 65,
+            "both_independent": 95.52173913043478
+          },
+          "skill_display": {
+            "ATK_130": 73.478,
+            "final_x1_30": 65,
+            "both_independent": 95.522
+          },
+          "tolerance": "소수 셋째 자리 반올림: 절대오차 ≤0.0005",
+          "status": "pass"
+        },
+        {
+          "id": "calc-path-probability",
+          "inputs": {
+            "h": 0.7,
+            "p": 0.3,
+            "c": 0.05
+          },
+          "formula": "pierce=h·p; crit=(h-h·p)·c; normal=h-pierce-crit; miss=1-h",
+          "actual_result": {
+            "pierce": 0.21,
+            "crit": 0.0245,
+            "normal": 0.4655,
+            "miss": 0.3,
+            "sum": 1
+          },
+          "skill_display": {
+            "pierce": "21%",
+            "crit": "2.45%",
+            "normal": "46.55%",
+            "miss": "30%"
+          },
+          "tolerance": "정확값(부동소수점 표시는 제외)",
+          "status": "pass"
+        },
+        {
+          "id": "calc-source-table-3-3",
+          "inputs": {
+            "level_1": [
+              100,
+              80
+            ],
+            "level_2": [
+              200,
+              160
+            ],
+            "level_30": [
+              3000,
+              2400
+            ],
+            "upgrade_K": 1200,
+            "multiply_constants": [
+              50,
+              200
+            ]
+          },
+          "formula": "upgrade=A-A·DEF/(1200+DEF); multiply=A·(1-DEF/(DEF+50·level+200)); divide=A²/(A+DEF)",
+          "actual_result": {
+            "level_1": [
+              93.75,
+              75.757576,
+              55.555556
+            ],
+            "level_2": [
+              176.470588,
+              130.434783,
+              111.111111
+            ],
+            "level_30": [
+              1000,
+              1243.902439,
+              1666.666667
+            ]
+          },
+          "skill_display": "대상 파일은 표 3.3 값을 재기재하지 않지만, 그 기반이 되는 4개 식은 위 원문 표와 모두 일치한다.",
+          "tolerance": "원문 표의 두 소수 자리 반올림: 절대오차 ≤0.005",
+          "status": "pass"
+        },
+        {
+          "id": "calc-npc-and-level-gap",
+          "inputs": {
+            "standard_turns": 10,
+            "boss_turns": 20,
+            "player_turns": 10,
+            "damage": 100,
+            "monster_level": 20,
+            "player_level": 10,
+            "level_gap_coefficient": 0.05
+          },
+          "formula": "HP계수=NPC주기/표준주기; 공격계수=표준주기/플레이어주기; 보정피해=d+d·(몬스터레벨-유저레벨)·계수",
+          "actual_result": {
+            "hp_coefficient": 2,
+            "hp_percent": 200,
+            "attack_coefficient": 1,
+            "adjusted_damage": 150
+          },
+          "skill_display": {
+            "hp": "200%",
+            "attack": "100%",
+            "adjusted_damage": 150
+          },
+          "tolerance": "정확값",
+          "status": "pass"
+        }
+      ],
+      "source_original_issues": [
+        {
+          "id": "source-p087-dr-label",
+          "sourcepage": "087 (인쇄 59)",
+          "status": "source_original_issue",
+          "claim": "원문은 곱셈식 문맥에서 '대미지 감소율 = (1-보호막/(...))'이라고 적었다.",
+          "basis": "수학적으로 1-R은 감소율이 아니라 피해 잔존 배율이다. 원문 PDF 078과 대상 참조문서 69행은 R=보호막/(...)을 감소율로 올바르게 사용한다.",
+          "impact_on_skill": "없음. combat-formulas.md 69행은 올바른 R 식을 채택했다.",
+          "recommendation": "원문 인용·주석을 추가할 때 이 행을 그대로 '감소율'로 전사하지 않는다."
+        }
+      ],
+      "findings": [
+        {
+          "severity": "medium",
+          "location": ".agents/skills/game-balance-bible/chapters/ch03-combat.md:64",
+          "finding": "제곱 법칙 적용 대상을 '원거리 다수 교전'으로 좁혀 원문의 '여러 병사가 싸우는 게임'보다 강한 조건을 만들었다.",
+          "fix": "'다수 유닛 교전(원거리 집중사격 등, 모델 가정이 맞을 때)'으로 수정한다."
+        },
+        {
+          "severity": "low",
+          "location": ".agents/skills/game-balance-bible/references/combat-formulas.md:102-112",
+          "finding": "전투력 차 보정식은 맞지만 원문 기본 상수와 반대 조건의 0값을 생략했다.",
+          "fix": "기본값을 채택하는 구현이라면 K1=.2/K2=.5(대상>유저), K1=0/K2=0(대상<유저)을 명시하고, 그렇지 않으면 현행처럼 프로젝트 규칙임을 유지한다."
+        }
+      ]
+    },
+    "economy": {
+      "audit": {
+        "scope": [
+          ".agents/skills/game-balance-bible/chapters/ch04-economy.md",
+          ".agents/skills/game-balance-bible/references/economy-models.md"
+        ],
+        "source": "게임 밸런스 수치 기획 바이블.pdf; PDF 쪽수는 1-based",
+        "method": "모든 수식·수치·비율이 들어간 문장과 표를 인벤토리화하고 PDF 추출문 및 PDF 157/187/193/197/205 렌더와 대조했다. 계산값은 별도로 재현했다.",
+        "status_legend": {
+          "원문일치": "원문 표기·의미와 일치",
+          "수학검산": "실무 재구성 또는 반올림 확장이지만 계산은 정확",
+          "주의": "수식은 맞지만 원문 변수의 정의 또는 정밀도가 축약되어 수정 권고",
+          "원문자체불일치": "원문 내부 표기/수치가 서로 맞지 않으며 스킬에는 전파되지 않음"
+        },
+        "inventory": [
+          {
+            "id": "ch04-matryoshka-10-9-1-4star",
+            "skillfile": "chapters/ch04-economy.md",
+            "line": 40,
+            "claim": "10회 중 9회 표준 풀, 1회 최소 4성 보상 풀",
+            "sourcepage": 158,
+            "status": "원문일치",
+            "evidence": "원문은 10연속 뽑기에서 9회 표준 랜덤 그룹, 1회 4성 무기·캐릭터 및 5성 무기·캐릭터 그룹에서 뽑는다고 설명한다.",
+            "recommendation": "없음"
+          },
+          {
+            "id": "ch04-stepped-example-5-levels",
+            "skillfile": "chapters/ch04-economy.md",
+            "line": 61,
+            "claim": "5레벨마다 비용 단계를 올리는 계단형 선형 소비 예",
+            "sourcepage": 171,
+            "status": "원문일치",
+            "evidence": "원문은 5레벨마다 전투력 수익이 크게 늘어야 하는 예와 ROUNDUP((레벨-1)/5.0) 식을 제시한다.",
+            "recommendation": "없음"
+          },
+          {
+            "id": "ch04-value-example-100k-10m",
+            "skillfile": "chapters/ch04-economy.md",
+            "line": 89,
+            "claim": "100,000×1 + 10,000,000×0.0001 = 101,000",
+            "sourcepage": 193,
+            "status": "원문일치",
+            "calculation": {
+              "input": {
+                "강화석": 100000,
+                "강화석단가": 1,
+                "코인": 10000000,
+                "코인단가": 0.0001
+              },
+              "formula": "100000×1 + 10000000×0.0001",
+              "actual_result": 101000,
+              "skill_display": 101000,
+              "tolerance": 0
+            },
+            "recommendation": "없음"
+          },
+          {
+            "id": "ch04-chest-expected-value",
+            "skillfile": "chapters/ch04-economy.md",
+            "line": 91,
+            "claim": "상자 기대가치=Σ(실제 확률×아이템 가격), 가중치 변경 시 전체 확률·기대가치 재계산",
+            "sourcepage": [
+              157,
+              188
+            ],
+            "status": "원문일치",
+            "evidence": "표4.5의 노트가 세 식을 명시하고, 표4.27이 확률은 정적·가중치는 동적이라고 구분한다.",
+            "recommendation": "없음"
+          },
+          {
+            "id": "ref-linear-consumption",
+            "skillfile": "references/economy-models.md",
+            "line": 9,
+            "claim": "C(L)=Δ×(L-1)+C0",
+            "sourcepage": 168,
+            "status": "주의",
+            "calculation": {
+              "input": {
+                "Δ": 4,
+                "C0": 2,
+                "L": 50
+              },
+              "formula": "4×(50-1)+2",
+              "actual_result": 198,
+              "skill_display": 198,
+              "tolerance": 0
+            },
+            "evidence": "수식과 표4.11의 강화석 소비량(레벨50=198)은 일치한다. 다만 원문 수식의 변수명은 '캐릭터 레벨'인데, 원문 표는 장비 강화 레벨로 적용한다.",
+            "recommendation": "L을 '해당 소비 단계(캐릭터 레벨 또는 강화 레벨)'로 정의하거나 Lc/Lg를 분리해 원문 자체의 변수명 혼용을 해소한다."
+          },
+          {
+            "id": "ref-stepped-linear-consumption",
+            "skillfile": "references/economy-models.md",
+            "line": 10,
+            "claim": "C(L)=Δ×ROUNDUP((L-1)/k)+C0",
+            "sourcepage": 171,
+            "status": "수학검산",
+            "calculation": {
+              "input": {
+                "Δ": 4,
+                "C0": 2,
+                "k": 5,
+                "L": [
+                  1,
+                  5,
+                  6
+                ]
+              },
+              "formula": "4×ceil((L-1)/5)+2",
+              "actual_result": [
+                2,
+                6,
+                6
+              ],
+              "skill_display": [
+                2,
+                6,
+                6
+              ],
+              "tolerance": 0
+            },
+            "evidence": "원문은 k=5.0인 특수식을 제시한다. 스킬은 이를 임의의 양의 정수 k로 일반화했으며 ROUNDUP의 비음수 입력에서는 ceil과 같다.",
+            "recommendation": "'책의 식' 대신 '책의 k=5 식을 일반화'라고 표기하고 k는 양의 정수라고 조건을 추가한다."
+          },
+          {
+            "id": "ref-time-linked-consumption",
+            "skillfile": "references/economy-models.md",
+            "line": 11,
+            "claim": "C(L)=T(L)×Pday(L)+A",
+            "sourcepage": 172,
+            "status": "주의",
+            "evidence": "원문 식은 '자원 소비량(레벨당)=1레벨당 시간×자원 생산량(일일)+보정값'이다. 단위 해석은 정확하다.",
+            "recommendation": "C와 Pday의 인덱스가 같은 성장 레벨이라는 뜻으로 읽히지 않게, Pday의 입력 레벨을 별도 정의한다."
+          },
+          {
+            "id": "ref-daily-production-linear",
+            "skillfile": "references/economy-models.md",
+            "line": 12,
+            "claim": "Pday(L)=Pbase+ΔP×L",
+            "sourcepage": 172,
+            "status": "주의",
+            "evidence": "원문은 '자원 생산량(일일)=기본 자원량+레벨 증가 보정값×캐릭터 레벨'이다. 산술 구조는 일치하지만 원문의 L은 캐릭터 레벨이다.",
+            "recommendation": "Pday(Lc)로 쓰고 Lc=캐릭터 레벨을 명시한다. 성장 레벨 L과 동일하다고 가정할 때만 현재 축약식이 성립한다."
+          },
+          {
+            "id": "ref-nonlinear-consumption",
+            "skillfile": "references/economy-models.md",
+            "line": 13,
+            "claim": "C(L)=Δ×(L-1)^2+L×A+C0",
+            "sourcepage": [
+              173,
+              174
+            ],
+            "status": "원문일치",
+            "calculation": {
+              "input": {
+                "Δ": 3,
+                "A": -1,
+                "C0": 3,
+                "L": 10
+              },
+              "formula": "3×(10-1)^2+10×(-1)+3",
+              "actual_result": 236,
+              "skill_display": 236,
+              "tolerance": 0
+            },
+            "evidence": "표4.15의 매개변수와 표4.16의 레벨10 강화석 소비량이 236으로 일치한다.",
+            "recommendation": "없음"
+          },
+          {
+            "id": "ref-input-output-ratio",
+            "skillfile": "references/economy-models.md",
+            "line": 17,
+            "claim": "레벨별 투입산출 비율=소비 가치÷전투력 가치",
+            "sourcepage": 170,
+            "status": "수학검산",
+            "calculation": {
+              "input": {
+                "레벨1강화석가치": 12,
+                "레벨1코인가치": 1,
+                "전투력": 90
+              },
+              "formula": "(12+1)/90",
+              "actual_result": 0.1444444444,
+              "skill_display": 0.14,
+              "tolerance": 0.005
+            },
+            "evidence": "원문은 '소비량÷전투력 수치'라고 쓰고 다중 화폐는 하나의 화폐로 환산하라고 한다. 스킬의 '가치' 표현은 가치체계까지 확장한 동치 표현이다.",
+            "recommendation": "원문 표현과 구분하려면 '동일 화폐/가치 단위로 환산한 소비량÷전투력 수치'라고 쓴다."
+          },
+          {
+            "id": "ref-daily-production-from-cycle",
+            "skillfile": "references/economy-models.md",
+            "line": 18,
+            "claim": "일일 생산량=총 소비량÷육성 주기",
+            "sourcepage": [
+              175,
+              180
+            ],
+            "status": "원문일치",
+            "evidence": "표4.17 노트와 표4.19 노트가 총 소비량을 육성/투입 주기로 나눠 일 생산량을 구한다고 명시한다.",
+            "recommendation": "없음"
+          },
+          {
+            "id": "ref-production-basic",
+            "skillfile": "references/economy-models.md",
+            "line": 24,
+            "claim": "플레이 생산량=생산 분배×생산 매개변수×(1+증가계수)",
+            "sourcepage": 177,
+            "status": "원문일치",
+            "evidence": "원문 기본 구조식과 정확히 일치한다.",
+            "recommendation": "없음"
+          },
+          {
+            "id": "ref-fixed-and-circulating-ratios",
+            "skillfile": "references/economy-models.md",
+            "line": [
+              32,
+              34
+            ],
+            "claim": "고정 비율과 유통 비율의 합산식",
+            "sourcepage": 179,
+            "status": "원문일치",
+            "evidence": "원문이 두 합산식을 동일하게 제시한다.",
+            "recommendation": "없음"
+          },
+          {
+            "id": "ref-weight-probability-and-chest-value",
+            "skillfile": "references/economy-models.md",
+            "line": [
+              48,
+              50,
+              52,
+              54
+            ],
+            "claim": "가중치 확률, 아이템 기대가치, 상자 가치, 기대 생산량 식",
+            "sourcepage": [
+              157,
+              186,
+              191
+            ],
+            "status": "원문일치",
+            "calculation": {
+              "input": {
+                "가중치": [
+                  200,
+                  200,
+                  140,
+                  90
+                ],
+                "수량구간평균": [
+                  4.5,
+                  6.5,
+                  10,
+                  16
+                ]
+              },
+              "formula": "Σ((가중치/630)×수량구간평균)",
+              "actual_result": 8,
+              "skill_display": 8,
+              "tolerance": 0
+            },
+            "evidence": "표4.31의 기대 드롭 값은 각각 1.43, 2.06, 2.22, 2.29로 반올림 표시되고 합계는 8.00이다.",
+            "recommendation": "없음"
+          },
+          {
+            "id": "ref-drop-50pct-4to8",
+            "skillfile": "references/economy-models.md",
+            "line": 63,
+            "claim": "50% 확률, 4~8개 드롭의 시도당 기대값 3개",
+            "sourcepage": 187,
+            "status": "원문일치",
+            "calculation": {
+              "input": {
+                "드롭확률": 0.5,
+                "최소수량": 4,
+                "최대수량": 8
+              },
+              "formula": "0.5×(4+8)÷2",
+              "actual_result": 3,
+              "skill_display": 3,
+              "tolerance": 0
+            },
+            "evidence": "원문도 3개를 명시한다. 다만 균등 분포는 원문이 구간의 산술평균을 썼다는 데서 도출한 실무 가정이다.",
+            "recommendation": "'균등 분포 가정' 표기는 적절하며 유지한다."
+          },
+          {
+            "id": "ref-chest-weight-change",
+            "skillfile": "references/economy-models.md",
+            "line": 65,
+            "claim": "가중치 100→80, 총가중치 495→475, 가중가치합 3515→3475, 기대가치 7.10→7.32",
+            "sourcepage": 157,
+            "status": "수학검산",
+            "calculation": {
+              "input": {
+                "변경전": {
+                  "총가중치": 495,
+                  "가중가치합": 3515
+                },
+                "변경후": {
+                  "총가중치": 475,
+                  "가중가치합": 3475
+                }
+              },
+              "formula": "가중가치합÷총가중치",
+              "actual_result": [
+                7.101010101,
+                7.315789474
+              ],
+              "skill_display": [
+                7.1,
+                7.32
+              ],
+              "tolerance": 0.005
+            },
+            "evidence": "원문 표기값은 7.1→7.3, 확률은 20.20%→16.84%, 해당 항목 기대가치는 0.40→0.33이다. 스킬의 7.32는 독립 계산의 소수 둘째 자리 반올림으로 맞다.",
+            "recommendation": "'원문 7.1→7.3(정밀 계산 7.10→7.32)'로 표기하면 원문 표시 정밀도와 재계산값을 더 명확히 구별한다."
+          },
+          {
+            "id": "ref-value-and-cost-effectiveness",
+            "skillfile": "references/economy-models.md",
+            "line": [
+              76,
+              78,
+              84
+            ],
+            "claim": "성장/플레이 가성비 식과 100,000·10,000,000·1,782·120,000 예",
+            "sourcepage": [
+              193,
+              197,
+              199,
+              202
+            ],
+            "status": "원문일치",
+            "calculation": {
+              "input": {
+                "전투력가치": 1782,
+                "강화석수량": 120000,
+                "강화석단가": 0.01
+              },
+              "formula": "1782÷(120000×0.01)",
+              "actual_result": 1.485,
+              "skill_display": 1.48,
+              "tolerance": 0.005
+            },
+            "evidence": "원문은 1.48로 소수 둘째 자리 절삭 또는 소수 둘째 자리 미만 미표기한다. 스킬은 정확한 1.485와 책 표시값 1.48을 구분했다. 100,000/10,000,000의 101,000 예와 120,000/0.01의 1,200 예는 원문에서 별도 조건이다.",
+            "recommendation": "없음"
+          },
+          {
+            "id": "ref-depth-formula-and-40pct",
+            "skillfile": "references/economy-models.md",
+            "line": [
+              88,
+              91
+            ],
+            "claim": "보정 후 성장 모듈 과금 깊이 합산식; 120,000개 중 유료 40%=48,000개",
+            "sourcepage": 205,
+            "status": "원문일치",
+            "calculation": {
+              "input": {
+                "총강화석": 120000,
+                "유료비율": 0.4
+              },
+              "formula": "120000×0.4",
+              "actual_result": 48000,
+              "skill_display": 48000,
+              "tolerance": 0
+            },
+            "evidence": "원문은 무료분 60%=72,000개도 함께 명시하고 같은 합산식을 제시한다.",
+            "recommendation": "없음"
+          },
+          {
+            "id": "source-only-variable-name-mismatch",
+            "skillfile": "references/economy-models.md",
+            "line": [
+              9,
+              12,
+              15
+            ],
+            "claim": "원문의 선형 소비/일일생산 식에서 '캐릭터 레벨'과 장비 강화 표의 레벨이 혼용됨",
+            "sourcepage": [
+              168,
+              172
+            ],
+            "status": "원문자체불일치",
+            "evidence": "PDF168은 선형식 독립변수를 캐릭터 레벨로 적지만 표4.11은 장비 강화 레벨을 열로 쓴다. PDF172도 일일 생산량 식의 입력을 캐릭터 레벨로 적는다. 스킬의 일반 L 표기는 산술 오류는 아니나 두 레벨을 동일시하면 모델 연결이 달라질 수 있다.",
+            "recommendation": "원문 인용식에는 Lc(캐릭터 레벨), Lg(강화/성장 레벨)를 분리하고 둘의 매핑을 입력 데이터로 둔다."
+          },
+          {
+            "id": "source-only-table-4-14-consistency",
+            "skillfile": null,
+            "line": null,
+            "claim": "표4.14 수치와 직전 시간연동 식의 완전 재현 불가",
+            "sourcepage": 172,
+            "status": "원문자체불일치",
+            "evidence": "원문은 Pday=50+0.5×캐릭터레벨, C=T×Pday+0을 제시하지만 표4.14는 캐릭터 레벨 매핑·반올림 규칙을 전부 제공하지 않는다. 예를 들어 강화 레벨1의 T=0.06, 소비=5는 공개된 두 식만으로 유일 재현되지 않는다. 스킬은 표4.14의 수치를 직접 인용하지 않는다.",
+            "recommendation": "원문 예시 수치를 재사용하지 말고 캐릭터 레벨 매핑과 반올림 규칙을 별도 입력으로 명시한다."
+          },
+          {
+            "id": "source-only-value-table-contradiction",
+            "skillfile": null,
+            "line": null,
+            "claim": "전투력-속성 단가 본문과 표4.35의 불일치",
+            "sourcepage": 196,
+            "status": "원문자체불일치",
+            "evidence": "본문은 체력1pt→전투력1pt, 공격력1pt→전투력10pt라고 적지만 표4.35는 공격력=1, 체력=0.1의 단가를 제시한다. 뒤 표4.36의 594+594+594=1,782은 표4.35(공격1·방어1·체력0.1)와 일치한다.",
+            "recommendation": "표4.35/4.36의 관계를 따르는 경우 공격력=1, 방어력=1, 체력=0.1을 사용하고 본문 문장을 근거로 삼지 않는다. 스킬 대상 두 파일에는 이 모순이 전파되지 않았다."
+          }
+        ],
+        "excluded_structural_numbers": {
+          "chapters/ch04-economy.md": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            104,
+            105,
+            106,
+            107,
+            108,
+            112,
+            113,
+            114
+          ],
+          "references/economy-models.md": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            67,
+            86,
+            94,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101
+          ],
+          "reason": "제목·순번·장/절/체크리스트 번호 및 링크 대상일 뿐, 검증 대상인 수치·수식·정보 주장에 해당하지 않는다."
+        },
+        "summary": {
+          "skill_numeric_errors": 0,
+          "skill_precision_or_definition_recommendations": 5,
+          "source_internal_inconsistencies": 3,
+          "rounding_only": [
+            "표4.5 기대가치 7.1/7.3 대 정밀계산 7.10/7.32",
+            "1,782÷1,200=1.485 대 원문 표시 1.48",
+            "표4.12 13÷90=0.14444… 대 표시 0.14"
+          ],
+          "conclusion": "검증 대상 스킬의 모든 수치 예제와 핵심 산식은 산술적으로 맞다. 수정이 필요한 것은 오류 정정이 아니라 원문보다 일반화한 레벨 변수의 정의와 원문 표시값/정밀계산값의 구분이다."
+        }
+      }
+    },
+    "validation_monetization": {
+      "audit": {
+        "scope": [
+          ".agents/skills/game-balance-bible/chapters/ch05-validation.md",
+          ".agents/skills/game-balance-bible/chapters/ch06-monetization.md"
+        ],
+        "source_pdf": "게임 밸런스 수치 기획 바이블.pdf",
+        "source_text_directory": "<temporary-workdir>",
+        "method": "장 파일의 숫자 포함 행을 전수 인벤토리화한 뒤 PDF 209–254쪽 추출 텍스트와 대조했다. 표·수식이 애매한 PDF 213, 230, 239, 250, 252쪽은 PyMuPDF 2x 렌더를 이미지로 재확인했다.",
+        "line_number_convention": "장 파일의 1-based 행 번호",
+        "status_legend": {
+          "pass": "원문과 일치하고 독립 계산도 통과",
+          "pass_rounding": "원문 표기와 일치하며 차이는 표준 반올림 범위",
+          "added_example_math_pass": "원문 인용이 아닌 설명용 추가 예제이며 수학·조건이 맞음",
+          "practical_inference_pass": "원문보다 구체화한 실무 조건이나 원문과 모순 없음",
+          "source_error_preserved": "원문 내부 오류를 식별했으며 스킬은 오류값을 복제하지 않음",
+          "wording_advisory": "수학은 맞지만 표현을 더 정확히 할 수 있음"
+        }
+      },
+      "numeric_inventory": {
+        "ch05": [
+          {
+            "lines": "5",
+            "claim": "검증 순서: 경제→육성→전투",
+            "kind": "절차 정보"
+          },
+          {
+            "lines": "17-24, 97-103",
+            "claim": "잔여량·잔여 비율 공식, 30일 표 5.3 재사용, 100일 +112%, -50% 지침",
+            "kind": "공식·원문 예제"
+          },
+          {
+            "lines": "35-42",
+            "claim": "4단계 레벨 검증 및 2일/68,256/59/49 예제",
+            "kind": "절차·원문 예제"
+          },
+          {
+            "lines": "48-59",
+            "claim": "4단계 성장 검증 및 강화석 100개 설명 예제",
+            "kind": "절차·추가 예제"
+          },
+          {
+            "lines": "72-89",
+            "claim": "피해·생존·생존 비율식, 란체스터 제곱식, PDF230·13.57/2.96/2.14",
+            "kind": "공식·원문 예제"
+          },
+          {
+            "lines": "127-131, 135-138",
+            "claim": "5개 핵심 요약과 3/4/6/7장 연결 번호",
+            "kind": "구조·요약"
+          }
+        ],
+        "ch06": [
+          {
+            "lines": "9-18",
+            "claim": "4가지 수익화 결제 유형",
+            "kind": "분류 정보"
+          },
+          {
+            "lines": "24-43, 110-114",
+            "claim": "CHURN·PR·ARPPU·ARPU·CPA·비용·수익·수익률·LTV 공식과 40/80%/50 예제",
+            "kind": "공식·원문 예제"
+          },
+          {
+            "lines": "45-51",
+            "claim": "5단계 과금 측정 절차",
+            "kind": "절차 정보"
+          },
+          {
+            "lines": "53-59",
+            "claim": "3개 기본 결제 형태와 10일 목표",
+            "kind": "분류 정보"
+          },
+          {
+            "lines": "61-73",
+            "claim": "5단계 운영법과 30분/수시간/수주",
+            "kind": "절차·원문 예시"
+          },
+          {
+            "lines": "75-106",
+            "claim": "66/398/1,958, 80/16/4, 194.8, 360-670=-310, 300/360/60, 7일 추가 예제",
+            "kind": "원문·추가 예제"
+          },
+          {
+            "lines": "130-140",
+            "claim": "5개 핵심 요약과 4/5/7장 연결 번호",
+            "kind": "구조·요약"
+          }
+        ],
+        "coverage_note": "목차/소제목의 1·2·3·4·5·6·7 장·절 번호는 주장 또는 계산값이 아닌 구조 표기라 별도 판정에서 제외했다. 그 외 숫자가 있는 모든 행은 아래 claims에 매핑했다."
+      },
+      "claims": [
+        {
+          "id": "ch05-validation-order",
+          "skillfile_line": "ch05-validation.md:5",
+          "sourcepage": [
+            209
+          ],
+          "status": "pass",
+          "claim": "검증을 경제→육성→전투 순으로 재생한다.",
+          "evidence": "원문은 경제 검증 후 생산 데이터로 육성 레벨·잔여량을 측정하고, 육성 데이터를 통해 플레이 및 유저-컴퓨터/유저-유저 전투를 시뮬레이션한다고 설명한다.",
+          "recommendation": "없음"
+        },
+        {
+          "id": "ch05-resource-formulas",
+          "skillfile_line": "ch05-validation.md:17-20",
+          "sourcepage": [
+            213
+          ],
+          "status": "pass",
+          "claim": "잔여량=총생산량−총소비량, 잔여 비율=(총생산량−총소비량)÷총소비량.",
+          "evidence": "PDF 213쪽의 원문 식과 기호·분모가 동일하다.",
+          "recommendation": "없음"
+        },
+        {
+          "id": "ch05-resource-day30",
+          "skillfile_line": "ch05-validation.md:22, 97-103",
+          "sourcepage": [
+            213
+          ],
+          "status": "pass_rounding",
+          "claim": "30일 생산 2,083,605, 소비 2,506,282, 잔여 -422,677, 잔여 비율 약 -16.9%(표 -17%).",
+          "reproducible_calculation": {
+            "inputs": {
+              "production": 2083605,
+              "consumption": 2506282
+            },
+            "formula": "residual=production-consumption; ratio=residual/consumption*100",
+            "actual_result": {
+              "residual": -422677,
+              "ratio_percent": -16.864702375869914
+            },
+            "skill_display": {
+              "residual": -422677,
+              "ratio_percent": -16.9,
+              "table_percent": -17
+            },
+            "tolerance": "백분율 소수 첫째 자리 반올림 ±0.05%p, 정수 잔여량 0",
+            "result": "통과"
+          },
+          "evidence": "PDF 213쪽 표 5.3 및 PyMuPDF 렌더에서 네 값이 확인된다.",
+          "recommendation": "없음"
+        },
+        {
+          "id": "ch05-resource-day100",
+          "skillfile_line": "ch05-validation.md:22",
+          "sourcepage": [
+            211,
+            213,
+            214
+          ],
+          "status": "source_error_preserved",
+          "claim": "100일 잔여 비율 +112%와 이후 생산 우세는 인플레이션 신호다.",
+          "reproducible_calculation": {
+            "inputs": {
+              "displayed_residual": 11747361,
+              "consumption": 10469466,
+              "PDF211_production": 22216827,
+              "PDF213_displayed_production": 222168267
+            },
+            "formula": "ratio=displayed_residual/consumption*100; corrected_production=displayed_residual+consumption",
+            "actual_result": {
+              "ratio_percent": 112.20592339666608,
+              "corrected_production": 22216827,
+              "PDF213_displayed_production_minus_consumption": 211698801
+            },
+            "skill_display": {
+              "ratio_percent": 112
+            },
+            "tolerance": "정수 백분율 반올림 ±0.5%p",
+            "result": "스킬의 +112%는 통과; 원문 표 5.3 총생산량만 불일치"
+          },
+          "evidence": "PDF 213쪽 표 5.3은 +112%, 잔여 11,747,361, 소비 10,469,466을 함께 싣지만 총생산을 222,168,267로 인쇄한다. PDF 211쪽 표 5.1의 100일 생산은 22,216,827이며, 이 값은 잔여·소비와 정확히 합치고 +112%도 재현한다. PDF 214쪽은 30일 후 양수·생산 과다라고 서술한다.",
+          "recommendation": "스킬은 잘못 인쇄된 222,168,267을 추가 인용하지 말 것. 필요하면 원문 표 오기(정합값 22,216,827)라는 주석을 추가할 것."
+        },
+        {
+          "id": "ch05-resource-minus50",
+          "skillfile_line": "ch05-validation.md:24",
+          "sourcepage": [
+            215
+          ],
+          "status": "pass",
+          "claim": "저자는 대다수 상황에서 잔여 비율을 약 -50%로 유지하라고 제안한다.",
+          "evidence": "PDF 215쪽에 같은 문장이 있다. 스킬의 '불변 임계값이 아닌 출발점' 단서는 원문의 맥락을 과도하게 일반화하지 않는 실무 보완이다.",
+          "recommendation": "없음"
+        },
+        {
+          "id": "ch05-fuzzy-match-procedure",
+          "skillfile_line": "ch05-validation.md:35-40",
+          "sourcepage": [
+            216,
+            217
+          ],
+          "status": "practical_inference_pass",
+          "claim": "레벨 검증은 계획·추가 경험치를 집계해 VLOOKUP TRUE 퍼지 매칭하고 기대 레벨과 비교하는 4단계다.",
+          "evidence": "PDF 217쪽은 계획·추가 생산 데이터, 실제 레벨의 역방향 퍼지 매칭 및 VLOOKUP(..., TRUE), 불일치 시 경험치 공식 조정을 명시한다. 스킬의 오름차순·경계값·상한 정의는 Excel 근사 일치의 필수 실무 조건을 보완한다.",
+          "recommendation": "없음"
+        },
+        {
+          "id": "ch05-level-day2",
+          "skillfile_line": "ch05-validation.md:42",
+          "sourcepage": [
+            217
+          ],
+          "status": "pass",
+          "claim": "2일 차 누적 경험치 68,256은 실제 레벨 59, 사전 기대 레벨은 49다.",
+          "reproducible_calculation": {
+            "inputs": {
+              "day": 2,
+              "total_experience": 68256,
+              "expected_level": 49
+            },
+            "formula": "오름차순 레벨업 누적 경험치 표에서 total_experience 이하 최대 행을 근사 일치 조회",
+            "actual_result": {
+              "actual_level": 59
+            },
+            "skill_display": {
+              "actual_level": 59,
+              "expected_level": 49
+            },
+            "tolerance": "레벨은 이산 조회값으로 허용차 0",
+            "result": "통과"
+          },
+          "evidence": "PDF 217쪽 표 5.4와 바로 아래 VLOOKUP(68256,...,TRUE) 설명이 일치한다.",
+          "recommendation": "없음"
+        },
+        {
+          "id": "ch05-growth-four-steps",
+          "skillfile_line": "ch05-validation.md:48-55",
+          "sourcepage": [
+            219,
+            220,
+            221
+          ],
+          "status": "pass",
+          "claim": "주기 성장 검증은 생산 인덱싱→소비 테이블→퍼지 매칭→속성·전투력 인덱싱의 4단계이며 해금 전 모듈은 제외한다.",
+          "evidence": "PDF 219–221쪽의 1~4단계 및 해금 전 기간 제외 문장과 일치한다.",
+          "recommendation": "없음"
+        },
+        {
+          "id": "ch05-shared-currency-example",
+          "skillfile_line": "ch05-validation.md:55-57",
+          "sourcepage": [],
+          "status": "added_example_math_pass",
+          "claim": "공유 강화석 100개에서 장비 20개/레벨, 스킬 10개/레벨이면 20×장비레벨+10×스킬레벨≤100; 장비5·스킬10에는 200개가 필요하다.",
+          "reproducible_calculation": {
+            "inputs": {
+              "available": 100,
+              "equipment_cost_per_level": 20,
+              "equipment_level": 5,
+              "skill_cost_per_level": 10,
+              "skill_level": 10
+            },
+            "formula": "20*equipment_level + 10*skill_level",
+            "actual_result": {
+              "required": 200,
+              "constraint_satisfied": false
+            },
+            "skill_display": {
+              "required": 200,
+              "available": 100
+            },
+            "tolerance": "정수 비용 0",
+            "result": "통과"
+          },
+          "evidence": "명시적으로 '설명용 예시'이며 원문 표 수치로 주장하지 않는다. 부등식과 결론은 정확하다.",
+          "recommendation": "없음"
+        },
+        {
+          "id": "ch05-play-formulas",
+          "skillfile_line": "ch05-validation.md:72-80",
+          "sourcepage": [
+            227,
+            228
+          ],
+          "status": "pass",
+          "claim": "단순 뺄셈 전투에서 피해=공격-방어, 생존 주기=체력÷받은 피해, 생존 비율=유저 생존 턴÷몬스터 생존 턴이다.",
+          "evidence": "PDF 227쪽의 처음 두 식 및 PDF 228쪽 표 5.13 노트의 생존 비율 정의와 일치한다. 실시간/턴제 해석의 단서도 원문과 일치한다.",
+          "recommendation": "없음"
+        },
+        {
+          "id": "ch05-lanchester-formula",
+          "skillfile_line": "ch05-validation.md:82-89",
+          "sourcepage": [
+            230,
+            231
+          ],
+          "status": "pass",
+          "claim": "란체스터 제곱 근사식과 1명의 A가 상대 가능한 B 수의 제곱근식.",
+          "reproducible_calculation": {
+            "inputs": {
+              "A_damage_to_B": 13.57,
+              "B_damage_to_A": 2.96
+            },
+            "formula": "sqrt(A_damage_to_B/B_damage_to_A)",
+            "actual_result": 2.141135086691043,
+            "skill_display": 2.14,
+            "tolerance": "소수 둘째 자리 반올림 ±0.005",
+            "result": "통과"
+          },
+          "evidence": "PDF 230쪽 PyMuPDF 렌더에서 제곱근 기호와 표 5.15의 13.57/2.96, 표 5.16의 2.14를 모두 확인했다. 텍스트 추출에서는 제곱근이 누락된다.",
+          "recommendation": "없음"
+        },
+        {
+          "id": "ch06-four-payment-types",
+          "skillfile_line": "ch06-monetization.md:9-18",
+          "sourcepage": [
+            236,
+            237
+          ],
+          "status": "pass",
+          "claim": "경험·성장·기능·화폐 결제의 4유형.",
+          "evidence": "PDF 236–237쪽의 4분류와 각 예시가 일치한다.",
+          "recommendation": "없음"
+        },
+        {
+          "id": "ch06-core-metric-formulas",
+          "skillfile_line": "ch06-monetization.md:24-35, 110-114",
+          "sourcepage": [
+            237,
+            238,
+            239,
+            241
+          ],
+          "status": "pass",
+          "claim": "CHURN, PR, ARPPU, ARPU, CPA, 비용, 수익, 월 수익률의 정의·산식 및 ARPU=PR×ARPPU.",
+          "evidence": "PDF 237–239쪽은 CHURN/PR/ARPPU/ARPU/CPA를, PDF 241쪽 표 6.1 노트는 비용=총유저수×CPA, 수익=월ARPPU×(총유저수×결제율), 월수익률=수익/비용-1을 제시한다. ARPU=PR×ARPPU는 동일 기간·동일 활성 모집단에서 세 정의를 대입한 대수적 항등식이다.",
+          "recommendation": "CHURN 원문은 분모를 '총 유저 수'로 적고 예시는 주기 시작 100명을 쓴다. 스킬의 '주기 시작 총 유저 수'는 코호트 정의를 명확히 한 합리적 보완이다."
+        },
+        {
+          "id": "ch06-ltv-source-formula-error",
+          "skillfile_line": "ch06-monetization.md:37-43",
+          "sourcepage": [
+            237,
+            239,
+            241
+          ],
+          "status": "source_error_preserved",
+          "claim": "표 6.1과 단위에 맞는 근사 LTV=ARPU×(1÷주기 이탈률); 월 ARPU 40, 이탈률 80%면 50.",
+          "reproducible_calculation": {
+            "inputs": {
+              "ARPU": 40,
+              "monthly_churn": 0.8
+            },
+            "formula": "ARPU*(1/monthly_churn)",
+            "actual_result": 50.0,
+            "skill_display": 50,
+            "tolerance": "통화 단위 0",
+            "result": "통과"
+          },
+          "evidence": "PDF 239쪽 본문 LTV 식은 '활성 유저의 평균 결제율×(1÷주기 이탈률)'이라고 인쇄되어 차원이 맞지 않는다. 같은 페이지의 설명은 평균 결제액이라고 하고, PDF 241쪽 표 6.1은 월 ARPU 40과 월 LTV 50(80% 이탈)을 제시한다. PyMuPDF 렌더로 이 모순을 확인했다.",
+          "recommendation": "원문 수식의 '평균 결제율'은 '평균 결제액(ARPU)' 오기라는 현 스킬의 처리 유지. 다만 '균일 증가 가정'은 '주기당 ARPU가 일정하다는 단순 가정'으로 바꾸면 공식의 가정을 더 정확히 표현한다."
+        },
+        {
+          "id": "ch06-payment-measurement-five-steps",
+          "skillfile_line": "ch06-monetization.md:45-51",
+          "sourcepage": [
+            240,
+            241
+          ],
+          "status": "pass",
+          "claim": "최적 서버 인구·CPA·월 이탈률/PR/ARPPU 시나리오·지표 비교의 5단계 과금 측정 절차.",
+          "evidence": "PDF 240–241쪽은 공공자원 비율이 높을수록 적정 서버 인구가 작다는 가정과 표 6.1의 측정 항목을 지원한다. 마지막 리스크 가설 관리는 원문 표를 안전하게 해석한 실무 보완이다.",
+          "recommendation": "없음"
+        },
+        {
+          "id": "ch06-basic-forms-and-ten-day",
+          "skillfile_line": "ch06-monetization.md:53-59",
+          "sourcepage": [
+            243,
+            244,
+            245,
+            246,
+            247
+          ],
+          "status": "pass",
+          "claim": "일반·유도·뽑기 결제 3형태와 첫 충전·월간/주간·성장·시즌 패스·보상 패키지·누적 충전/소비·VIP·10일 목표·순위 예시.",
+          "evidence": "PDF 243–247쪽의 분류와 나열을 압축한 것이다.",
+          "recommendation": "없음"
+        },
+        {
+          "id": "ch06-five-step-operations",
+          "skillfile_line": "ch06-monetization.md:61-73",
+          "sourcepage": [
+            246,
+            247,
+            248
+          ],
+          "status": "pass",
+          "claim": "이벤트 목적·형식·참여 조건·주기·콘텐츠의 5단계 운영법 및 30분/수시간/수주 예시.",
+          "evidence": "PDF 246쪽이 다섯 요소를 정의하고 PDF 247–248쪽이 각 요소와 30분·몇 시간·몇 주의 지속 시간 예를 제시한다.",
+          "recommendation": "없음"
+        },
+        {
+          "id": "ch06-weighted-arppu",
+          "skillfile_line": "ch06-monetization.md:77-85, 100, 105",
+          "sourcepage": [
+            250,
+            251
+          ],
+          "status": "pass",
+          "claim": "소과금 66 RMB·중과금 398 RMB·헤비과금 1,958 RMB, 80%/16%/4% 가중 ARPPU 194.8 RMB.",
+          "reproducible_calculation": {
+            "inputs": {
+              "low": 66,
+              "middle": 398,
+              "heavy": 1958,
+              "weights": [
+                0.8,
+                0.16,
+                0.04
+              ]
+            },
+            "formula": "66*0.80 + 398*0.16 + 1958*0.04",
+            "actual_result": {
+              "weighted_parts": [
+                52.8,
+                63.68,
+                78.32
+              ],
+              "sum": 194.8
+            },
+            "skill_display": 194.8,
+            "tolerance": "RMB 소수 첫째 자리 0.05 미만",
+            "result": "통과"
+          },
+          "evidence": "PDF 250쪽 표 6.2·6.3 및 PyMuPDF 렌더에서 입력·가중 금액·합계가 모두 확인된다. PDF 251쪽은 예측값이며 헤비과금 비중이 더 낮을 수 있다고 경고한다.",
+          "recommendation": "없음"
+        },
+        {
+          "id": "ch06-push-pull-and-diamond-gap",
+          "skillfile_line": "ch06-monetization.md:87-94, 106",
+          "sourcepage": [
+            251,
+            252,
+            253
+          ],
+          "status": "pass",
+          "claim": "압박/유인력 분류, 차액=충전 검증 다이아−필요 다이아, 소과금 360−670=-310 및 300/360/60 나선형 계단 예시.",
+          "reproducible_calculation": {
+            "inputs": {
+              "received_diamonds": 360,
+              "required_diamonds": 670,
+              "held_diamonds": 300,
+              "reward_requirement": 360
+            },
+            "formula": "gap=received_diamonds-required_diamonds; shortfall=reward_requirement-held_diamonds",
+            "actual_result": {
+              "gap": -310,
+              "shortfall": 60,
+              "low_spender_total": 670,
+              "middle_spender_total": 3070,
+              "heavy_spender_total": 15146
+            },
+            "skill_display": {
+              "gap": -310,
+              "shortfall": 60
+            },
+            "tolerance": "다이아 정수 0",
+            "result": "통과"
+          },
+          "evidence": "PDF 251쪽 표 6.4, PDF 252쪽 표 6.5와 PyMuPDF 렌더, PDF 253쪽의 300다이아·360다이아·60다이아 설명이 일치한다. 670/3,070/15,146도 표의 행 합계로 독립 재계산했다.",
+          "recommendation": "없음"
+        },
+        {
+          "id": "ch06-added-seven-day-operation-example",
+          "skillfile_line": "ch06-monetization.md:100-106",
+          "sourcepage": [],
+          "status": "added_example_math_pass",
+          "claim": "신규 유저 PR, 첫 결제 1회, 7일, 즉시 보상+매일 보상은 추가 가상 운영안이다.",
+          "evidence": "장 파일이 원문 수치 66/398/1,958 및 80/16/4와 명시적으로 구분한다. 7일·첫 결제 1회은 원문 사실로 인용하지 않으며, 5단계 운영법의 요소 배치도 논리적으로 맞다.",
+          "recommendation": "없음"
+        },
+        {
+          "id": "ch05-ch06-summary-numbered-items",
+          "skillfile_line": "ch05-validation.md:125-138; ch06-monetization.md:128-140",
+          "sourcepage": [
+            209,
+            210,
+            216,
+            219,
+            227,
+            229,
+            235,
+            236,
+            248,
+            249,
+            253
+          ],
+          "status": "pass",
+          "claim": "각 장의 5개 요약 항목과 3/4/5/6/7장 연결 표기.",
+          "evidence": "해당 장 본문에서 재구성한 요약이며 숫자는 항목·장 번호다. 별도 계산값이나 외부 통계가 포함되지 않는다.",
+          "recommendation": "없음"
+        }
+      ],
+      "source_errors": [
+        {
+          "sourcepage": 213,
+          "location": "표 5.3, 100일 총생산량",
+          "printed_value": 222168267,
+          "consistent_value": 22216827,
+          "proof": "PDF 211쪽 표 5.1의 100일 생산 22,216,827 = PDF 213쪽 잔여 11,747,361 + 소비 10,469,466. 인쇄값 222,168,267은 잔여·비율과 모두 불일치한다.",
+          "impact_on_skill": "없음. 스킬은 잘못된 총생산값을 쓰지 않고, 정합되는 +112%만 사용한다."
+        },
+        {
+          "sourcepage": 239,
+          "location": "LTV 수식의 '활성 유저의 평균 결제율'",
+          "printed_expression": "평균 결제율 × (1÷주기 이탈률)",
+          "consistent_expression": "ARPU(활성 유저의 평균 결제액) × (1÷주기 이탈률)",
+          "proof": "PDF 241쪽 표 6.1에서 ARPU 40, 이탈률 80%가 LTV 50을 만든다. 결제율만으로는 통화 단위 LTV가 나오지 않는다.",
+          "impact_on_skill": "스킬이 오류를 명시하고 정합식으로 교정했으므로 수학적으로 맞다."
+        }
+      ],
+      "skill_issues": [
+        {
+          "skillfile_line": "ch06-monetization.md:43",
+          "severity": "low",
+          "issue": "'균일 증가 가정'은 LTV 근사의 실제 가정을 정확히 가리키지 않는다.",
+          "reason": "원문도 시간이 갈수록 결제액이 감소해 균일한 증가 추세가 아니라고 말한다. 현재 식이 전제하는 것은 주기당 ARPU가 일정하다는 단순화다.",
+          "recommended_change": "'균일 증가 가정의 참고치'를 '주기당 ARPU가 일정하다는 단순 가정의 참고치'로 변경."
+        }
+      ],
+      "result": {
+        "skill_claims_checked": 21,
+        "pass_or_pass_rounding_or_practical_or_added_example": 19,
+        "source_error_preserved": 2,
+        "skill_issues_requiring_change": 1,
+        "conclusion": "검산한 수식·수치 예제는 모두 맞다. 발견한 핵심 불일치는 원문 표 5.3의 100일 총생산 오기와 원문 LTV 수식의 단위 오류이며, 스킬은 두 오류를 복제하지 않았다. 스킬 자체에는 LTV 가정 표현의 저위험 문구 개선 1건만 있다."
+      }
+    },
+    "frameworks": {
+      "audit_scope": {
+        "mode": "독립 읽기 전용 검수",
+        "audited_files": [
+          ".agents/skills/game-balance-bible/chapters/ch01-process.md",
+          ".agents/skills/game-balance-bible/chapters/ch02-preparation.md",
+          ".agents/skills/game-balance-bible/chapters/ch07-visualization.md",
+          ".agents/skills/game-balance-bible/chapters/ch08-modularization.md"
+        ],
+        "source": "프로젝트 루트 PDF와 <temporary-workdir> PDF 쪽수별 텍스트",
+        "source_page_convention": "sourcepage는 PDF 1-based 쪽수",
+        "status_legend": {
+          "일치": "원문의 수치·관계·프레임워크가 보존됐고, 수학적으로도 타당함",
+          "조건부_일치": "원문에 근거하지만 원문보다 넓은 적용·해석·규범을 덧붙임",
+          "원문_불일치": "원문이 말하지 않은 사실을 단정하거나 원문과 충돌함"
+        }
+      },
+      "items": [
+        {
+          "id": "ch01-five-stage-process",
+          "file": ".agents/skills/game-balance-bible/chapters/ch01-process.md",
+          "line": "5, 7-13",
+          "sourcepage": "029-034",
+          "status": "일치",
+          "evidence": "PDF 029는 연결된 수치 모델을 반복 개선하는 생산 라인 비유를, PDF 030은 준비 작업→전투 수치→경제 수치→수치 검증→수익화의 5단계를 명시한다. PDF 031-034는 각 단계의 세부 범위를 뒷받침한다.",
+          "수정권고": "없음"
+        },
+        {
+          "id": "ch01-stage-output-input-contract",
+          "file": ".agents/skills/game-balance-bible/chapters/ch01-process.md",
+          "line": "5, 17-21",
+          "sourcepage": "030, 033-034",
+          "status": "조건부_일치",
+          "evidence": "원문은 수치 검증·수익화가 전투·경제 수치를 계속 다듬는다고 설명하지만, 모든 단계의 산출물이 반드시 다음 단계의 입력이라는 일반 계약과 단계별 결정·입력·지표 표는 원문에 없는 실무 재구성이다.",
+          "수정권고": "현 문구를 유지하려면 '적용용 재구성'임을 표시하거나, '상호 연결되어 반복 보정된다'로 원문 수준으로 좁힌다."
+        },
+        {
+          "id": "ch01-battle-framework",
+          "file": ".agents/skills/game-balance-bible/chapters/ch01-process.md",
+          "line": "10",
+          "sourcepage": "031-032",
+          "status": "일치",
+          "evidence": "PDF 031은 속성 설계·전투 구조·능력치 정량화·AI 설정의 4단계를, PDF 032는 속성=기반, 전투 구조=커넥터, 능력치=직접 피드백, AI=당근과 채찍이라는 역할을 제시한다.",
+          "수정권고": "없음"
+        },
+        {
+          "id": "ch01-economy-and-verification-framework",
+          "file": ".agents/skills/game-balance-bible/chapters/ch01-process.md",
+          "line": "11-12, 25-27, 37-38",
+          "sourcepage": "032-033",
+          "status": "일치",
+          "evidence": "PDF 032는 경제모델·화폐/자원·경제구조·가치 체계를, PDF 033은 생산·소비 모델과 경제 검증·육성 검증·전투 검증을 제시한다. 생산 감소→디플레이션, 소비 감소→자원 축적과 인플레이션의 인과도 PDF 033과 일치한다.",
+          "수정권고": "없음"
+        },
+        {
+          "id": "ch01-monetization-validation-norm",
+          "file": ".agents/skills/game-balance-bible/chapters/ch01-process.md",
+          "line": "13, 21, 28",
+          "sourcepage": "034",
+          "status": "조건부_일치",
+          "evidence": "PDF 034는 수익화 포지셔닝·전략·검증과, 부적절한 수익화가 플레이 리듬·흥미·수명을 해칠 수 있다는 양날의 검 비유를 제시한다. '반드시 함께 검증' 및 '핵심 성장 리듬'은 타당한 실무 규범이지만 원문의 직접 문구는 아니다.",
+          "수정권고": "원전 충실성이 우선이면 '수익화가 플레이 리듬과 흥미를 해치는지 검토한다'로 완화한다."
+        },
+        {
+          "id": "ch02-genre-direction",
+          "file": ".agents/skills/game-balance-bible/chapters/ch02-preparation.md",
+          "line": "5, 9-17",
+          "sourcepage": "035-042",
+          "status": "조건부_일치",
+          "evidence": "PDF 035-042는 장르가 설계 방향과 기대 경험을 결정하며 RPG는 육성 경험, 전략은 전투 경험과 경제 흐름을 중시한다고 설명한다. 여러 장르 요소의 결합도 PDF 041의 판타지 타운 사례와 일치한다. 다만 세션 성공 빈도, 실패 복귀 비용, MOBA의 개인 성장/팀 전력 동시 모델링 등은 원문을 바탕으로 한 확장이다.",
+          "수정권고": "장르별 우선 검증 지표를 책의 주장처럼 읽히지 않게 '실무 적용 예'로 표시한다."
+        },
+        {
+          "id": "ch02-theme-player-lenses",
+          "file": ".agents/skills/game-balance-bible/chapters/ch02-preparation.md",
+          "line": "19-28",
+          "sourcepage": "042-045",
+          "status": "일치",
+          "evidence": "PDF 042는 테마에 맞는 전투·속성·적·화폐·자원·아이템을 검토하도록 하고, 바틀·커시·DGD1을 테마별 유저 기대를 파악하는 분류 모델로 든다. PDF 043의 킬러·달성가·모험가·사교가 정의와 PDF 045의 삼국지 사례도 요약과 부합한다.",
+          "수정권고": "없음"
+        },
+        {
+          "id": "ch02-three-elements-user-view",
+          "file": ".agents/skills/game-balance-bible/chapters/ch02-preparation.md",
+          "line": "30-36",
+          "sourcepage": "046-047",
+          "status": "일치",
+          "evidence": "PDF 046-047은 유저 관점의 넓이·깊이·난이도, 넓이의 육성/플레이 규모와 유형 범위, 깊이의 재미·유지력, 난이도의 입문·플레이·성장 및 '입문은 쉽게, 마스터는 어렵게' 원칙을 명시한다.",
+          "수정권고": "없음"
+        },
+        {
+          "id": "ch02-three-elements-planning-view",
+          "file": ".agents/skills/game-balance-bible/chapters/ch02-preparation.md",
+          "line": "38-44, 59-60",
+          "sourcepage": "047-051",
+          "status": "조건부_일치",
+          "evidence": "PDF 047은 플레이 생산 자원이 성장에 쓰이고 성장이 더 안전·효율적인 플레이를 만드는 사이클, 그리고 성장의 수익·깊이·난이도·표현을 직접 설명한다. PDF 048-051은 플레이 분해 항목과 전투 모듈을 제시한다. '피로도·목표 과밀도·보상 부족을 발견'은 분포 파악/최적화 가능성을 구체화한 해석이다.",
+          "수정권고": "진단 예시는 '발견할 수 있다'보다 '검토할 수 있다'로 낮추면 원문 범위를 보존한다."
+        },
+        {
+          "id": "ch02-target-game-reverse-inference",
+          "file": ".agents/skills/game-balance-bible/chapters/ch02-preparation.md",
+          "line": "46-54, 61",
+          "sourcepage": "051-052",
+          "status": "일치",
+          "evidence": "PDF 051은 결과에서 과정으로 설계 의도를 추론하는 역방향 추론과 1목표→3시스템→수익화 순서를, PDF 052는 성장·플레이·경제의 3시스템 및 일반·유도·뽑기 결제를 명시한다.",
+          "수정권고": "없음"
+        },
+        {
+          "id": "ch07-experience-framework",
+          "file": ".agents/skills/game-balance-bible/chapters/ch07-visualization.md",
+          "line": "5, 7-34",
+          "sourcepage": "255-261",
+          "status": "일치",
+          "evidence": "PDF 255-256은 리듬감·의례감·몰입감과 단계 목표/시각화의 관계를, PDF 257-259는 성장의 질적·양적 변화와 단일 대미지·단일 전투 시간을, PDF 260-261은 몰입의 4과정·면적 그래프·유저 유형별 한계를 제시한다.",
+          "수정권고": "없음"
+        },
+        {
+          "id": "ch07-combat-rhythm-detail",
+          "file": ".agents/skills/game-balance-bible/chapters/ch07-visualization.md",
+          "line": "17-22, 77-78",
+          "sourcepage": "257-259",
+          "status": "일치",
+          "evidence": "PDF 257은 단일 대미지와 단일 전투 시간을 전투 리듬의 두 변수로 정의한다. PDF 258은 단일 대미지의 요동 상승과 전투 시간의 주기적 요동, PDF 259는 콤보·QTE·연계 스킬·속성 상극의 보상 역할을 설명한다.",
+          "수정권고": "없음"
+        },
+        {
+          "id": "ch07-stage-goals-five-steps",
+          "file": ".agents/skills/game-balance-bible/chapters/ch07-visualization.md",
+          "line": "36-44",
+          "sourcepage": "261-265",
+          "status": "일치",
+          "evidence": "PDF 261-264는 단계 구분, 해금 기능 검증, 성장 리듬 검증, 과금 깊이 검증, 유저 목표 설정의 다섯 단계를 같은 순서로 설명한다. 과금 깊이는 주기별 소비 자원량과 가치 체계 가격을 곱해 구한다는 설명도 PDF 264와 일치한다.",
+          "수정권고": "없음"
+        },
+        {
+          "id": "ch07-graph-functions",
+          "file": ".agents/skills/game-balance-bible/chapters/ch07-visualization.md",
+          "line": "46-54",
+          "sourcepage": "265-267",
+          "status": "일치",
+          "evidence": "PDF 265는 꺾은선=주기별 변화, 원=비율, 막대=주기별 크기·비율을 설명한다. PDF 266은 지수=기하급수적 증가/합성 소비, 선형=비례 증가와 안정성, 로그=한계효용체감, 다항식=큰 주기 안 작은 변동을 정의하며 PDF 267은 레이더·선버스트 용도를 제시한다.",
+          "수정권고": "없음"
+        },
+        {
+          "id": "ch07-monetization-pressure-meaning",
+          "file": ".agents/skills/game-balance-bible/chapters/ch07-visualization.md",
+          "line": "43, 80",
+          "sourcepage": "264",
+          "status": "조건부_일치",
+          "evidence": "PDF 264는 과금 깊이를 주기별 성장에 필요한 자원 소비량과 가치 체계 가격의 곱으로 계산하고, 이후 결제 전략 조정에 쓸 자원을 남기기 위한 검증으로 설명한다. '수익화 압박의 크기'는 유용한 해석이나 원문의 정의어는 '과금 깊이'다.",
+          "수정권고": "핵심 개념 정의는 '과금 깊이: 주기별 성장 자원 소비에 가치 체계 가격을 적용한 값'으로 두고, 압박은 해석 문장으로 분리한다."
+        },
+        {
+          "id": "ch08-model-scope-and-contract",
+          "file": ".agents/skills/game-balance-bible/chapters/ch08-modularization.md",
+          "line": "5, 9-16",
+          "sourcepage": "269-271, 281",
+          "status": "일치",
+          "evidence": "PDF 269는 독립 설계·집중 관리와 독립성/통합성을, PDF 270은 변수·등식·부등식·수학 연산·언어 규칙 및 넓은/좁은 수치 모델을, PDF 281은 기능·상태·인터페이스=외부 특성 및 로직=내부 특성을 명시한다.",
+          "수정권고": "없음"
+        },
+        {
+          "id": "ch08-linear-growth-550",
+          "file": ".agents/skills/game-balance-bible/chapters/ch08-modularization.md",
+          "line": "18-22",
+          "sourcepage": "270-271",
+          "status": "일치",
+          "evidence": "PDF 270의 식은 공격력=초깃값+(레벨−1)×레벨 증폭이다. PDF 271은 초깃값 100, 증폭 50, 레벨 10의 공격력 550을 표로 제시한다. 재계산도 100+(10−1)×50=550으로 정확하다.",
+          "수정권고": "없음"
+        },
+        {
+          "id": "ch08-ten-step-model-order",
+          "file": ".agents/skills/game-balance-bible/chapters/ch08-modularization.md",
+          "line": "24-43, 81-83",
+          "sourcepage": "271-274",
+          "status": "일치",
+          "evidence": "PDF 271의 그림 8.1과 PDF 272-274의 본문은 1 기초 성장, 2 속성 성장, 3 성장 모듈 성장, 4 몬스터 난이도, 5 성장 소비, 6 생산, 7 경제 검증, 8 성장 검증, 9 수익화 검증, 10 전투 기본 모델을 같은 순서·소속으로 제시한다. PDF 272는 4단계가 초기에는 성장 모듈 데이터로 시작하고 8단계 완성 후 갱신됨을, PDF 274는 10단계의 시점이 고정되지 않으며 기본 속성 성장과 성장 검증은 전투 기본 모델로 검증해야 함을 명시한다.",
+          "수정권고": "없음"
+        },
+        {
+          "id": "ch08-economy-pressure-causality",
+          "file": ".agents/skills/game-balance-bible/chapters/ch08-modularization.md",
+          "line": "41",
+          "sourcepage": "273",
+          "status": "일치",
+          "evidence": "PDF 273은 생산 데이터−소비 데이터로 주기별 자원 잔여를 얻고, 경제 검증으로 유저의 성장 원동력과 생존 압박 정보를 미리 판단한다고 설명한다. 따라서 '생산−소비=주기별 자원 잔여'와 경제 압박/성장 동력의 인과 연결은 원문과 부합한다.",
+          "수정권고": "없음"
+        },
+        {
+          "id": "ch08-step9-value-system-link",
+          "file": ".agents/skills/game-balance-bible/chapters/ch08-modularization.md",
+          "line": "41",
+          "sourcepage": "273",
+          "status": "조건부_일치",
+          "evidence": "PDF 273은 9단계를 수익화 전략의 집계·계산과 주기별 수익 예측으로 설명한다. 이 문장의 '경제·가치 체계 위에서'는 다른 장의 맥락에서는 타당할 수 있으나, 8장 10단계 설명의 직접 근거는 아니다.",
+          "수정권고": "8장 원문 충실 요약에서는 '수익화 전략을 집계·계산해 주기별 수익을 예측한다'로 쓴다."
+        },
+        {
+          "id": "ch08-three-build-steps",
+          "file": ".agents/skills/game-balance-bible/chapters/ch08-modularization.md",
+          "line": "45-51",
+          "sourcepage": "274-280",
+          "status": "일치",
+          "evidence": "PDF 274는 아이디어 구상→세부 사항 보강→모델링을, PDF 275-280은 성유물 예시의 매개변수 정의→다른 모델 데이터 호출→모델 계산을 같은 순서로 전개한다. 속성 성장 데이터×성유물 속성 비율 식도 PDF 277에 직접 제시된다.",
+          "수정권고": "없음"
+        },
+        {
+          "id": "ch08-artifact-four-level-rule",
+          "file": ".agents/skills/game-balance-bible/chapters/ch08-modularization.md",
+          "line": "53-55",
+          "sourcepage": "274-275",
+          "status": "일치",
+          "evidence": "PDF 274-275는 5개 부위, 주/부속성, 1~5성, 최대 레벨=별 등급×4, 4레벨마다 부속성을 추가하거나 속성이 4개면 하나를 무작위 강화하는 규칙을 제시한다. 장의 '4레벨 단위의 부속성 추가·강화 규칙' 요약은 정확하다.",
+          "수정권고": "규칙을 구현용으로 재사용할 때는 '4개 미만이면 추가, 4개면 기존 4개 중 하나 강화' 조건을 본문에도 적어 모호성을 없앤다."
+        },
+        {
+          "id": "ch08-reuse-operation-principle",
+          "file": ".agents/skills/game-balance-bible/chapters/ch08-modularization.md",
+          "line": "65-69",
+          "sourcepage": "280-282",
+          "status": "조건부_일치",
+          "evidence": "PDF 281-282는 표준 모델로 업데이트에 대응하고, 다른 게임의 수치·모듈 복각이 경험 축적과 학습이 될 수 있음을 말한다. '인터페이스·제약·검증 순서를 이해해 조건에 맞게 재사용'은 281의 모듈 특성과 282의 경험 계승을 결합한 안전한 실무 확장이다.",
+          "수정권고": "원전 서술과 실무 권고를 구분하려면 문장 앞에 '적용 시에는'을 붙인다."
+        }
+      ],
+      "summary": {
+        "items_total": 23,
+        "일치": 16,
+        "조건부_일치": 7,
+        "원문_불일치": 0,
+        "critical_findings": [
+          "550 성장 계산과 10단계 순서는 원문 및 산술 모두 정확하다.",
+          "성유물 사례의 4레벨 규칙은 정확하나, 구현용 설명에는 속성 수 4개 미만/완성 후의 분기 조건을 명시하는 편이 안전하다.",
+          "그래프 기능과 단계 목표 5단계는 원문과 일치한다.",
+          "조건부 항목은 오류가 아니라 원문보다 강한 실무 해석이다. 원전 충실 서술이 목표이면 각 항목의 수정권고를 적용한다."
+        ]
+      }
+    }
+  },
+  "primary_metadata_audit": {
+    "pdf_count": 290,
+    "page_map": [
+      {
+        "range": [
+          29,
+          34
+        ],
+        "start_text": "CHAPTER 1\n수치 프로세스화\n한게임 회사 면접에서 이런 질문을 받은 적이 있다.\n\"게임 수치를 어떻게 기획하나요?\"\n당시 몇 년간 게임 수치 기획을 했고 몇",
+        "last_footer": "다. 합리적인 수익 모델은 게임의 '사용자 경험'을 향상시킬 수 있지\n산, 게임의 플레이 리듬을 바꾸고 유저의 게임에 대한 흥미를 빠르게 감소시켜 게임의 수명을 줄\n일 수도 있다. 수치 기획자는 게임의 수익 모델을 잘 만들어 수익을 극대화할지의 방법을 계속 고\n민하고 연구해야 한다.\n6 CHAPTER 1 수치 프로세스화\n"
+      },
+      {
+        "range": [
+          35,
+          52
+        ],
+        "start_text": "2\nCHAPTER\n수치 구축 준비 작업\n수치 기획은 장편소설을 쓰는 것과 같다. 장르를 정한 후 시놉시스를 작성하고, 이야기의 줄거리를\n다듬으며 주요 캐릭터를 설",
+        "last_footer": " 과정이기도 하다. 다른 게임의\n설계 방법, 설계 맥락, 유저의 실제 경험 등을 이해하면 게임을 이해하는 데 도움이 될 것이다. 사\n물에는 모방, 정리, 초월, 혁신이라는 발전 규칙이 있다. 모방과 정리는 학습 과정이지만, 초월과 혁\n신을 위해서는 충분한 경험을 쌓아야 한다.\nCHAPTER 2 수치 구축 준비 작업\n24\n"
+      },
+      {
+        "range": [
+          53,
+          133
+        ],
+        "start_text": "3\nCHAPTER\n게임의 전투 수치\n게임의 전투 수치가 무엇인지 이해하려면 먼저 게임의 핵심 전투가 무엇인지를 알아야 한다. 게임\n의 핵심 전투는 전투 방식, 전",
+        "last_footer": "델의 설정에 따라 전투 수치를\n검증할 것이다. 전투 수치 검증을 통해 얻은 데이터로 전투 시뮬레이션을 진행하고, '실전 밸런스’를\n이뤄야 진정한 의미의 게임 밸런스를 이뤘다고 할 수 있다. 이를 통해 게임의 전투 과정이 더 재미\n있어지고, 각 직업의 특성이 돋보이고, 게임이 더 '공평해질 것이다.\n3.4 인공지능\n103\n"
+      },
+      {
+        "range": [
+          135,
+          208
+        ],
+        "start_text": "CHAPTER4\n게임의 경제 수치\n현실의 경제구조는 생산이 기초이고 소비가 종점이다. 경제는 가치 창출과 가치 변화를 중심으로\n하며 궁극적으로는 인류의 삶을 위해",
+        "last_footer": ""
+      },
+      {
+        "range": [
+          209,
+          234
+        ],
+        "start_text": "5\nCHAPTER\n게임 수치 검증\n게임의 전투 수치와 경제 수치를 설계할 때 정방향 제작 프로세스를 거쳤다. 속성 정의, 전투 구조,\n능력치 정량화, 인공지능의 ",
+        "last_footer": ""
+      },
+      {
+        "range": [
+          235,
+          254
+        ],
+        "start_text": "6\nCHAPTER\n게임의 수익화\n게임의 수익화를 설계하기 전에, 게임의 수익화는 게임 경험을 최적화하기 위한 것이지, '수익 창\n출'이 최우선 목적이 아니라는 점",
+        "last_footer": ""
+      },
+      {
+        "range": [
+          255,
+          268
+        ],
+        "start_text": "7\nCHAPTER\n수치 시각화\n앞의 6개 장에서 수치 프로세스 5단계(준비 작업, 전투 수치, 경제 수치, 수치 검증, 수익화)를 통해 게임\n의 완전한 수치 모델",
+        "last_footer": ""
+      },
+      {
+        "range": [
+          269,
+          282
+        ],
+        "start_text": "8\nCHAPTER\n수치 모듈화\n모듈화는 복잡한 시스템을 처리할 때 위에서 아래로 하나씩 모듈로 나누는 과정으로, 소프트웨어\n개발과 설계에서 자주 볼 수 있다. 게",
+        "last_footer": "업이 더 발전하고, 수치 기획자라는 직업이 더 보편화되면 수치 기획자는 생각하고\n검증할 시간이 더 많아질 것이며, 수치 기획자가 설정한 수치에 따른 게임 경험도 더 '밸런스 있고\n안정적이게' 될 것이다.\n마지막으로 여기까지 읽어준 독자에게 감사드리며, 이 책이 도움이 됐기를 바란다.\nCHAPTER 8 수치 모듈화\n252\n"
+      }
+    ]
+  },
+  "independent_behavior": {
+    "baseline_cases": 12,
+    "baseline": {
+      "request": "게임 밸런스 수치 기획 바이블의 전투·경제·수익화 산식으로 12개 수치 문제를 계산하고 조건을 검증한다.",
+      "answer": [
+        {
+          "id": 1,
+          "result": "시도당 기대 피해는 46.235이다.",
+          "condition": "명중 → 관통 → 치명의 순차·배타 판정이며, 치명은 관통에 실패한 명중에서만 판정한다."
+        },
+        {
+          "id": 2,
+          "result": "피해는 약 85.091, 원래 피해 50 대비 증가는 약 70.182%이다.",
+          "condition": "피해식 D=ATK²/(ATK+DEF), ATK 증가와 최종 피해 증가는 서로 독립이며 최종 피해 +30%를 마지막에 곱한다."
+        },
+        {
+          "id": 3,
+          "result": "정확한 처치 시각은 2.5초이고, HP/DPS 근사 2.525초보다 0.025초 빠르다.",
+          "condition": "피해는 고정 20, 회복·다른 피해원 없음, 첫 타격은 t=0에 발생한다."
+        },
+        {
+          "id": 4,
+          "result": "B=100, k=0이면 1이다. B=0, k=0이면 0/0이라 정의되지 않는다. '포화형이면 항상 0~1'은 입력 제약 없이는 틀리다.",
+          "condition": "0~1 범위는 B≥0, k≥0, B+k>0 같은 제약이 있을 때만 보장된다."
+        },
+        {
+          "id": 5,
+          "result": "각 모듈의 레벨을 총재고로 따로 계산하면 안 된다. 가용 코인을 90,000으로 해석하면 20,000×장비레벨 + 10,000×스킬레벨 ≤ 90,000을 만족하는 조합만 가능하다.",
+          "condition": "'총누적 100,000'을 초기 재고와 별도인 누적 획득량으로 해석했다."
+        },
+        {
+          "id": 6,
+          "result": "첫 항목 가중치를 50으로 낮춘 뒤 보물상자 기대가치는 62/7, 즉 약 8.857143이다.",
+          "condition": "가격 2/5/20을 각 항목의 동일 가치 단위 보상으로 해석한다."
+        },
+        {
+          "id": 7,
+          "result": "시도당 기대 드롭량은 2.4개, 100회 기대량은 240개, 100회 중 드롭 성공이 1회 이상일 확률은 1−0.5^100 ≈ 1이다.",
+          "condition": "각 시도는 독립이고 '드롭 1회 이상'은 성공 이벤트가 한 번 이상 발생하는 뜻이다."
+        },
+        {
+          "id": 8,
+          "result": "책의 소비 분모 잔여 비율은 −50%이고, 생산 분모로 바꾼 지표는 −100%이다. 소비가 0이면 책의 지표는 정의되지 않는다.",
+          "condition": "생산 100, 소비 200은 같은 기간의 누적량이다."
+        },
+        {
+          "id": 9,
+          "result": "ARPU는 200, ARPPU는 2,000, PR은 10%, 단순 LTV는 2,000이다.",
+          "condition": "매출·이용자·결제자·이탈률이 모두 같은 월간 활성 모집단 기준이고, 월 ARPU와 월 이탈률이 일정하다고 가정한다."
+        },
+        {
+          "id": 10,
+          "result": "아니다. 월 ARPU 200을 연 이탈률 10%로 바로 나누면 단위가 맞지 않는다. 연 단순 근사에서는 연 ARPU 2,400/연 이탈률 0.10=24,000이다.",
+          "condition": "월별 이탈로 환산하면 월 이탈률은 약 0.874161%이고, 월 단순 근사는 약 22,879.078이어서 관찰 시점 정의도 필요하다."
+        },
+        {
+          "id": 11,
+          "result": "선형 소비는 L1=100, L10=550, L1~L10 합계=3,250이다. k=3 계단형은 L1=100, L2=150, L4=150, L5=200이다.",
+          "condition": "C(L)=Δ(L−1)+C0 및 C(L)=Δ×ROUNDUP((L−1)/k)+C0을 사용한다."
+        },
+        {
+          "id": 12,
+          "result": "아니다. 공격 비율 4의 제곱근 2만으로는 충분하지 않다. 동일한 연속 란체스터 근사에서 A의 체력이 B의 2배라면 유효 비율은 4×2=8이고, A 1명은 약 √8=2.828명의 B에 해당한다.",
+          "condition": "공격 비율 4가 초당 원시 피해 dA/dB이고, 공격 속도·집중사격·회복·스킬·표적 선택이 같다는 단순 확장 가정이다."
+        }
+      ],
+      "calculations": [
+        {
+          "id": 1,
+          "formula": "P(관통)=h×p; P(치명)=(h−h×p)×c; P(일반)=h−P(관통)−P(치명); E=ΣP_i×피해_i",
+          "steps": [
+            "P(관통)=0.70×0.30=0.21",
+            "P(치명)=(0.70−0.21)×0.05=0.0245",
+            "P(일반)=0.70−0.21−0.0245=0.4655; P(미스)=0.30",
+            "E=0.21×100+0.0245×80+0.4655×50+0.30×0=46.235"
+          ]
+        },
+        {
+          "id": 2,
+          "formula": "기본 D=ATK²/(ATK+DEF); 변경 D'=[(ATK×1.20)²/(ATK×1.20+DEF)]×1.30",
+          "steps": [
+            "기본 D=100²/(100+100)=50",
+            "ATK 증가 후 소공식 피해=120²/(120+100)=14400/220=65.454545…",
+            "최종 피해 적용 D'=65.454545…×1.30=85.090909…",
+            "증가율=(85.090909…/50−1)×100=70.181818…%"
+          ]
+        },
+        {
+          "id": 3,
+          "formula": "필요 타격 수=ceil(HP/타격 피해); 정확한 시각=첫 타격 시각+(필요 타격 수−1)/초당 타격 수; DPS=타격 피해×초당 타격 수",
+          "steps": [
+            "필요 타격 수=ceil(101/20)=6",
+            "타격 시각=0, 0.5, 1.0, 1.5, 2.0, 2.5초",
+            "정확한 처치 시각=0+(6−1)/2=2.5초",
+            "DPS=20×2=40; HP/DPS=101/40=2.525초; 정확값−근사값=−0.025초"
+          ]
+        },
+        {
+          "id": 4,
+          "formula": "f(B,k)=B/(B+k)",
+          "steps": [
+            "f(100,0)=100/(100+0)=1",
+            "f(0,0)=0/(0+0)=0/0: 정의되지 않음",
+            "B≥0, k≥0, B+k>0이면 0≤B/(B+k)≤1"
+          ]
+        },
+        {
+          "id": 5,
+          "formula": "가용 재고=누적 획득+초기 재고−이미 소비; 공유 재화 제약=Σ(모듈별 레벨×레벨당 비용)≤가용 재고",
+          "steps": [
+            "가용 재고=100,000+20,000−30,000=90,000",
+            "독립 계산은 장비 floor(90,000/20,000)=4, 스킬 floor(90,000/10,000)=9를 내지만 필요 합계가 170,000이라 불가능",
+            "유효 조합은 20,000E+10,000S≤90,000이며, 예를 들어 E=4, S=1은 정확히 90,000을 소비한다"
+          ]
+        },
+        {
+          "id": 6,
+          "formula": "E(상자)=Σ(가중치_i/총가중치×가격_i)",
+          "steps": [
+            "변경 뒤 총가중치=50+200+100=350",
+            "E=(50×2+200×5+100×20)/350=3100/350=62/7=8.857142…",
+            "참고: 변경 전 기대가치=(100×2+200×5+100×20)/400=8"
+          ]
+        },
+        {
+          "id": 7,
+          "formula": "E(성공 시 수량)=0.8×4+0.2×8; E(시도당)=P(성공)×E(성공 시 수량); P(≥1회 성공)=1−(1−p)^n",
+          "steps": [
+            "E(성공 시 수량)=0.8×4+0.2×8=4.8",
+            "E(시도당)=0.5×4.8=2.4",
+            "E(100회)=100×2.4=240",
+            "P(100회 중 1회 이상)=1−(1−0.5)^100=1−0.5^100=1−7.888609052×10^−31"
+          ]
+        },
+        {
+          "id": 8,
+          "formula": "책의 잔여 비율=(생산−소비)/소비; 생산 대비 잔여율=(생산−소비)/생산",
+          "steps": [
+            "책의 잔여 비율=(100−200)/200=−0.5=−50%",
+            "생산 대비 잔여율=(100−200)/100=−1=−100%",
+            "소비=0이면 첫 식은 0으로 나누므로 정의되지 않음; 주어진 생산=100에서 둘째 식은 (100−0)/100=100%"
+          ]
+        },
+        {
+          "id": 9,
+          "formula": "ARPU=매출/활성 유저; ARPPU=매출/결제 유저; PR=결제 유저/활성 유저; 단순 LTV=ARPU×(1/주기 이탈률)",
+          "steps": [
+            "ARPU=200,000/1,000=200",
+            "ARPPU=200,000/100=2,000",
+            "PR=100/1,000=0.10=10%; ARPU=PR×ARPPU=0.10×2,000=200",
+            "단순 LTV=200×(1/0.10)=2,000; 평균 생명주기는 단순 근사로 10개월"
+          ]
+        },
+        {
+          "id": 10,
+          "formula": "같은 주기로 정렬: 연 ARPU=월 ARPU×12; 또는 월 이탈률=1−(1−연 이탈률)^(1/12)",
+          "steps": [
+            "연 단순 근사=(200×12)/0.10=24,000",
+            "월 이탈률=1−0.90^(1/12)=0.00874161095…=0.874161…%",
+            "월 단순 근사=200/0.00874161095…=22,879.078…",
+            "두 값의 차이는 연도 경계에서의 수익 인식과 월별 이탈 시점을 다르게 둔 결과다"
+          ]
+        },
+        {
+          "id": 11,
+          "formula": "선형 C(L)=50(L−1)+100; 계단형 C(L)=50×ROUNDUP((L−1)/3)+100",
+          "steps": [
+            "선형 L1=50×0+100=100; L10=50×9+100=550",
+            "선형 1~10 합계=10×(100+550)/2=3,250",
+            "계단형 L1=50×ceil(0/3)+100=100; L2=50×ceil(1/3)+100=150",
+            "계단형 L4=50×ceil(3/3)+100=150; L5=50×ceil(4/3)+100=200"
+          ]
+        },
+        {
+          "id": 12,
+          "formula": "연속 란체스터 확장: 유효 비율=(dA/dB)×(HPA/HPB); A 1명에 대응하는 B 수≈sqrt(유효 비율)",
+          "steps": [
+            "공격 피해 비율 dA/dB=4, 체력 비율 HPA/HPB=2",
+            "유효 비율=4×2=8",
+            "대응 인원≈sqrt(8)=2.828427…",
+            "sqrt(4)=2는 HPA=HPB와 그 밖의 전투 조건이 같을 때만 사용할 수 있다"
+          ]
+        }
+      ],
+      "불확실_불일치_항목": [
+        {
+          "id": 5,
+          "issue": "'총누적 100,000'이 초기 재고를 포함하는지 불명확하다.",
+          "impact": "포함한다면 가용 재고는 100,000−30,000=70,000이고, 포함하지 않는다면 본문처럼 90,000이다. 어느 해석이든 공유 코인을 장비·스킬에 각각 전액 배정하는 독립 레벨 계산은 불가하다."
+        },
+        {
+          "id": 8,
+          "issue": "생산을 분모로 쓴 값은 책의 '잔여 비율'이 아니다.",
+          "impact": "같은 생산·소비 차이를 보더라도 소비 대비 부족률(−50%)과 생산 대비 부족률(−100%)은 의미와 스케일이 다르므로 같은 임계값으로 평가하면 안 된다. 생산도 0이면 생산 분모 지표 역시 정의되지 않는다."
+        },
+        {
+          "id": 10,
+          "issue": "연 이탈률 10%가 단일 연말 이탈률인지, 12개월 복리 생존율인지와 월 ARPU의 인식 시점이 정해지지 않았다.",
+          "impact": "따라서 24,000은 주기를 맞춘 단순 근사이고 22,879.078은 90% 연 생존율을 월 이탈로 환산한 이산 월별 근사다. 실제 LTV에는 코호트별 매출 감소·할인율·재활성화도 필요하다."
+        },
+        {
+          "id": 12,
+          "issue": "'공격비율 4'가 원시 초당 피해 비율인지, 이미 체력·공격 속도·명중률을 반영한 단위 처치효율 비율인지가 불명확하다.",
+          "impact": "원시 피해 비율이면 체력 2배를 반영한 √8 근사가 맞지만, 4가 이미 단위 처치효율 비율이면 체력을 다시 곱하면 중복이다. 실제 다수전에서는 집중사격, 표적 선택, 스킬, 회복, 사거리도 별도 시뮬레이션해야 한다."
+        }
+      ],
+      "summary": "12개 항목을 순차 확률, 비선형 피해식, 고정 간격 TTK, 포화식 정의역, 공유 재화 제약, 가중 기대값, I/O 잔여 지표, 월간 수익화 단위, 소비 곡선, 체력 보정 란체스터 근사로 검산했다. 수치 자체보다 5·8·10·12번의 재화 공유, 분모 정의, 기간 단위, 전투 효율 정의가 결론을 바꾸는 핵심 조건이다."
+    },
+    "final_cases": 10,
+    "final_status": "PASS",
+    "final": {
+      "검증_범위": {
+        "기준": "game-balance-bible 스킬의 SKILL.md, 관련 장 및 references만 사용",
+        "제외": "이전 검수 보고서와 다른 에이전트 산출물은 읽지 않음"
+      },
+      "요청별_답변": [
+        {
+          "번호": 1,
+          "주제": "시간 연동 강화 소비",
+          "계산식": "C(L) = T(L) × (Pbase + ΔP × Lc(L)) + A",
+          "입력": {
+            "강화레벨": 10,
+            "캐릭터레벨_Lc": 50,
+            "T": 0.2,
+            "Pbase": 50,
+            "ΔP": 0.5,
+            "A": 3
+          },
+          "계산": "0.2 × (50 + 0.5 × 50) + 3 = 18",
+          "답": "소비량은 18이다. 캐릭터 레벨을 10으로 바꾸면 0.2 × (50 + 0.5 × 10) + 3 = 14이므로 같지 않다.",
+          "실제오류": null,
+          "불확실성": "강화 레벨 10과 캐릭터 레벨의 대응은 자동으로 동일시하면 안 된다. 여기서는 질문이 준 Lc=50을 해당 강화 단계의 입력으로 사용했다.",
+          "근거": [
+            "references/economy-models.md: 시간 연동 소비와 일일 생산량 식",
+            "references/economy-models.md: L과 Lc(L)의 구분"
+          ]
+        },
+        {
+          "번호": 2,
+          "주제": "계단형 소비",
+          "계산식": "C(L) = Δ × CEILING((L-1)/k) + C0",
+          "입력": {
+            "k": 5,
+            "Δ": 4,
+            "C0": 2
+          },
+          "값": {
+            "L1": 2,
+            "L2": 6,
+            "L5": 6,
+            "L6": 6,
+            "L7": 10
+          },
+          "Excel식": "=4*ROUNDUP((A1-1)/5,0)+2  (A1은 레벨 L)",
+          "답": "같은 규칙이 아니다. 이 식은 L=1만 초깃값이고 L=2~6이 첫 증분 구간, L=7부터 다음 증분 구간이다. ‘5레벨 완성 시 비용 상승’을 목표로 한다면 비용이 어느 행동의 비용인지(현재 레벨 완료/다음 레벨 진입)를 먼저 정하고 경계식을 바꿔야 한다.",
+          "실제오류": null,
+          "불확실성": "‘5레벨 완성 시’의 비용 표기 기준이 명시되지 않아 대체 식의 정확한 경계는 확정할 수 없다.",
+          "근거": [
+            "references/economy-models.md: 계단형 선형 소비",
+            "references/economy-models.md: k=5이면 L=2~6이 같은 단계"
+          ]
+        },
+        {
+          "번호": 3,
+          "주제": "B/(B+k)의 확률 유효성",
+          "계산": {
+            "B=0,k=0": "0/0으로 정의되지 않으므로 확률로 사용할 수 없다.",
+            "B=100,k=0": "100/100=1.0이므로 경계값 확률 100%로는 사용할 수 있다.",
+            "B=100,k=-50": "100/50=2.0으로 1을 초과하므로 확률로 사용할 수 없다."
+          },
+          "답": "확률로 쓰려면 분모가 양수이고 결과가 0~1이어야 한다. 스킬의 포화형 안전 조건은 B≥0, k≥0, 양수 분모다.",
+          "실제오류": null,
+          "불확실성": null,
+          "근거": [
+            "references/combat-formulas.md: 포화형 변환의 유효 범위"
+          ]
+        },
+        {
+          "번호": 4,
+          "주제": "곱셈 피해식과 감소율",
+          "계산식": "D=A×(1-R), DR=(A-D)/A",
+          "입력": {
+            "A": 100,
+            "R": 0.3
+          },
+          "계산": "D=100×0.7=70, DR=(100-70)/100=0.3",
+          "답": "피해는 70, 실제 피해 감소율은 30%, 피해 잔존 배율은 70%(0.7)다.",
+          "실제오류": "인쇄 59쪽(PDF 87)은 1-R을 ‘감소율’로 부르지만, 1-R은 피해 잔존 배율이다. 감소율은 R이다.",
+          "불확실성": null,
+          "근거": [
+            "references/combat-formulas.md: 곱셈식과 DR 정의",
+            "references/source-map.md: PDF87/인쇄59 원문 용어 재검수"
+          ]
+        },
+        {
+          "번호": 5,
+          "주제": "표 5.3 100일 자원 검산",
+          "제시된_산술": "222,168,267 - 10,469,466 = 211,698,801이므로, 잔여 11,747,361과 일치하지 않는다.",
+          "대조값": "표 5.1(PDF 211)의 총생산 22,216,827은 11,747,361 + 10,469,466 = 22,216,827과 일치한다.",
+          "답": "계산에 사용할 100일 총생산은 22,216,827, 총소비는 10,469,466, 잔여는 11,747,361이다. 잔여 비율은 약 112.21%다.",
+          "실제오류": "표 5.3의 222,168,267은 자릿수가 하나 더 들어간 오기다.",
+          "불확실성": null,
+          "근거": [
+            "chapters/ch05-validation.md: 잔여량/잔여 비율 식",
+            "references/source-map.md: 표5.3과 표5.1의 100일 수치 대조"
+          ]
+        },
+        {
+          "번호": 6,
+          "주제": "본문과 표 4.35 속성 단가의 혼용",
+          "답": "같이 사용하면 안 된다. 표 4.36의 합계 1,782를 재현하려면 표 4.35의 공격력 1, 방어력 1, 체력 0.1 단가를 사용해야 한다. 본문 예시의 공격력 10, 체력 1은 표 계산에 섞지 않는다.",
+          "실제오류": "본문 예시 단가와 표 4.35 단가는 10배 차이가 나며, 같은 기준으로 보이지 않는다.",
+          "불확실성": "원문이 어느 단가 체계를 최종 규칙으로 채택하는지 별도 정정 문구가 없으므로, 표 4.36 재현 목적에서는 표 4.35 체계를 국소적으로 사용한다.",
+          "근거": [
+            "references/source-map.md: PDF196–197/인쇄166–167 단가 불일치와 1,782 재현 조건"
+          ]
+        },
+        {
+          "번호": 7,
+          "주제": "월 ARPU와 월 이탈률의 단순 LTV",
+          "계산식": "근사 LTV = ARPU × (1 / 주기 이탈률)",
+          "계산": "40 × (1 / 0.8) = 50",
+          "답": "단순 근사 LTV는 50이다.",
+          "가정": [
+            "월별 ARPU 40이 유지된다.",
+            "매월 이탈률 80%가 유지된다.",
+            "평균 생명주기를 1/0.8=1.25개월로 근사한다.",
+            "할인율, 코호트 변화, 잔존 유저의 결제 감소·증가, 재유입은 반영하지 않는다."
+          ],
+          "실제오류": "원문 본문의 ‘활성 유저의 평균 결제율’이라는 표현은 표 6.1의 40→50 산술 및 단위와 맞지 않는다. 이 계산에는 ARPU를 써야 한다.",
+          "불확실성": "실제 LTV는 기간별 ARPU와 생존곡선을 관측해 계산해야 하므로 참고치다.",
+          "근거": [
+            "chapters/ch06-monetization.md: LTV 근사식과 40→50 예시"
+          ]
+        },
+        {
+          "번호": 8,
+          "주제": "보물상자 가중 기대가치",
+          "계산": {
+            "변경전": "3515/495 = 7.101010… → 소수 둘째 자리 7.10",
+            "변경후": "3475/475 = 7.315789… → 소수 둘째 자리 7.32"
+          },
+          "답": "책의 표시 7.1과 7.3은 각각 소수 첫째 자리 반올림이며, 7.10과 7.32는 둘째 자리 표시다. 서로 오류가 아니라 표시 정밀도의 차이다.",
+          "실제오류": null,
+          "불확실성": null,
+          "근거": [
+            "references/economy-models.md: 표4.5 가중치 변경 예시",
+            "references/source-map.md: 원문 표시값과 정밀 재계산의 자릿수 차"
+          ]
+        },
+        {
+          "번호": 9,
+          "주제": "다항식의 주기성과 과금 깊이",
+          "답": "일반적인 다항식은 반복 주기를 보장하지 않는다. 증가·감소·변곡은 계수와 적용 구간에 따라 달라질 뿐이다. 또한 성장 소비량에 가치 체계의 가격을 곱해 보는 과금 깊이는 판매 가능한 성장 소비의 규모와 자원 압박을 보는 지표이며, 유저의 실제 결제 부족액과 같지 않다.",
+          "실제오류": null,
+          "불확실성": "실제 결제 부족액을 구하려면 세그먼트별 보유·무료 획득 화폐와 필요 화폐를 같은 기간에 대조해야 한다. 차액은 ‘획득 다이아 − 필요 다이아’로 계산한다.",
+          "근거": [
+            "chapters/ch07-visualization.md: 다항식은 주기성을 보장하지 않음",
+            "chapters/ch07-visualization.md: 과금 깊이와 실제 부족액의 구별",
+            "references/economy-models.md: 보정 후 과금 깊이 정의",
+            "chapters/ch06-monetization.md: 소비 차액 정의"
+          ]
+        },
+        {
+          "번호": 10,
+          "주제": "성유물 부속성의 다음 4레벨 이정표",
+          "답": "부속성이 3개이면 다음 4레벨 이정표에서 부속성 1개가 추가되어 4개가 된다. 이미 4개이면 새 속성은 추가되지 않고, 기존 4개 중 하나가 무작위로 강화된다.",
+          "영향": "두 경우는 같은 이정표라도 첫 경우는 속성 종류와 총량이 늘고, 둘째 경우는 기존 속성의 분포와 집중도가 변한다. 따라서 기대값·분산·성장 총량 검증을 분리해야 한다.",
+          "실제오류": null,
+          "불확실성": "정확히 어느 레벨(Lv4, Lv8 등)에 첫 이정표가 오는지는 별도의 시작 레벨·레벨 상한 설정이 필요하다. 여기서는 질문의 ‘다음 4레벨 이정표’만 판정했다.",
+          "근거": [
+            "chapters/ch08-modularization.md: 성유물의 4레벨 단위 부속성 추가·강화 규칙"
+          ]
+        }
+      ],
+      "요약": "10개 요청 중 실제 데이터·표기 문제는 표5.3의 100일 총생산 오기, 본문과 표4.35의 속성 단가 불일치, 인쇄59쪽의 감소율 용어 혼용, 원문 LTV 본문 표현과 표6.1의 단위 불일치다. 상자 기대가치 7.1/7.3은 오류가 아니라 반올림 자릿수 차이다."
+    },
+    "review_note": "부모가 실제 답변·산식과 독립 검산값을 대조. 원문오류로 기록된 항목은 스킬실패를 뜻하지 않음."
+  },
+  "arithmetic_and_invariants": {
+    "status": "PASS",
+    "arithmetic_assertions": 45,
+    "results": [
+      {
+        "name": "common-consumption-value",
+        "actual": 101000.0,
+        "expected": 101000.0,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "separate-stone-cost",
+        "actual": 1200.0,
+        "expected": 1200.0,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "cost-effectiveness-exact",
+        "actual": 1.485,
+        "expected": 1.485,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "chest-old-2dp",
+        "actual": 7.101010101010101,
+        "expected": 7.1,
+        "tolerance": 0.005,
+        "passed": true
+      },
+      {
+        "name": "chest-new-2dp",
+        "actual": 7.315789473684211,
+        "expected": 7.32,
+        "tolerance": 0.005,
+        "passed": true
+      },
+      {
+        "name": "uniform-drop-conditional",
+        "actual": 6.0,
+        "expected": 6.0,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "uniform-drop-unconditional",
+        "actual": 3.0,
+        "expected": 3.0,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "unequal-drop-unconditional",
+        "actual": 2.4,
+        "expected": 2.4,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "weighted-drop-source",
+        "actual": 8.0,
+        "expected": 8.0,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "paid-depth-count",
+        "actual": 48000.0,
+        "expected": 48000.0,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "residual-day30",
+        "actual": -422677.0,
+        "expected": -422677.0,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "residual-day30-percent",
+        "actual": -16.864702375869914,
+        "expected": -16.9,
+        "tolerance": 0.05,
+        "passed": true
+      },
+      {
+        "name": "production-day100-consistency",
+        "actual": 22216827.0,
+        "expected": 22216827.0,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "residual-day100-percent",
+        "actual": 112.20592339666608,
+        "expected": 112.0,
+        "tolerance": 0.5,
+        "passed": true
+      },
+      {
+        "name": "weighted-arppu",
+        "actual": 194.8,
+        "expected": 194.8,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "diamond-gap",
+        "actual": -310.0,
+        "expected": -310.0,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "diamond-shortfall",
+        "actual": 60.0,
+        "expected": 60.0,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "ltv-source",
+        "actual": 50.0,
+        "expected": 50.0,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "arpu-example",
+        "actual": 200.0,
+        "expected": 200.0,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "arppu-example",
+        "actual": 2000.0,
+        "expected": 2000.0,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "pr-example",
+        "actual": 0.1,
+        "expected": 0.1,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "arpu-identity",
+        "actual": 200.0,
+        "expected": 200.0,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "linear-atk-L10",
+        "actual": 550.0,
+        "expected": 550.0,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "linear-cost-total-1to10",
+        "actual": 3250.0,
+        "expected": 3250.0,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "step-cost-L1",
+        "actual": 2.0,
+        "expected": 2.0,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "step-cost-L2",
+        "actual": 6.0,
+        "expected": 6.0,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "step-cost-L5",
+        "actual": 6.0,
+        "expected": 6.0,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "step-cost-L6",
+        "actual": 6.0,
+        "expected": 6.0,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "step-cost-L7",
+        "actual": 10.0,
+        "expected": 10.0,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "time-cost-character-map",
+        "actual": 18.0,
+        "expected": 18.0,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "quadratic-cost-source-L10",
+        "actual": 236.0,
+        "expected": 236.0,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "damage-base",
+        "actual": 50.0,
+        "expected": 50.0,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "damage-atk30",
+        "actual": 73.47826086956522,
+        "expected": 73.478,
+        "tolerance": 0.0005,
+        "passed": true
+      },
+      {
+        "name": "damage-final30",
+        "actual": 65.0,
+        "expected": 65.0,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "damage-both30",
+        "actual": 95.52173913043478,
+        "expected": 95.522,
+        "tolerance": 0.0005,
+        "passed": true
+      },
+      {
+        "name": "sequential-crit",
+        "actual": 0.0245,
+        "expected": 0.0245,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "sequential-expected-damage",
+        "actual": 46.235,
+        "expected": 46.235,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "hp101-hit-count",
+        "actual": 6.0,
+        "expected": 6.0,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "hp101-kill-time-first0",
+        "actual": 2.5,
+        "expected": 2.5,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "hp101-dps-approx",
+        "actual": 2.525,
+        "expected": 2.525,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "npc-hp-coefficient",
+        "actual": 2.0,
+        "expected": 2.0,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "level-gap-damage",
+        "actual": 150.0,
+        "expected": 150.0,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "lanchester-source",
+        "actual": 2.141135086691043,
+        "expected": 2.14,
+        "tolerance": 0.005,
+        "passed": true
+      },
+      {
+        "name": "damage-reduction",
+        "actual": 0.3,
+        "expected": 0.3,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "name": "shared-invalid-allocation",
+        "actual": 200.0,
+        "expected": 200.0,
+        "tolerance": 0,
+        "passed": true
+      }
+    ],
+    "probability_grid_cases": 1331,
+    "damage_identity_cases": 24,
+    "limitation": "산술과 명시한 모델 불변식 검증이며 전체 원문/에이전트 행동의 증명은 아님"
+  },
+  "structural_checks": {
+    "status": "PASS",
+    "markdown_checks": [
+      {
+        "file": "SKILL.md",
+        "missing_links": [],
+        "balanced_fences": true
+      },
+      {
+        "file": "chapters/ch01-process.md",
+        "missing_links": [],
+        "balanced_fences": true
+      },
+      {
+        "file": "chapters/ch02-preparation.md",
+        "missing_links": [],
+        "balanced_fences": true
+      },
+      {
+        "file": "chapters/ch03-combat.md",
+        "missing_links": [],
+        "balanced_fences": true
+      },
+      {
+        "file": "chapters/ch04-economy.md",
+        "missing_links": [],
+        "balanced_fences": true
+      },
+      {
+        "file": "chapters/ch05-validation.md",
+        "missing_links": [],
+        "balanced_fences": true
+      },
+      {
+        "file": "chapters/ch06-monetization.md",
+        "missing_links": [],
+        "balanced_fences": true
+      },
+      {
+        "file": "chapters/ch07-visualization.md",
+        "missing_links": [],
+        "balanced_fences": true
+      },
+      {
+        "file": "chapters/ch08-modularization.md",
+        "missing_links": [],
+        "balanced_fences": true
+      },
+      {
+        "file": "cheatsheet.md",
+        "missing_links": [],
+        "balanced_fences": true
+      },
+      {
+        "file": "glossary.md",
+        "missing_links": [],
+        "balanced_fences": true
+      },
+      {
+        "file": "patterns.md",
+        "missing_links": [],
+        "balanced_fences": true
+      },
+      {
+        "file": "references/combat-formulas.md",
+        "missing_links": [],
+        "balanced_fences": true
+      },
+      {
+        "file": "references/economy-models.md",
+        "missing_links": [],
+        "balanced_fences": true
+      },
+      {
+        "file": "references/source-map.md",
+        "missing_links": [],
+        "balanced_fences": true
+      }
+    ],
+    "ui_metadata_unchanged": true,
+    "reference_security_findings": [],
+    "changed_files": [
+      "chapters/ch03-combat.md",
+      "chapters/ch06-monetization.md",
+      "chapters/ch07-visualization.md",
+      "chapters/ch08-modularization.md",
+      "references/combat-formulas.md",
+      "references/economy-models.md",
+      "references/source-map.md"
+    ],
+    "sha256": {
+      "SKILL.md": "54ccdf97d9226e49de79db3e50e584dda599284c45f721cfc3a1505b5cb9f328",
+      "agents/openai.yaml": "3c93c464247489358c3c4593137ce251999b3db187fb05ae2b138ec2b6c4ee41",
+      "chapters/ch01-process.md": "7103c11cf781f968d6e6f6d8aa4b30af1f5c09ad6adbce2424859f6832deb76a",
+      "chapters/ch02-preparation.md": "7e460ae4f1fc7be2028703f05cc4abc59a524167e1d27f1274b57da5d552aa50",
+      "chapters/ch03-combat.md": "1adaef24e7fb6ac7af210205a8f5fdace332844813e517becd1f0ea29628af92",
+      "chapters/ch04-economy.md": "137e4155fe5f2971ef5a96adf5ec968101948321cd50d5d71ee6fa3de63a3b61",
+      "chapters/ch05-validation.md": "8155b888ace0ff41cc90f291c5164b4df5a9af93ca60d76407ba52ea501f3872",
+      "chapters/ch06-monetization.md": "8ea2b2ba5f5c31176ffdae427dc55905cb3a2324e7c215c0a29694aa531e9649",
+      "chapters/ch07-visualization.md": "9c2525846d0269180817961cd1130f74b6cf69fd2332e379e83f700d1f93d1f0",
+      "chapters/ch08-modularization.md": "d84e25f46a6391581e23e6683b33c47735de820d600d98c1753887753b4e79f2",
+      "cheatsheet.md": "4fcd1276c63dd11e8cf7cab6b480bc1cc2ed2ef7136d06fb41afd45507ac9b44",
+      "glossary.md": "d924022ca0bc474e7d2b1f1a88825eb065219ac0da5b8fa25541db1229609c65",
+      "patterns.md": "62bbf6dfade27b9011e3ce69ccac9c0fb71b0f40c2d92ad75b8db8f43c46694e",
+      "references/combat-formulas.md": "daf02ddb7f863cc116f5fe0624a9a55350a944ee06beb3c5f15a27d71121458d",
+      "references/economy-models.md": "5543e612a2a350732eeb7f410bb0e4590318f96570ca6691d419bce7806aa248",
+      "references/source-map.md": "282539fbf0db5bc25d90a91ff7de0010b44c3d5f9a0b7fb803d298a2a2a1ef42"
+    }
+  },
+  "security": {
+    "generated_scope": "PASS",
+    "references_scanned_separately": 3,
+    "reference_findings": 0
+  },
+  "reproducible_test": "numeric_regression.py",
+  "limits": [
+    "스킬에있는수치·공식·장프레임워크를검수했으며 책전체290쪽의모든표·그림을전면교정한것은아님.",
+    "원문표4.14의일부값은레벨대응/정밀도조건이부족해유일재현할수없음. 스킬은그표값을직접인용하지않음.",
+    "레벨59조회는원문표5.4·조회설명과대조했으며 원문전체경험치테이블을재구축한독립계산은아님.",
+    "단순LTV·란체스터·고정피해모델은명시가정내의근사이며실제게임승률/유저매출의보장은아님."
+  ]
+}

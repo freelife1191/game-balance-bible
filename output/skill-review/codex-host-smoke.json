@@ -1,0 +1,86 @@
+{
+  "checked_at": "2026-10-12T04:17:07.100341+00:00",
+  "status": "PASS",
+  "host": "Codex CLI",
+  "version": "0.162.0",
+  "invocations": 1,
+  "exit_code": 0,
+  "model": "호스트의 기존 설정 사용; 모델을 별도로 지정하지 않음",
+  "execution": {
+    "cwd": "<project-root>",
+    "ephemeral": true,
+    "sandbox": "read-only",
+    "prompt_file": "로컬 임시 파일; 원시 이벤트·세션은 공유하지 않음"
+  },
+  "request": "$game-balance-bible 호출로 인내 변환/최종 HP, 이산 타격 TTK, 월 결제 지표 및 LTV·회수 한계 검토. 기대 답은 제공하지 않음.",
+  "observed": {
+    "discovery": "이름만으로 정본 SKILL.md와 질문별 자료 지도를 찾아 읽음",
+    "reference_loading": [
+      "SKILL.md",
+      "references/task-map.md",
+      "chapters/ch03-combat.md",
+      "references/combat-formulas.md",
+      "chapters/ch06-monetization.md",
+      "references/source-map.md"
+    ],
+    "calculation": "Python Decimal/ceil을 실제 실행; 명령 exit 0과 계산 단언 확인",
+    "scope": "파일 수정·설치·네트워크 조사·추가 에이전트 생성 없음"
+  },
+  "checks": [
+    {
+      "item": "HP 변환 후 백분율",
+      "expected": 385,
+      "observed": 385
+    },
+    {
+      "item": "필요 타격",
+      "expected": 6,
+      "observed": 6
+    },
+    {
+      "item": "정확한 처치 시각(초)",
+      "expected": 2.5,
+      "observed": 2.5
+    },
+    {
+      "item": "DPS 근사(초)",
+      "expected": 2.525,
+      "observed": 2.525
+    },
+    {
+      "item": "월 ARPPU(RMB)",
+      "expected": 194.8,
+      "observed": 194.8
+    },
+    {
+      "item": "월 ARPU(RMB)",
+      "expected": 19.48,
+      "observed": 19.48
+    },
+    {
+      "item": "근사 LTV(RMB)",
+      "expected": 97.4,
+      "observed": 97.4
+    },
+    {
+      "item": "회수 월",
+      "expected": "입력 부족으로 미확정",
+      "observed": "입력 부족으로 미확정"
+    }
+  ],
+  "read_file_sha256": {
+    ".agents/skills/game-balance-bible/SKILL.md": "89e083f53d5a738b96f56ca06fc232b93c0b05c4056c76ba52cfa3bc29fd5c6b",
+    ".agents/skills/game-balance-bible/references/task-map.md": "e06969967fe8569619de0f4f81e2ebb8b77032801f5182e08acee1f2133b00e2",
+    ".agents/skills/game-balance-bible/chapters/ch03-combat.md": "40014ee6bf82c484ee13e8286c1de6b6d02f06d409fdaf17b8854b612bd2505b",
+    ".agents/skills/game-balance-bible/references/combat-formulas.md": "03b196dbe01430a1939b41e8d76120d4f4ac6931275952564b3a90b4fdb07174",
+    ".agents/skills/game-balance-bible/chapters/ch06-monetization.md": "10acc174569f8e12550f450eb90a4f4f37be1a5da2ad7ddf92c09dbe04947b54",
+    ".agents/skills/game-balance-bible/references/source-map.md": "c426851512873b71e57c646f60d6ebd7d1225af7df6bf8c1e223f8ffb76ec61c"
+  },
+  "limitations": [
+    "한 번의 Codex CLI 응답이며 Codex App UI와 다른 호스트의 호출은 재시험하지 않음",
+    "전체 프롬프트 32개, 실제 게임 승률과 경제 결과를 검증한 것은 아님",
+    "실행 전 비관련 MCP 일부 시작 경고가 있었으나 관련 파일 읽기·Python 계산·최종 응답은 모두 완료"
+  ],
+  "answer": "| 항목 | 계산과 결과 | 실제 읽은 근거 파일·절 |\n|---|---|---|\n| **총 HP** | 인내 변환: `18×10=180 HP` → 고정값 합산: `100+50+20+180=350 HP` → 최종 보너스: `350×1.10=385 HP`. 변환분은 다른 항목에 없으므로 한 번 더한다. | [combat-formulas.md](<project-root>/.agents/skills/game-balance-bible/references/combat-formulas.md:18) 「속성 총합과 변환」; [ch03-combat.md](<project-root>/.agents/skills/game-balance-bible/chapters/ch03-combat.md:47) 「공식 정의와 수익 곡선」 |\n| **필요 타격·처치 시각** | `ceil(101/20)=6회`. 타격 시각은 `0, 0.5, 1, 1.5, 2, 2.5초`. 5타격 후 HP가 1 남으므로 **2.5초에 처치**한다. | [combat-formulas.md](<project-root>/.agents/skills/game-balance-bible/references/combat-formulas.md:94) 「생존 주기·직업 가치·NPC」 |\n| **DPS 근사와 차이** | `DPS=20×2=40 HP/초`. 근사 시간은 `101/40=2.525초`로, 정확한 처치 시각보다 **0.025초 길다**. | 위 파일의 같은 절 |\n| **월 ARPPU** | 결제 유저 내 가중 평균: `66×0.80+398×0.16+1958×0.04` = **194.80 RMB/결제 유저/월**. | [ch06-monetization.md](<project-root>/.agents/skills/game-balance-bible/chapters/ch06-monetization.md:77) 「5. 수익화 검증: 충전 검증과 소비 검증」 |\n| **월 ARPU** | `194.80×PR 0.10` = **19.48 RMB/활성 유저/월**. | [ch06-monetization.md](<project-root>/.agents/skills/game-balance-bible/chapters/ch06-monetization.md:20) 「2. 기본 운영 지표와 과금 측정」 |\n| **근사 LTV** | 평균 생명주기 근사: `1/0.20=5개월`. `19.48×5` = **97.40 RMB/유저**. | 위 파일의 같은 절; [source-map.md](<project-root>/.agents/skills/game-balance-bible/references/source-map.md:72) 「이미지 대조로 확인한 핵심 항목」 |\n| **실제 투자 회수 월** | **이 입력만으로 확정할 수 없다.** 투자·획득·운영 비용, 유입 규모, 월별 잔존·매출 경로, 수수료와 비용 발생 시점이 필요하다. 누적 순현금흐름이 투자액을 회수하는 월을 계산해야 한다. | [ch06-monetization.md](<project-root>/.agents/skills/game-balance-bible/chapters/ch06-monetization.md:45) 「표6.1의 재현 한계」; [source-map.md](<project-root>/.agents/skills/game-balance-bible/references/source-map.md:99) 「추가로 확인한 원문 불일치와 적용 조건」 |\n\nPython `Decimal`과 올림 계산으로 검산했고, HP·타격 수·처치 시각·ARPPU·ARPU·LTV의 결과 검증문이 모두 통과했습니다.\n\n**적용 한계**\n\n- 스킬의 [SKILL.md](<project-root>/.agents/skills/game-balance-bible/SKILL.md) 「핵심 원칙과 판단 도구」 2·3·6에 따라 계산 순서, 타격 단위, 수익 지표의 모집단·기간을 맞췄습니다.\n- 정확한 처치 시간은 **0초부터 0.5초 간격으로 즉시 피해가 적용**되는 조건입니다. DPS 근사는 피해를 연속량으로 취급합니다. 올림과 첫 타격 시점 처리는 [source-map.md](<project-root>/.agents/skills/game-balance-bible/references/source-map.md:113) 「실무 적용을 위해 추가한 계산 조건」에 해당합니다.\n- LTV는 같은 코호트에 월 이탈률 20%가 지속되고, 잔존 유저의 월 ARPU가 일정하며 첫 월 매출을 포함한다는 단순 근사입니다. 재유입·결제군 변화·할인·비용은 반영하지 않은 **매출 기준 값**입니다. 원문의 “평균 결제율” 표현은 표의 산술·단위와 불일치하여 스킬의 보완대로 ARPU를 사용했습니다.\n\n원문 PDF·실제 구현은 추가 확인하지 않았고, 파일 수정·설치·네트워크 조사·추가 에이전트 생성은 하지 않았습니다. 근사 LTV를 순이익이나 회수 기간으로 해석하면 안 됩니다.",
+  "prompt": "$game-balance-bible\n책 스킬에 근거해 아래 가상 RPG의 계산을 검토해줘. 한국어로 답해줘.\n1. 총 체력: 초기 HP100, 레벨 HP50, 장비 고정 HP20, 인내 총합18, 인내1당 HP10, 최종 HP 보너스+10%. 인내 변환은 아직 다른 HP 항목에 들어있지 않다. 변환과 백분율 적용 순서를 설명하고 총 HP를 구해줘.\n2. 고정 타격 피해20, 적 HP101, 초당 타격2회, 첫 타격0초다. 치명/회복/다른 피해원은 없다. 필요 타격 수, 정확한 처치 시각, DPS 근사의 차이를 계산해줘.\n3. 한 달 결제 유저 내 소/중/고액 결제 비중80%/16%/4%, 월 결제액66/398/1958 RMB, 같은 월 활성 유저 PR10%, 월 이탈률20%다. ARPPU/ARPU와 일정 ARPU·이탈률을 가정한 근사 LTV를 계산하고 가정의 한계를 밝혀줘. 이 입력만으로 실제 투자 회수 월을 확정할 수 있는지도 판단해줘.\n각 결과에 실제 읽은 스킬/참고 파일 경로와 절을 연결하고 핵심 계산은 도구로 검산해줘. 관련 자료만 읽고 파일 수정·설치·네트워크 조사·추가 에이전트 생성은 하지 마. 출력은 계산표와 적용 한계로 간결히 작성해줘.\n"
+}

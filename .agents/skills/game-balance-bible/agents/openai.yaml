@@ -1,0 +1,4 @@
+interface:
+  display_name: "게임 밸런스 수치 기획 바이블"
+  short_description: "책에 근거한 게임 전투·성장·경제 수치 설계와 검증"
+  default_prompt: "$game-balance-bible로 이 게임의 전투·성장·경제 수치를 분석하고 계산 근거와 검증 방법을 제안해줘."

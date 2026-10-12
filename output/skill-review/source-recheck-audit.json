@@ -1,0 +1,2031 @@
+{
+  "date": "2026-10-12",
+  "source_sha256": "db8068221feed05d1f23e6e8de9cdc6d8614c6f401353e96048764e1df42c019",
+  "scope": "8장 표·그림 인벤토리; 전체 도식의 구조·축·라벨 이미지 대조; 필요한 주요 표·산식·각주 재확인",
+  "summary": {
+    "source_pdf_pages": 290,
+    "chapters": 8,
+    "tables_inventoried": 113,
+    "figures_inventoried": 51,
+    "distinct_pages_visually_viewed": 109,
+    "all_figure_caption_pages_viewed": true,
+    "table_caption_pages_viewed": 77,
+    "all_table_cells_verified": false,
+    "all_chart_coordinates_transcribed": false
+  },
+  "visual_pages_by_lane": {
+    "preparation": [
+      30,
+      31,
+      33,
+      36,
+      43,
+      44,
+      45,
+      46,
+      48,
+      49,
+      50,
+      51
+    ],
+    "combat": [
+      55,
+      56,
+      57,
+      59,
+      64,
+      66,
+      68,
+      75,
+      80,
+      81,
+      82,
+      83,
+      96,
+      97,
+      98,
+      99,
+      103,
+      104,
+      105,
+      106,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      118,
+      119,
+      120,
+      126,
+      127,
+      128,
+      130,
+      131
+    ],
+    "economy": [
+      142,
+      144,
+      146,
+      160,
+      163,
+      169,
+      171,
+      172,
+      173,
+      184,
+      187,
+      195,
+      196,
+      200,
+      202,
+      204,
+      205,
+      206
+    ],
+    "validation-monetization": [
+      211,
+      212,
+      213,
+      214,
+      217,
+      218,
+      219,
+      220,
+      221,
+      222,
+      223,
+      224,
+      226,
+      227,
+      228,
+      229,
+      230,
+      231,
+      232,
+      238,
+      239,
+      241,
+      249,
+      250,
+      251,
+      252
+    ],
+    "visual-module": [
+      258,
+      259,
+      260,
+      261,
+      262,
+      263,
+      264,
+      265,
+      266,
+      267,
+      270,
+      271,
+      272,
+      275,
+      276,
+      277,
+      278,
+      279,
+      280
+    ]
+  },
+  "inventory": [
+    {
+      "kind": "그림",
+      "id": "1.1",
+      "caption_pdf_page": 30,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "1.2",
+      "caption_pdf_page": 31,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "1.3",
+      "caption_pdf_page": 33,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "2.1",
+      "caption_pdf_page": 36,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "2.2",
+      "caption_pdf_page": 43,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "2.3",
+      "caption_pdf_page": 44,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "2.4",
+      "caption_pdf_page": 45,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "2.5",
+      "caption_pdf_page": 46,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "2.6",
+      "caption_pdf_page": 48,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "2.7",
+      "caption_pdf_page": 49,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "2.8",
+      "caption_pdf_page": 49,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "2.9",
+      "caption_pdf_page": 50,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "2.10",
+      "caption_pdf_page": 50,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "2.11",
+      "caption_pdf_page": 51,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "3.1",
+      "caption_pdf_page": 55,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "3.2",
+      "caption_pdf_page": 56,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "3.3",
+      "caption_pdf_page": 57,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "3.4",
+      "caption_pdf_page": 59,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "3.1",
+      "caption_pdf_page": 60,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "그림",
+      "id": "3.5",
+      "caption_pdf_page": 64,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "3.6",
+      "caption_pdf_page": 66,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "3.7",
+      "caption_pdf_page": 68,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "3.8",
+      "caption_pdf_page": 75,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "3.2",
+      "caption_pdf_page": 80,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "3.3",
+      "caption_pdf_page": 80,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "3.9",
+      "caption_pdf_page": 81,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "3.4",
+      "caption_pdf_page": 82,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "3.10",
+      "caption_pdf_page": 83,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "3.11",
+      "caption_pdf_page": 97,
+      "page_visually_viewed": true,
+      "inventory_note": "PDF96은 본문 참조이며 실제 도식/캡션은PDF97; 양쪽 이미지 확인"
+    },
+    {
+      "kind": "표",
+      "id": "3.5",
+      "caption_pdf_page": 98,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "3.6",
+      "caption_pdf_page": 99,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "3.7",
+      "caption_pdf_page": 100,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "표",
+      "id": "3.8",
+      "caption_pdf_page": 102,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "그림",
+      "id": "3.12",
+      "caption_pdf_page": 103,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "3.9",
+      "caption_pdf_page": 104,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "3.10",
+      "caption_pdf_page": 104,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "3.11",
+      "caption_pdf_page": 104,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "3.12",
+      "caption_pdf_page": 105,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "3.13",
+      "caption_pdf_page": 105,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "3.14",
+      "caption_pdf_page": 106,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "3.15",
+      "caption_pdf_page": 108,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "표",
+      "id": "3.16",
+      "caption_pdf_page": 109,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "3.17",
+      "caption_pdf_page": 109,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "3.18",
+      "caption_pdf_page": 109,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "3.19",
+      "caption_pdf_page": 110,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "3.20",
+      "caption_pdf_page": 111,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "3.13",
+      "caption_pdf_page": 111,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "3.21",
+      "caption_pdf_page": 112,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "3.22",
+      "caption_pdf_page": 113,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "3.23",
+      "caption_pdf_page": 114,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "3.24",
+      "caption_pdf_page": 114,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "3.25",
+      "caption_pdf_page": 115,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "표",
+      "id": "3.26",
+      "caption_pdf_page": 118,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "3.27",
+      "caption_pdf_page": 119,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "3.28",
+      "caption_pdf_page": 120,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "3.29",
+      "caption_pdf_page": 125,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "표",
+      "id": "3.30",
+      "caption_pdf_page": 126,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "3.31",
+      "caption_pdf_page": 127,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "3.32",
+      "caption_pdf_page": 128,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "3.33",
+      "caption_pdf_page": 128,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "3.34",
+      "caption_pdf_page": 130,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "3.35",
+      "caption_pdf_page": 130,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "3.36",
+      "caption_pdf_page": 131,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "3.37",
+      "caption_pdf_page": 131,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "4.1",
+      "caption_pdf_page": 142,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "4.2",
+      "caption_pdf_page": 144,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "4.3",
+      "caption_pdf_page": 146,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "4.1",
+      "caption_pdf_page": 150,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "표",
+      "id": "4.2",
+      "caption_pdf_page": 150,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "표",
+      "id": "4.3",
+      "caption_pdf_page": 153,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "표",
+      "id": "4.4",
+      "caption_pdf_page": 154,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "표",
+      "id": "4.5",
+      "caption_pdf_page": 157,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "그림",
+      "id": "4.4",
+      "caption_pdf_page": 160,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "4.6",
+      "caption_pdf_page": 162,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "그림",
+      "id": "4.5",
+      "caption_pdf_page": 163,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "4.7",
+      "caption_pdf_page": 164,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "표",
+      "id": "4.8",
+      "caption_pdf_page": 165,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "표",
+      "id": "4.9",
+      "caption_pdf_page": 167,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "표",
+      "id": "4.10",
+      "caption_pdf_page": 168,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "표",
+      "id": "4.11",
+      "caption_pdf_page": 169,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "4.6",
+      "caption_pdf_page": 169,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "4.12",
+      "caption_pdf_page": 170,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "그림",
+      "id": "4.7",
+      "caption_pdf_page": 171,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "4.13",
+      "caption_pdf_page": 172,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "4.14",
+      "caption_pdf_page": 172,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "4.8",
+      "caption_pdf_page": 172,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "4.15",
+      "caption_pdf_page": 174,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "표",
+      "id": "4.16",
+      "caption_pdf_page": 174,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "표",
+      "id": "4.17",
+      "caption_pdf_page": 175,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "표",
+      "id": "4.18",
+      "caption_pdf_page": 178,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "표",
+      "id": "4.19",
+      "caption_pdf_page": 180,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "표",
+      "id": "4.20",
+      "caption_pdf_page": 181,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "표",
+      "id": "4.21",
+      "caption_pdf_page": 183,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "표",
+      "id": "4.22",
+      "caption_pdf_page": 183,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "표",
+      "id": "4.23",
+      "caption_pdf_page": 184,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "4.24",
+      "caption_pdf_page": 184,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "4.25",
+      "caption_pdf_page": 185,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "표",
+      "id": "4.26",
+      "caption_pdf_page": 186,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "표",
+      "id": "4.27",
+      "caption_pdf_page": 188,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "표",
+      "id": "4.28",
+      "caption_pdf_page": 188,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "표",
+      "id": "4.29",
+      "caption_pdf_page": 189,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "표",
+      "id": "4.30",
+      "caption_pdf_page": 190,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "표",
+      "id": "4.31",
+      "caption_pdf_page": 191,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "표",
+      "id": "4.32",
+      "caption_pdf_page": 192,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "표",
+      "id": "4.33",
+      "caption_pdf_page": 195,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "4.34",
+      "caption_pdf_page": 195,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "4.35",
+      "caption_pdf_page": 196,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "4.36",
+      "caption_pdf_page": 197,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "표",
+      "id": "4.37",
+      "caption_pdf_page": 200,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "4.9",
+      "caption_pdf_page": 200,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "4.38",
+      "caption_pdf_page": 201,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "그림",
+      "id": "4.10",
+      "caption_pdf_page": 202,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "4.39",
+      "caption_pdf_page": 203,
+      "page_visually_viewed": false
+    },
+    {
+      "kind": "그림",
+      "id": "4.11",
+      "caption_pdf_page": 204,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "4.40",
+      "caption_pdf_page": 205,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "4.12",
+      "caption_pdf_page": 206,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "5.1",
+      "caption_pdf_page": 211,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "5.2",
+      "caption_pdf_page": 212,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "5.3",
+      "caption_pdf_page": 213,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "5.1",
+      "caption_pdf_page": 214,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "5.4",
+      "caption_pdf_page": 217,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "5.5",
+      "caption_pdf_page": 218,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "5.6",
+      "caption_pdf_page": 219,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "5.7",
+      "caption_pdf_page": 220,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "5.8",
+      "caption_pdf_page": 220,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "5.9",
+      "caption_pdf_page": 220,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "5.10",
+      "caption_pdf_page": 221,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "5.11",
+      "caption_pdf_page": 222,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "5.2",
+      "caption_pdf_page": 223,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "5.3",
+      "caption_pdf_page": 224,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "5.4",
+      "caption_pdf_page": 224,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "5.12",
+      "caption_pdf_page": 226,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "5.13",
+      "caption_pdf_page": 228,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "5.14",
+      "caption_pdf_page": 229,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "5.15",
+      "caption_pdf_page": 230,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "5.16",
+      "caption_pdf_page": 230,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "5.17",
+      "caption_pdf_page": 231,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "5.18",
+      "caption_pdf_page": 232,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "6.1",
+      "caption_pdf_page": 241,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "6.2",
+      "caption_pdf_page": 250,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "6.3",
+      "caption_pdf_page": 250,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "6.4",
+      "caption_pdf_page": 251,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "6.5",
+      "caption_pdf_page": 252,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "7.1",
+      "caption_pdf_page": 258,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "7.2",
+      "caption_pdf_page": 260,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "7.1",
+      "caption_pdf_page": 262,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "7.2",
+      "caption_pdf_page": 262,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "7.3",
+      "caption_pdf_page": 263,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "7.4",
+      "caption_pdf_page": 265,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "7.5",
+      "caption_pdf_page": 266,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "7.6",
+      "caption_pdf_page": 267,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "8.1",
+      "caption_pdf_page": 270,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "8.2",
+      "caption_pdf_page": 271,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "8.1",
+      "caption_pdf_page": 271,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "8.3",
+      "caption_pdf_page": 275,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "8.4",
+      "caption_pdf_page": 276,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "8.5",
+      "caption_pdf_page": 276,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "8.6",
+      "caption_pdf_page": 276,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "8.7",
+      "caption_pdf_page": 277,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "8.8",
+      "caption_pdf_page": 277,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "8.9",
+      "caption_pdf_page": 278,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "8.10",
+      "caption_pdf_page": 278,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "표",
+      "id": "8.11",
+      "caption_pdf_page": 279,
+      "page_visually_viewed": true
+    },
+    {
+      "kind": "그림",
+      "id": "8.2",
+      "caption_pdf_page": 280,
+      "page_visually_viewed": true
+    }
+  ],
+  "reviews": {
+    "preparation": {
+      "scope": {
+        "chapters": [
+          "ch01-process.md",
+          "ch02-preparation.md"
+        ],
+        "source_pdf_pages": "29-52",
+        "source_print_pages": "1-24",
+        "text_source": "tmp/reference-audit/book.txt"
+      },
+      "visual_reviewed": [
+        {
+          "pdf_page": 30,
+          "label": "그림 1.1 게임의 전략적 계획",
+          "finding": "전략적 계획의 네 입력: 장르·테마·게임의 3요소·타깃 제품"
+        },
+        {
+          "pdf_page": 31,
+          "label": "그림 1.2 전투 수치의 관계",
+          "finding": "속성 설계→전투 시스템→능력치 계량화→전투 시스템→AI의 순환"
+        },
+        {
+          "pdf_page": 33,
+          "label": "그림 1.3 I/O 구조",
+          "finding": "소비·생산 모델을 I/O 구조로 연결하며 각각 변수와 등식으로 구축"
+        },
+        {
+          "pdf_page": 36,
+          "label": "그림 2.1 게임 장르",
+          "finding": "장르들이 연결된 관계도로 표시되어 단일 배타 분류가 아님"
+        },
+        {
+          "pdf_page": 43,
+          "label": "그림 2.2 바틀의 플레이어 유형",
+          "finding": "플레이어/세계와 상호작용/행동의 두 축"
+        },
+        {
+          "pdf_page": 44,
+          "label": "그림 2.3 커시의 기질 분류",
+          "finding": "내향/외향과 변화/전통의 두 축"
+        },
+        {
+          "pdf_page": 45,
+          "label": "그림 2.4 인구통계학적 게임 설계 모델",
+          "finding": "주요 유형 사이에 DGD1 중간 역할을 배치"
+        },
+        {
+          "pdf_page": 46,
+          "label": "그림 2.5 게임의 3요소 간의 관계",
+          "finding": "넓이가 깊이·난이도를 포괄하는 도식"
+        },
+        {
+          "pdf_page": 48,
+          "label": "그림 2.6 게임 플레이 분포도",
+          "finding": "혜택성·출첵·방치형·수동의 사례 분포"
+        },
+        {
+          "pdf_page": 49,
+          "label": "그림 2.7·2.8",
+          "finding": "주기 분포와 레벨/시간 해금 곡선은 사례이며 기본 비율·속도가 아님"
+        },
+        {
+          "pdf_page": 50,
+          "label": "그림 2.9·2.10",
+          "finding": "시간 분포는 플레이 유형과 콘텐츠를 중첩하고, 유형 분포는 PvE/PvP/GvE/GvG/통합을 사용"
+        },
+        {
+          "pdf_page": 51,
+          "label": "그림 2.11 게임 역추론",
+          "finding": "1목표→3시스템(성장·플레이·경제)→수익화(일반·유도·뽑기)"
+        }
+      ],
+      "changes": [
+        "ch01에 1장 원문 페이지 범위를 명시했다.",
+        "ch02에 바틀·커시·DGD1의 시각 축 및 콘텐츠 수요 점검표라는 사용 한계를 보완했다.",
+        "ch02에 타깃 게임의 검증된 수치 구조 참고 가능성과 프로젝트별 가설 검증 조건을 명시했다."
+      ],
+      "limitations": [
+        "그림의 사례 비율·시간·레벨 좌표는 해당 책의 예시이므로 기본값으로 이식하지 않았다.",
+        "DGD1 도식의 반복된 참여자 표기와 세부 연결은 원문 그대로 확인했으며, 외부 이론으로 보정하지 않았다.",
+        "원문 전체 표·이미지의 전면 교정은 이 감사 범위에 포함하지 않는다."
+      ]
+    },
+    "combat": {
+      "scope": "chapter 3 combat source recheck",
+      "source": "게임 밸런스 수치 기획 바이블.pdf",
+      "pdf_pages_inventoried": "53-133",
+      "printed_pages_inventoried": "25-103 (102-103 duplicate scans)",
+      "labels_inventoried": {
+        "figures": [
+          "3.1",
+          "3.2",
+          "3.3",
+          "3.4",
+          "3.5",
+          "3.6",
+          "3.7",
+          "3.8",
+          "3.9",
+          "3.10",
+          "3.11",
+          "3.12",
+          "3.13"
+        ],
+        "tables": [
+          "3.1",
+          "3.2",
+          "3.3",
+          "3.4",
+          "3.5",
+          "3.6",
+          "3.7",
+          "3.8",
+          "3.9",
+          "3.10",
+          "3.11",
+          "3.12",
+          "3.13",
+          "3.14",
+          "3.15",
+          "3.16",
+          "3.17",
+          "3.18",
+          "3.19",
+          "3.20",
+          "3.21",
+          "3.22",
+          "3.23",
+          "3.24",
+          "3.25",
+          "3.26",
+          "3.27",
+          "3.28",
+          "3.29",
+          "3.30",
+          "3.31",
+          "3.32",
+          "3.33",
+          "3.34",
+          "3.35",
+          "3.36",
+          "3.37"
+        ]
+      },
+      "pdf_pages_visually_checked": [
+        55,
+        56,
+        57,
+        59,
+        64,
+        66,
+        68,
+        75,
+        80,
+        81,
+        82,
+        83,
+        97,
+        98,
+        99,
+        103,
+        104,
+        105,
+        106,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        118,
+        119,
+        120,
+        126,
+        127,
+        128,
+        130,
+        131
+      ],
+      "figures_visually_checked": {
+        "3.1": 55,
+        "3.2": 56,
+        "3.3": 57,
+        "3.4": 59,
+        "3.5": 64,
+        "3.6": 66,
+        "3.7": 68,
+        "3.8": 75,
+        "3.9": 81,
+        "3.10": 83,
+        "3.11": [
+          96,
+          97
+        ],
+        "3.12": 103,
+        "3.13": 111
+      },
+      "source_backed_additions": [
+        "Growth construction uses an explicit standard-stat, owned-ratio, target-ratio template.",
+        "Growth allocation is per-stat hierarchical allocation; an item's payout multiplies the ancestor shares.",
+        "Refinement distinguishes cumulative from per-step allocation and records the master plan fields.",
+        "NPC templates index the corresponding monster difficulty level and apply type defaults plus per-instance damage/survival modifiers.",
+        "Combat-power coefficients separate displayed power from actual rhythm yield and the source's skill-compensation decision."
+      ],
+      "diagram_findings": [
+        "Basic flow checks combat termination before the combat, skill, and damage flows on every turn; combat leave happens only after the result branch.",
+        "The illustrated skill flow contains target iteration, hit-gated caster/target buffs, buff recording, reactive handling, and post-turn cleanup.",
+        "The illustrated damage flow has evade as an immediate exit, then critical and resistance branches that rejoin damage calculation before bleed and death-dependent branches.",
+        "The global allocation diagram requires equal total allocation across the primary attack, defense, and HP attributes to preserve lower balance; it does not require all attribute columns together to total 100%.",
+        "The level-benchmark figure shows that the benchmark mapping determines whether a route is linear, diminishing-return, or segmented in its visible growth rhythm.",
+        "Figure 3.11 is split across PDF96-97: PDF96 contains the textual pointer to the figure, while PDF97 contains the chart and caption."
+      ],
+      "document_interpretation_corrections": [
+        "The prior skill text compressed the basic, skill, and damage flows; it now records the actual decision and return branches shown in figures 3.5-3.7.",
+        "The prior allocation note only required per-attribute hierarchy sums. It now also records the source's cross-primary-attribute total-equality constraint from figure 3.12."
+      ],
+      "source_caveats": [
+        "The book's worked examples use different total-HP assumptions (e.g. 6000 in table 3.5, 4800 in table 3.30); they remain separate examples, not a single canonical data set.",
+        "Formula notation, allocation templates, and tables were visually checked on the listed rendered PDF pages. All figures 3.1-3.13 were rendered and visually checked; unlisted table labels were inventoried from text extraction only."
+      ],
+      "arithmetic_checks": [
+        "18 x 0.20 x 0.60 = 2.16",
+        "12 x 0.10 x 0.40 = 0.48",
+        "600 x 1.00 x 0.50 / 50 = 6",
+        "38 / 50 = 0.76",
+        "3 + 6.6 + 84 x 0.1 = 18",
+        "9 + 5.1 + 39 x 0.1 = 18"
+      ]
+    },
+    "economy": {
+      "scope": {
+        "source": "게임 밸런스 수치 기획 바이블.pdf",
+        "chapter": "4장 게임의 경제 수치",
+        "pdf_pages": "135-207",
+        "print_pages": "105-177",
+        "method": "tmp/reference-audit/book.txt의 formfeed 페이지 분리 텍스트를 전수 탐색하고, 표·수식의 배열 또는 OCR 점 손실이 중요한 PDF 쪽과 그림4.1-4.12가 실린 모든 쪽을 렌더링해 읽었다.",
+        "limit": "표·그림 라벨은 모두 인벤토리했지만, 표의 모든 행·그래프의 모든 좌표를 전면 판독하거나 원문 전체의 오류를 교정한 것은 아니다."
+      },
+      "inventory": {
+        "tables": [
+          [
+            "4.1",
+            "모바일 게임 <몽환서유>의 화폐 포지셔닝",
+            150
+          ],
+          [
+            "4.2",
+            "<몽환서유> 화폐의 계층 관계",
+            150
+          ],
+          [
+            "4.3",
+            "육성 자원을 분류한 시스템 열거법(생산단계)",
+            153
+          ],
+          [
+            "4.4",
+            "게임 자원 열거(개발 단계)",
+            154
+          ],
+          [
+            "4.5",
+            "초보자 보물상자",
+            157
+          ],
+          [
+            "4.6",
+            "플레이 분류",
+            162
+          ],
+          [
+            "4.7",
+            "생산 블랙닷 구조 표",
+            164
+          ],
+          [
+            "4.8",
+            "소비 블랙닷 구조 표",
+            165
+          ],
+          [
+            "4.9",
+            "소비 세분화",
+            167
+          ],
+          [
+            "4.10",
+            "장비 강화 매개변수",
+            168
+          ],
+          [
+            "4.11",
+            "장비 강화 소비",
+            169
+          ],
+          [
+            "4.12",
+            "장비 강화(각 레벨)의 투입산출 비율",
+            170
+          ],
+          [
+            "4.13",
+            "강화 매개변수",
+            172
+          ],
+          [
+            "4.14",
+            "장비 강화 소비(자원 생산량(일일))",
+            172
+          ],
+          [
+            "4.15",
+            "무기 돌파의 소비 매개변수",
+            174
+          ],
+          [
+            "4.16",
+            "무기 돌파 소비",
+            174
+          ],
+          [
+            "4.17",
+            "소비 데이터 집계",
+            175
+          ],
+          [
+            "4.18",
+            "생산 분배",
+            178
+          ],
+          [
+            "4.19",
+            "생산 매개변수",
+            180
+          ],
+          [
+            "4.20",
+            "자원 생산의 증가계수",
+            181
+          ],
+          [
+            "4.21",
+            "엘리트 던전 생산 분배",
+            183
+          ],
+          [
+            "4.22",
+            "생산 매개변수",
+            183
+          ],
+          [
+            "4.23",
+            "엘리트 던전의 귀속 자원 고정 생산 데이터(활성 유저)",
+            184
+          ],
+          [
+            "4.24",
+            "엘리트 던전의 유통 자원 고정 생산 데이터(활성 유저)",
+            184
+          ],
+          [
+            "4.25",
+            "엘리트 던전의 귀속자원 계획 생산 데이터(활성 유저)",
+            185
+          ],
+          [
+            "4.26",
+            "엘리트 던전의 유통 자원 계획 생산 데이터(활성 유저)",
+            186
+          ],
+          [
+            "4.27",
+            "가중치와 확률값",
+            188
+          ],
+          [
+            "4.28",
+            "표준 드롭 패키지 세팅",
+            188
+          ],
+          [
+            "4.29",
+            "다른 드롭 패키지 세팅",
+            189
+          ],
+          [
+            "4.30",
+            "일반 드롭 패키지",
+            190
+          ],
+          [
+            "4.31",
+            "일반 랜덤 드롭 패키지(드롭 기댓값)",
+            191
+          ],
+          [
+            "4.32",
+            "게임의 뽑기 패키지 세팅",
+            192
+          ],
+          [
+            "4.33",
+            "주 화폐 구매력(1 RMB)",
+            195
+          ],
+          [
+            "4.34",
+            "주 화폐 가치(단위당 가격)",
+            195
+          ],
+          [
+            "4.35",
+            "주요 속성 가치(1/1%, 단위 RMB)",
+            196
+          ],
+          [
+            "4.36",
+            "각 장비 강화 레벨의 속성 보너스와 소비 데이터",
+            197
+          ],
+          [
+            "4.37",
+            "각 성장 모듈의 광의 성장 가성비 데이터",
+            200
+          ],
+          [
+            "4.38",
+            "각 성장 모듈의 협의 가성비 데이터",
+            201
+          ],
+          [
+            "4.39",
+            "각 플레이의 가성비 데이터",
+            203
+          ],
+          [
+            "4.40",
+            "게임의 깊이",
+            205
+          ]
+        ],
+        "figures": [
+          [
+            "4.1",
+            "핵심 시스템 간의 상관관계 설계",
+            142
+          ],
+          [
+            "4.2",
+            "모바일 게임 <몽환서유>의 경제 사이클",
+            144
+          ],
+          [
+            "4.3",
+            "각 서버의 보석 가격 생태계 시뮬레이션",
+            146
+          ],
+          [
+            "4.4",
+            "게임의 큰 사이클",
+            160
+          ],
+          [
+            "4.5",
+            "모바일 게임 <브롤스타즈>의 화폐와 자원 유통 프로세스 표",
+            163
+          ],
+          [
+            "4.6",
+            "선형 소비 추세",
+            169
+          ],
+          [
+            "4.7",
+            "투입산출 비율 데이터 그래프(변동 추세)",
+            171
+          ],
+          [
+            "4.8",
+            "투입산출 비율 그래프",
+            173
+          ],
+          [
+            "4.9",
+            "종합 가성비 데이터",
+            200
+          ],
+          [
+            "4.10",
+            "각 성장 모듈의 가성비 곡선 그래프",
+            202
+          ],
+          [
+            "4.11",
+            "각 플레이 모듈 가성비 막대그래프",
+            204
+          ],
+          [
+            "4.12",
+            "각 성장 모듈의 과금의 깊이",
+            206
+          ]
+        ]
+      },
+      "visual_checks": [
+        {
+          "pdf_page": 172,
+          "print_page": 142,
+          "confirmed": [
+            "표4.13",
+            "표4.14",
+            "레벨50 시간값 1.02; 텍스트 추출의 102는 점 손실"
+          ]
+        },
+        {
+          "pdf_page": 184,
+          "print_page": 154,
+          "confirmed": [
+            "귀속 고정 생산식",
+            "표4.23",
+            "표4.24"
+          ]
+        },
+        {
+          "pdf_page": 187,
+          "print_page": 157,
+          "confirmed": [
+            "유통 랜덤 생산식",
+            "50% 확률·4~8개 드롭의 시도당 기대값 3개"
+          ]
+        },
+        {
+          "pdf_page": 195,
+          "print_page": 165,
+          "confirmed": [
+            "본문의 1:10:100 표기",
+            "표4.33·4.34의 1:10:10 및 단가 1/0.1/0.1"
+          ]
+        },
+        {
+          "pdf_page": 196,
+          "print_page": 166,
+          "confirmed": [
+            "본문 속성 단가 설명",
+            "표4.35 단가 행"
+          ]
+        },
+        {
+          "pdf_page": 205,
+          "print_page": 175,
+          "confirmed": [
+            "과금의 깊이 정의",
+            "표4.40 전반 행"
+          ]
+        },
+        {
+          "pdf_page": 206,
+          "print_page": 176,
+          "confirmed": [
+            "표4.40 후반 행·합계 241589",
+            "그림4.12"
+          ]
+        }
+      ],
+      "figure_visual_checks": [
+        {
+          "figure": "4.1",
+          "pdf_page": 142,
+          "confirmed": "장비 모듈→퀘스트→경험치→레벨·스킬 모듈의 방향 연결. 경제모델의 결과를 단일 화폐 표가 아니라 시스템 의존으로 본다."
+        },
+        {
+          "figure": "4.2",
+          "pdf_page": 144,
+          "confirmed": "제한 일상 생산·무제한 충전 생산이 유통 가능 골드로 들어오고, 시스템 교환 뒤 유통 불가 실버가 P2S 폐쇄경제와 시스템 회수로 흐른다. 골드는 P2P 계획경제와 연결된다."
+        },
+        {
+          "figure": "4.3",
+          "pdf_page": 146,
+          "confirmed": "14일 가로축, 막대는 두 서버의 생산·잉여량, 선은 두 서버 가격 비율의 이중 축 시뮬레이션이다. 일일 생산의 50% 소비라는 예시 가정이며 실제 운영 예측값은 아니다."
+        },
+        {
+          "figure": "4.4",
+          "pdf_page": 160,
+          "confirmed": "일반 던전(플레이)→생산(I) 장비(화폐·자원)→소비 또는 저장(O) 속성 증가(캐릭터 성장)→상위 플레이의 순환 구조다. 독립 재검수에서 숫자1/0과 영문I/O의 혼동을 이미지로 해소했다."
+        },
+        {
+          "figure": "4.5",
+          "pdf_page": 163,
+          "confirmed": "전투 참여·퀘스트에서 토큰·트로피·경험치를 생산하고 레벨업·패스·상자·코인으로 이어지는 다중 프로세스다. 중간 변환과 소비 연결을 보존해야 블랙닷 표를 만들 수 있다."
+        },
+        {
+          "figure": "4.6",
+          "pdf_page": 169,
+          "confirmed": "가로축 레벨, 좌축 누적 소비량, 우축 레벨당 강화석 소비량의 이중 축이다. 소비량 선형 증가와 누적 소비의 가속을 함께 보여 준다."
+        },
+        {
+          "figure": "4.7",
+          "pdf_page": 171,
+          "confirmed": "가로축 성장 레벨, 세로축 투입산출 비율이다. 5레벨마다 단계 수익을 주는 계단식 함수가 톱니형 비율 변동을 만든다."
+        },
+        {
+          "figure": "4.8",
+          "pdf_page": 173,
+          "confirmed": "가로축 강화 레벨, 세로축 투입산출 비율이다. 후반 상승과 두 번의 하락 구간은 소비량만이 아니라 자원 가치 변동을 포함해 해석해야 한다."
+        },
+        {
+          "figure": "4.9",
+          "pdf_page": 200,
+          "confirmed": "성장 모듈별 종합 가성비 막대 비교다. 전투력 가치와 소비 가치가 항상 같다는 뜻은 아니며 표4.37의 합산 값이다."
+        },
+        {
+          "figure": "4.10",
+          "pdf_page": 202,
+          "confirmed": "A·B·C 성장 모듈의 협의 가성비를 레벨/수명주기 축에서 선으로 비교한다. 결과선만이 아니라 단계별 수익·비용 원시 데이터를 함께 본다."
+        },
+        {
+          "figure": "4.11",
+          "pdf_page": 204,
+          "confirmed": "플레이별 단위시간 가성비 막대다. 광의 가성비의 결과 비교이며 모듈별 비용·수익 데이터 원천이 다르면 참조 지표로 제한한다."
+        },
+        {
+          "figure": "4.12",
+          "pdf_page": 206,
+          "confirmed": "성장 모듈별 실제 과금의 깊이를 파이 조각과 비율로 표시한다. 총 소비가치가 아니라 소비가치×판매 가능 비율의 분포다."
+        }
+      ],
+      "findings": [
+        {
+          "kind": "ocr_resolution",
+          "location": "PDF172 표4.14",
+          "finding": "레벨50의 1레벨당 시간은 1.02다. pdftotext의 102는 OCR/추출 점 손실이며 원문 수치 오류가 아니다.",
+          "handling": "경제 산식 자료에 시각 확인값과 재현 한계를 기록했다."
+        },
+        {
+          "kind": "under_specified_source_model",
+          "location": "PDF172 표4.14",
+          "finding": "소비식은 캐릭터 레벨을 쓰지만 표는 장비 강화 레벨만 제공하며 레벨 대응과 반올림 위치가 없다.",
+          "handling": "식만으로 표 전체를 유일하게 재현한다고 주장하지 않고, 프로젝트 입력으로 분리했다."
+        },
+        {
+          "kind": "source_inconsistency",
+          "location": "PDF195 본문·표4.33·표4.34",
+          "finding": "본문 유료 화폐 비율 1:10:100은 표와 후속 교환식의 1:10:10, 단가 1/0.1/0.1과 맞지 않는다.",
+          "handling": "표·후속 식을 해당 사례의 일관된 입력으로만 사용하며 본문 비율을 일반 규칙으로 사용하지 않는다."
+        },
+        {
+          "kind": "source_inconsistency",
+          "location": "PDF196-197 본문·표4.35·표4.36",
+          "finding": "본문의 체력 1pt=전투력 1pt, 공격력 1pt=전투력 10pt 설명과 표4.35의 공격력 1·방어력 1·체력 0.1 단가는 표4.36 합계 1782를 동시에 만족시키지 않는다.",
+          "handling": "표4.36 합계 재현에는 표4.35 값을 국소적으로 쓰며, 두 체계를 혼용하지 않는다."
+        }
+      ],
+      "arithmetic_checks": [
+        {
+          "claim": "시간 연동 표의 레벨50 시간값",
+          "calculation": "원문 이미지 1.02",
+          "result": "확인"
+        },
+        {
+          "claim": "표4.40 장비 강화 실제 과금의 깊이",
+          "calculation": "68082 × 0.40 = 27232.8 → 27233",
+          "result": "표시값과 일치"
+        },
+        {
+          "claim": "표4.40 날개·탈것 실제 과금의 깊이",
+          "calculation": "53301 × 0.40 = 21320.4 → 21320; 28964 × 0.80 = 23171.2 → 23171",
+          "result": "표시값과 일치"
+        },
+        {
+          "claim": "표4.40 표시 행 합계",
+          "calculation": "3197 + 39961 + 27233 + 97587 + 21320 + 23171 + 29120 = 241589",
+          "result": "표시 합계와 일치"
+        }
+      ],
+      "changes": [
+        ".agents/skills/game-balance-bible/chapters/ch04-economy.md: 블랙닷 표 역할, 표4.14 재현 조건, 고정·랜덤 생산 단위, 화폐 비율 불일치, 과금의 깊이 계산 조건 보강",
+        ".agents/skills/game-balance-bible/references/economy-models.md: 표4.14의 점 손실과 재현 한계, 생산 계획·랜덤 피팅 절차, 화폐 비율 불일치, 가치·가성비·과금의 깊이 산식 조건 보강"
+      ]
+    },
+    "validation-monetization": {
+      "scope": {
+        "chapters": [
+          5,
+          6
+        ],
+        "source_pdf_pages": "209-253",
+        "method": "표·그림 라벨과 관련 본문 탐색; 아래 페이지는 실제 렌더 이미지를 보고 구조·주요 값·각주를 대조"
+      },
+      "pdf_pages_visually_checked": [
+        211,
+        212,
+        213,
+        214,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        238,
+        239,
+        241,
+        249,
+        250,
+        251,
+        252
+      ],
+      "findings": [
+        {
+          "pdf_pages": [
+            211,
+            213
+          ],
+          "topic": "생산 집계",
+          "finding": "표5.1의 루트별 당일/누적 기간과 총생산을 같은 행 합으로 간주할 수 없음; 표5.3 총생산 오기는 기존 확인 유지",
+          "resolution": "당일·누적 열 분리, 동일 기간의 전체 루트 합으로 구현 재계산"
+        },
+        {
+          "pdf_pages": [
+            217,
+            218,
+            220,
+            221,
+            222
+          ],
+          "topic": "조회 계약",
+          "finding": "표5.7 소비 행은 다음 도달 레벨과 연결; 중간 행·요구량·반올림 생략; 표5.4/5.5 150일5922000 경험치 레벨201/208 불일치",
+          "resolution": "테이블 레벨 의미·해금·보간을 고정하고 실제 프로젝트는 하나의 레벨 요구량으로 재조회"
+        },
+        {
+          "pdf_pages": [
+            223,
+            224
+          ],
+          "topic": "성장 그래프",
+          "finding": "그림5.2 상위 선의 활성 범례가 표5.5와 본문의 헤비과금 성장 설명과 상충",
+          "resolution": "색상/범례만으로 유저군 결론을 내리지 않고 데이터 대조"
+        },
+        {
+          "pdf_pages": [
+            229,
+            230,
+            232
+          ],
+          "topic": "생존 비율",
+          "finding": "표5.15 각주는 값이 1회 피해와 피해 비율이라고 설명하며 산출 피해식도 미확인이라고 명시; 표5.13·5.18의 생존 주기와 구별 필요",
+          "resolution": "4.35/7.68은 피해 비율이며 HP·행동횟수를 포함한 생존비율로 자동 치환하지 않음"
+        },
+        {
+          "pdf_pages": [
+            238,
+            239,
+            241
+          ],
+          "topic": "LTV·회수",
+          "finding": "본문 결제율 단어와 표6.1 ARPU 계산 불일치; 손익분기월 산식은 미제시",
+          "resolution": "ARPU/CHURN 근사와 일정성 가정; 회수월은 명시한 주기 매출·비용 경로로 별도 계산"
+        },
+        {
+          "pdf_pages": [
+            249,
+            250,
+            251,
+            252
+          ],
+          "topic": "상품 합산",
+          "finding": "본문의6+30+98+68에합계330 표기(실제202), 프리미엄128 누락 가능; 표6.2·6.5는 별도 사례",
+          "resolution": "표6.2 가격합66/398/1958 및 표6.5 소비합670/3070/15146 검산; 차액은−310/−790/−346"
+        }
+      ],
+      "limitations": [
+        "표·그림 구조와 필요한 대표 산술·각주는 대조했으나 모든 셀·좌표를 전사한 것은 아님",
+        "중간 요구량·산출식이 없는 원문 예시는 유일한 전체 재현을 주장하지 않음"
+      ]
+    },
+    "visual-module": {
+      "scope": "chapters 7 and 8 source recheck",
+      "source": {
+        "pdf": "게임 밸런스 수치 기획 바이블.pdf",
+        "pdf_pages_viewed": [
+          258,
+          259,
+          260,
+          261,
+          262,
+          263,
+          264,
+          265,
+          266,
+          267,
+          270,
+          271,
+          272,
+          275,
+          276,
+          277,
+          278,
+          279,
+          280
+        ],
+        "printed_pages_confirmed": [
+          228,
+          229,
+          230,
+          231,
+          232,
+          233,
+          234,
+          235,
+          236,
+          237,
+          240,
+          241,
+          242,
+          245,
+          246,
+          247,
+          248,
+          249,
+          250
+        ]
+      },
+      "visual_inventory": {
+        "chapter_7": [
+          "Fig. 7.1: single damage (left axis 0-1400) and combat time (right axis 0-6), periods 1-16",
+          "Fig. 7.2: immersion area chart, 5-50 minutes, growth modules 1/2 and play modules 1/2",
+          "Table 7.1: stage, game cycle days, player level",
+          "Table 7.2: period, minutes, interest weight, player level, new/repeated content name, activation, content",
+          "Fig. 7.3: interest line chart; source calls out peaks at 20 and 60 minutes",
+          "Fig. 7.4: exponential, linear, logarithmic, polynomial curves",
+          "Fig. 7.5: 1-5 attribute-growth shares 9/18/27/37/9 percent",
+          "Fig. 7.6: 100 percent stacked bars of 1-4 attribute-growth modules for periods 2-10"
+        ],
+        "chapter_8": [
+          "Tables 8.1-8.2: a linear growth formula, its two input parameters, and output checkpoints at levels 1/10/50/100",
+          "Fig. 8.1: combat/economy/validation/monetization model connection map with 10 model stages",
+          "Table 8.3: five-slot main-stat eligibility and occurrence counts",
+          "Table 8.4: five-slot sub-stat eligibility and occurrence counts",
+          "Tables 8.5-8.7: 5-star initial ratio 15 percent, maximum level 20, five breakthrough opportunities, grade ratios, four sub-stat variation bands",
+          "Table 8.8: called main/sub-stat totals",
+          "Tables 8.9-8.11: initial-stat, level-up, and sub-stat-pool formulas and examples",
+          "Fig. 8.2: the author's game-numerics production-history analogy; explicitly not used as current-industry evidence or a forecast"
+        ]
+      },
+      "changes": [
+        "Added chart/table schema, axes, and source-example boundary to chapter 7.",
+        "Added model-map connections, no-fixed-time rule for combat basic model, and source-example artifact system calculation path to chapter 8."
+      ],
+      "verified_arithmetic": [
+        "15% * 100% * 311 / 1 = 46.65",
+        "100% * 388 / (4 * 5) = 19.4",
+        "15% + ((1 - 15%) / 20 * 15) = 78.75%; 78.75% * 311 = 244.9125"
+      ],
+      "remaining_uncertainty": [
+        "The book does not state sub-stat selection weights or post-variation rounding; no probability distribution was inferred.",
+        "The source figures are illustrative book examples, not current production-game values or rules."
+      ]
+    }
+  },
+  "skill_file_sha256": {
+    "SKILL.md": "89e083f53d5a738b96f56ca06fc232b93c0b05c4056c76ba52cfa3bc29fd5c6b",
+    "agents/openai.yaml": "3c93c464247489358c3c4593137ce251999b3db187fb05ae2b138ec2b6c4ee41",
+    "chapters/ch01-process.md": "2bd4cd9b986180856f7c51310e4cc2a569cc79ef80590c48d960741f80ea4d8e",
+    "chapters/ch02-preparation.md": "81646eccc4c98d70dddd1f466974be427d0c488b144d2a7731e193ac2c7766f1",
+    "chapters/ch03-combat.md": "40014ee6bf82c484ee13e8286c1de6b6d02f06d409fdaf17b8854b612bd2505b",
+    "chapters/ch04-economy.md": "ada7c07e4116fcd17402ca8a0a5f2a87e736c9c3eb078005c7cc1ffc5e010114",
+    "chapters/ch05-validation.md": "1b35b50d6a4f931a411e814e5923d51719b16e0a4d5cc81713235f3326ca5054",
+    "chapters/ch06-monetization.md": "10acc174569f8e12550f450eb90a4f4f37be1a5da2ad7ddf92c09dbe04947b54",
+    "chapters/ch07-visualization.md": "553a684f475da32f3a337421308a9e424f5f1861a839064c7184b55fcb014c9d",
+    "chapters/ch08-modularization.md": "b8cc2eee214b792f6c8ee1e58cd36ad02967939ed8824aa1ccbe578ed154575c",
+    "cheatsheet.md": "4fcd1276c63dd11e8cf7cab6b480bc1cc2ed2ef7136d06fb41afd45507ac9b44",
+    "glossary.md": "dd9addb0d637397f34eae33af96a2372d4af557efdaee4482e1d6406df6ea6f6",
+    "patterns.md": "62bbf6dfade27b9011e3ce69ccac9c0fb71b0f40c2d92ad75b8db8f43c46694e",
+    "references/combat-formulas.md": "03b196dbe01430a1939b41e8d76120d4f4ac6931275952564b3a90b4fdb07174",
+    "references/economy-models.md": "6ab59edb4e89b3eadf7a2a517e3ab5e4b74ee960061f5dc4b76e1792be857390",
+    "references/source-map.md": "c426851512873b71e57c646f60d6ebd7d1225af7df6bf8c1e223f8ffb76ec61c",
+    "references/task-map.md": "e06969967fe8569619de0f4f81e2ebb8b77032801f5182e08acee1f2133b00e2"
+  },
+  "verification": {
+    "arithmetic_assertions": 64,
+    "probability_cases": 1331,
+    "damage_identity_cases": 24,
+    "status": "PASS",
+    "skill_metadata": "PASS",
+    "markdown_files": 24,
+    "local_links_and_anchors": 339,
+    "markdown_links": "PASS",
+    "whitespace": "PASS",
+    "advisory_scan": "PASS: entrypoint/supporting/chapters plus all 4 references",
+    "independent_source_review": "PASS after correcting OCR I/O confusion; semantic and selected arithmetic scope"
+  },
+  "limitations": [
+    "표·그림 인벤토리는 추출된 라벨과 장별 번호를 대조한 결과이며 이미지 전용 미라벨 요소 전체 목록은 아님",
+    "시각 확인은 도식 의미·핵심 값·각주 중심; 표 모든 셀 무오류 보증이 아님",
+    "원문에 없는 선택 가중치·보간·반올림·피해식·회수 산식은 추정하지 않음",
+    "외부 게임 최신규칙·실제 승률·호스트 런타임은 이번 검토 범위 밖"
+  ]
+}

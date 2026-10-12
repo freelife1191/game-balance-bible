@@ -1,0 +1,103 @@
+# OS files
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+
+# Local credentials and environment files (examples may be shared)
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Agent runtime state; shared skill directories remain tracked
+/.omx/
+/.stone/
+/.codex/auth.json
+/.codex/history.jsonl
+/.codex/sessions/
+/.codex/logs/
+/.codex/cache/
+/.claude/settings.local.json
+/.claude/.credentials.json
+/.claude/projects/
+/.claude/logs/
+/.claude/cache/
+/.gemini/settings.local.json
+/.gemini/oauth_creds.json
+/.gemini/google_accounts.json
+/.gemini/history/
+/.gemini/tmp/
+/.agent/artifacts/
+/.agent/logs/
+/.agent/cache/
+/.agents/artifacts/
+/.agents/logs/
+/.agents/cache/
+
+# Separate local authoring tool; this repository ships only game-balance-bible
+/.agents/skills/book-to-skill/
+/.claude/skills/book-to-skill
+/.agent/skills/book-to-skill
+/.codex/skills/book-to-skill/
+
+# Source books/documents are local inputs, not repository contents
+*.pdf
+*.epub
+*.mobi
+*.azw
+*.azw3
+*.docx
+*.rtf
+/books/
+/sources/
+/inputs/
+/private/
+full_text.txt
+book_skill_work*/
+.eval-work/
+
+# Python, JavaScript, test and documentation build artifacts
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.cache/
+node_modules/
+*.egg-info/
+build/
+dist/
+site/
+.coverage
+.coverage.*
+htmlcov/
+coverage/
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+/tmp/
+/temp/
+
+# Keep reviewed summaries and reproducible checks; exclude raw sessions
+/output/**
+!/output/skill-review/
+!/output/skill-review/game-balance-bible-review.json
+!/output/skill-review/game-balance-bible-numeric-audit.json
+!/output/skill-review/source-recheck-audit.json
+!/output/skill-review/multi-agent-compatibility.json
+!/output/skill-review/codex-host-smoke.json
+!/output/skill-review/prompt-sample-validation.json
+!/output/skill-review/numeric-regression-results.json
+!/output/skill-review/numeric_regression.py
+
+# Intentionally tracked: game-balance-bible source, host connection,
+# skill metadata, usage guides, reviewed summaries and numerical checks.

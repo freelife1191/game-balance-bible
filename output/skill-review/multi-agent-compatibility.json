@@ -1,0 +1,58 @@
+{
+  "skill": "game-balance-bible",
+  "scope": "project",
+  "claude_link": "<project-root>/.claude/skills/game-balance-bible",
+  "link_target": "../../.agents/skills/game-balance-bible",
+  "antigravity_path": "<project-root>/.agents/skills/game-balance-bible",
+  "shared_files_verified": 16,
+  "sources": [
+    "https://code.claude.com/docs/en/skills",
+    "https://www.antigravity.google/docs/skills?tab=ide"
+  ],
+  "sha256": {
+    "glossary.md": "d924022ca0bc474e7d2b1f1a88825eb065219ac0da5b8fa25541db1229609c65",
+    "cheatsheet.md": "4fcd1276c63dd11e8cf7cab6b480bc1cc2ed2ef7136d06fb41afd45507ac9b44",
+    "patterns.md": "62bbf6dfade27b9011e3ce69ccac9c0fb71b0f40c2d92ad75b8db8f43c46694e",
+    "SKILL.md": "54ccdf97d9226e49de79db3e50e584dda599284c45f721cfc3a1505b5cb9f328",
+    "chapters/ch01-process.md": "7103c11cf781f968d6e6f6d8aa4b30af1f5c09ad6adbce2424859f6832deb76a",
+    "chapters/ch05-validation.md": "8155b888ace0ff41cc90f291c5164b4df5a9af93ca60d76407ba52ea501f3872",
+    "chapters/ch03-combat.md": "1adaef24e7fb6ac7af210205a8f5fdace332844813e517becd1f0ea29628af92",
+    "chapters/ch02-preparation.md": "7e460ae4f1fc7be2028703f05cc4abc59a524167e1d27f1274b57da5d552aa50",
+    "chapters/ch04-economy.md": "137e4155fe5f2971ef5a96adf5ec968101948321cd50d5d71ee6fa3de63a3b61",
+    "chapters/ch08-modularization.md": "d84e25f46a6391581e23e6683b33c47735de820d600d98c1753887753b4e79f2",
+    "chapters/ch07-visualization.md": "9c2525846d0269180817961cd1130f74b6cf69fd2332e379e83f700d1f93d1f0",
+    "chapters/ch06-monetization.md": "8ea2b2ba5f5c31176ffdae427dc55905cb3a2324e7c215c0a29694aa531e9649",
+    "references/economy-models.md": "5543e612a2a350732eeb7f410bb0e4590318f96570ca6691d419bce7806aa248",
+    "references/source-map.md": "282539fbf0db5bc25d90a91ff7de0010b44c3d5f9a0b7fb803d298a2a2a1ef42",
+    "references/combat-formulas.md": "daf02ddb7f863cc116f5fe0624a9a55350a944ee06beb3c5f15a27d71121458d",
+    "agents/openai.yaml": "3c93c464247489358c3c4593137ce251999b3db187fb05ae2b138ec2b6c4ee41"
+  },
+  "status": "CONFIGURED",
+  "canonical_skill_unchanged": true,
+  "invocation": {
+    "claude_code": "/game-balance-bible <요청>",
+    "antigravity": "/game-balance-bible <요청>"
+  },
+  "verification": {
+    "frontmatter": "PASS",
+    "linked_bundle_files": 16,
+    "claude_code": {
+      "skill_discovery": "PASS",
+      "calculation_smoke": "BLOCKED_AUTH",
+      "reason": "OAuth session expired and could not be refreshed",
+      "evidence": "claude-skill-discovery.json"
+    },
+    "antigravity": {
+      "calculation_smoke": "PASS",
+      "reported_skill": "game-balance-bible",
+      "reference": "references/combat-formulas.md",
+      "checked_results": {
+        "damage_exact": "936/11",
+        "damage_approx": 85.0909090909,
+        "hit_count": 6,
+        "kill_time_seconds": 2.5
+      },
+      "evidence": "antigravity-skill-smoke.json"
+    }
+  }
+}

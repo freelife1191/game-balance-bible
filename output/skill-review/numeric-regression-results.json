@@ -1,0 +1,457 @@
+{
+  "status": "PASS",
+  "arithmetic_assertions": 64,
+  "results": [
+    {
+      "name": "common-consumption-value",
+      "actual": 101000.0,
+      "expected": 101000.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "separate-stone-cost",
+      "actual": 1200.0,
+      "expected": 1200.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "cost-effectiveness-exact",
+      "actual": 1.485,
+      "expected": 1.485,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "chest-old-2dp",
+      "actual": 7.101010101010101,
+      "expected": 7.1,
+      "tolerance": 0.005,
+      "passed": true
+    },
+    {
+      "name": "chest-new-2dp",
+      "actual": 7.315789473684211,
+      "expected": 7.32,
+      "tolerance": 0.005,
+      "passed": true
+    },
+    {
+      "name": "uniform-drop-conditional",
+      "actual": 6.0,
+      "expected": 6.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "uniform-drop-unconditional",
+      "actual": 3.0,
+      "expected": 3.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "unequal-drop-unconditional",
+      "actual": 2.4,
+      "expected": 2.4,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "weighted-drop-source",
+      "actual": 8.0,
+      "expected": 8.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "paid-depth-count",
+      "actual": 48000.0,
+      "expected": 48000.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "residual-day30",
+      "actual": -422677.0,
+      "expected": -422677.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "residual-day30-percent",
+      "actual": -16.864702375869914,
+      "expected": -16.9,
+      "tolerance": 0.05,
+      "passed": true
+    },
+    {
+      "name": "production-day100-consistency",
+      "actual": 22216827.0,
+      "expected": 22216827.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "residual-day100-percent",
+      "actual": 112.20592339666608,
+      "expected": 112.0,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "weighted-arppu",
+      "actual": 194.8,
+      "expected": 194.8,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "diamond-gap",
+      "actual": -310.0,
+      "expected": -310.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "diamond-shortfall",
+      "actual": 60.0,
+      "expected": 60.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "ltv-source",
+      "actual": 50.0,
+      "expected": 50.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "arpu-example",
+      "actual": 200.0,
+      "expected": 200.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "arppu-example",
+      "actual": 2000.0,
+      "expected": 2000.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "pr-example",
+      "actual": 0.1,
+      "expected": 0.1,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "arpu-identity",
+      "actual": 200.0,
+      "expected": 200.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "linear-atk-L10",
+      "actual": 550.0,
+      "expected": 550.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "linear-cost-total-1to10",
+      "actual": 3250.0,
+      "expected": 3250.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "step-cost-L1",
+      "actual": 2.0,
+      "expected": 2.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "step-cost-L2",
+      "actual": 6.0,
+      "expected": 6.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "step-cost-L5",
+      "actual": 6.0,
+      "expected": 6.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "step-cost-L6",
+      "actual": 6.0,
+      "expected": 6.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "step-cost-L7",
+      "actual": 10.0,
+      "expected": 10.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "time-cost-character-map",
+      "actual": 18.0,
+      "expected": 18.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "quadratic-cost-source-L10",
+      "actual": 236.0,
+      "expected": 236.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "converted-hp-before-percent",
+      "actual": 385.0,
+      "expected": 385.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "damage-base",
+      "actual": 50.0,
+      "expected": 50.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "damage-atk30",
+      "actual": 73.47826086956522,
+      "expected": 73.478,
+      "tolerance": 0.0005,
+      "passed": true
+    },
+    {
+      "name": "damage-final30",
+      "actual": 65.0,
+      "expected": 65.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "damage-both30",
+      "actual": 95.52173913043478,
+      "expected": 95.522,
+      "tolerance": 0.0005,
+      "passed": true
+    },
+    {
+      "name": "sequential-crit",
+      "actual": 0.0245,
+      "expected": 0.0245,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "sequential-expected-damage",
+      "actual": 46.235,
+      "expected": 46.235,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "hp101-hit-count",
+      "actual": 6.0,
+      "expected": 6.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "hp101-kill-time-first0",
+      "actual": 2.5,
+      "expected": 2.5,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "hp101-dps-approx",
+      "actual": 2.525,
+      "expected": 2.525,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "npc-hp-coefficient",
+      "actual": 2.0,
+      "expected": 2.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "level-gap-damage",
+      "actual": 150.0,
+      "expected": 150.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "lanchester-source",
+      "actual": 2.141135086691043,
+      "expected": 2.14,
+      "tolerance": 0.005,
+      "passed": true
+    },
+    {
+      "name": "damage-reduction",
+      "actual": 0.3,
+      "expected": 0.3,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "shared-invalid-allocation",
+      "actual": 200.0,
+      "expected": 200.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "source-growth-template",
+      "actual": 2.16,
+      "expected": 2.16,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "source-hierarchical-allocation",
+      "actual": 0.48,
+      "expected": 0.48,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "source-tank-weighted-power",
+      "actual": 18.0,
+      "expected": 18.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "source-damage-ratio-not-survival",
+      "actual": 0.56640625,
+      "expected": 0.57,
+      "tolerance": 0.005,
+      "passed": true
+    },
+    {
+      "name": "source-pve-user-survival",
+      "actual": 13.666666666666666,
+      "expected": 13.67,
+      "tolerance": 0.005,
+      "passed": true
+    },
+    {
+      "name": "source-pve-monster-survival",
+      "actual": 12.0,
+      "expected": 12.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "source-charging-column-low",
+      "actual": 66.0,
+      "expected": 66.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "source-charging-column-medium",
+      "actual": 398.0,
+      "expected": 398.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "source-consumption-column-low",
+      "actual": 670.0,
+      "expected": 670.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "source-consumption-column-medium",
+      "actual": 3070.0,
+      "expected": 3070.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "source-consumption-column-heavy",
+      "actual": 15146.0,
+      "expected": 15146.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "source-paid-depth-equipment",
+      "actual": 27232.8,
+      "expected": 27232.8,
+      "tolerance": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "source-paid-depth-displayed-total",
+      "actual": 241589.0,
+      "expected": 241589.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "source-artifact-main-initial",
+      "actual": 46.65,
+      "expected": 46.65,
+      "tolerance": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "source-artifact-substat-max",
+      "actual": 19.4,
+      "expected": 19.4,
+      "tolerance": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "source-artifact-level-15-ratio",
+      "actual": 0.7875,
+      "expected": 0.7875,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "source-artifact-level-20-ratio",
+      "actual": 1.0,
+      "expected": 1.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "source-artifact-level-15-atk",
+      "actual": 244.9125,
+      "expected": 244.9125,
+      "tolerance": 1e-05,
+      "passed": true
+    }
+  ],
+  "probability_grid_cases": 1331,
+  "damage_identity_cases": 24,
+  "limitation": "산술과 명시한 모델 불변식 검증이며 전체 원문/에이전트 행동의 증명은 아님"
+}
