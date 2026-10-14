@@ -1,4 +1,4 @@
-# 설치와 도구별 호출
+# 설치와 호스트 연결
 
 <a id="document-top"></a>
 
@@ -11,16 +11,14 @@
 
 **이 문서에서 찾기**
 
-| 필요한 내용 | 바로가기 |
-|---|---|
-| 포함된 스킬과 파일 | [이동](#current-state) |
-| 기존 프로젝트에 설치하기 | [이동](#install-game-balance-skill) |
-| 설치 대상 고르기 | [이동](#choose-target) |
-| Codex에서 호출하기 | [이동](#codex) |
-| Claude Code와 Antigravity에서 호출하기 | [이동](#claude-antigravity) |
-| Claude Code 연결 만들기 | [이동](#claude-link) |
-| 설치·호출 성공 조건 | [이동](#success) |
-| 자주 묻는 질문 | [이동](#faq) |
+- [포함된 스킬과 파일](#current-state)
+- [기존 프로젝트에 설치하기](#install-game-balance-skill)
+- [설치 대상 고르기](#choose-target)
+- [Codex에서 호출하기](#codex)
+- [Claude Code와 Antigravity에서 호출하기](#claude-antigravity)
+- [Claude Code 연결 만들기](#claude-link)
+- [설치·호출 성공 조건](#success)
+- [자주 묻는 질문](#faq)
 
 ---
 
@@ -32,11 +30,11 @@
 
 ```text
 <project-root>/
-├── .agents/skills/game-balance-bible/  # 스킬 본문과 지식 파일 17개
+├── .agents/skills/game-balance-bible/  # SKILL.md·지식 파일·메타데이터 17개
 └── .claude/skills/game-balance-bible/  # Claude Code용 상대 심볼릭 링크
 ```
 
-`.agents/skills/game-balance-bible/`에는 `SKILL.md`, 8개 장 파일, 용어·패턴·요약 파일과 전투·경제·출처·질문별 자료 참고 파일이 들어 있습니다. 이 폴더 전체를 복사해야 장별 답변과 수식 근거를 함께 사용할 수 있습니다.
+`.agents/skills/game-balance-bible/`에는 `SKILL.md`, 8개 장 파일, 용어·패턴·요약 파일과 전투 공식·경제 모델·원문 페이지 지도·질문별 자료 지도 참고 파일이 들어 있습니다. 이 폴더 전체를 복사해야 장별 답변과 수식 근거를 함께 사용할 수 있습니다.
 
 아래 셸 명령은 **설치할 프로젝트의 루트**에서 실행합니다. 대화창에 입력하는 스킬 호출 예시와 구별해 사용합니다.
 
@@ -48,7 +46,7 @@
 
 먼저 이 저장소를 내려받거나 복제합니다. 전체 프로젝트를 사용하려면 [README의 설치 안내](../README.md#installation)를 따릅니다. 기존 프로젝트에는 아래처럼 스킬 폴더 하나만 복사할 수 있습니다.
 
-`GAME_BALANCE_SKILL_SOURCE`를 내려받은 이 저장소의 실제 절대 경로로 바꿉니다. 대상에 기존 파일이나 링크가 있으면 **아무것도 덮어쓰지 않고 중단**합니다.
+명령 맨 앞의 `GAME_BALANCE_SKILL_SOURCE` 값 `/절대/경로/game-balance-bible`을 내려받은 이 저장소의 실제 절대 경로로 바꿉니다. 대상에 기존 파일이나 링크가 있으면 **아무것도 덮어쓰지 않고 중단**합니다.
 
 ```bash
 GAME_BALANCE_SKILL_SOURCE='/절대/경로/game-balance-bible' python3 - <<'PY'
@@ -142,13 +140,18 @@ Claude Code와 Antigravity 대화에서는 슬래시 호출을 사용합니다.
 
 Antigravity는 `.agents/skills/game-balance-bible/`을 사용합니다. Claude Code는 `.claude/skills/game-balance-bible/` 링크를 사용합니다. 설치 후에는 새 대화에서 호출해 인식을 확인합니다.
 
+> [!NOTE]
+> **지원하는 호출 경로**
+>
+> 세 도구 모두 **명시 호출**(Codex `$game-balance-bible`, Claude Code·Antigravity `/game-balance-bible`)과 기호 없는 **자연어 요청**으로 사용할 수 있습니다. 자연어 요청에서 스킬을 쓸지는 호스트가 `SKILL.md`의 설명을 보고 판단합니다. 스킬이 쓰이지 않으면 [자연어 요청으로 스킬이 호출되지 않을 때](troubleshooting.md#explicit-invocation)의 방법으로 직접 호출합니다.
+
 ---
 
 <a id="claude-link"></a>
 
 ## Claude Code 연결 만들기
 
-다음은 프로젝트 루트에서 실행하는 명령입니다. 기존 파일이나 링크가 있으면 중단하므로 실재 디렉터리를 덮어쓰지 않습니다.
+다음은 프로젝트 루트에서 실행하는 명령입니다. 기존 파일이나 링크가 있으면 중단하므로 실제 디렉터리를 덮어쓰지 않습니다.
 
 ```bash
 LINK='.claude/skills/game-balance-bible'
@@ -169,7 +172,7 @@ test -L "$LINK" \
 > [!WARNING]
 > **기존 디렉터리는 먼저 검토합니다**
 >
-> `.claude/skills/game-balance-bible`가 실재 디렉터리라면 자동으로 바꾸지 않습니다. 기존 내용과 소유자를 확인한 뒤, 필요한 경우 별도 이관 절차를 정합니다.
+> `.claude/skills/game-balance-bible`이 실제 디렉터리라면 자동으로 바꾸지 않습니다. 기존 내용과 소유자를 확인한 뒤, 필요한 경우 별도 이관 절차를 정합니다.
 
 ---
 
@@ -179,10 +182,10 @@ test -L "$LINK" \
 
 다음 체크를 순서대로 통과하면 설치를 확인할 수 있습니다.
 
-- [ ] `.agents/skills/game-balance-bible/SKILL.md`를 읽을 수 있다.
-- [ ] Claude Code를 쓴다면 `.claude/skills/game-balance-bible/SKILL.md`도 읽을 수 있다.
-- [ ] 새 대화에서 해당 도구의 호출 문법으로 `game-balance-bible`을 인식한다.
-- [ ] 기본 질문에 장별 개념, 가정, 계산 절차가 포함된 답을 받는다.
+- [ ] `.agents/skills/game-balance-bible/SKILL.md`를 읽을 수 있습니다.
+- [ ] Claude Code를 쓴다면 `.claude/skills/game-balance-bible/SKILL.md`도 읽을 수 있습니다.
+- [ ] 새 대화에서 해당 도구의 호출 문법으로 `game-balance-bible`을 인식합니다.
+- [ ] 기본 질문에 장별 개념, 가정, 계산 절차가 포함된 답을 받습니다.
 
 > [!NOTE]
 > **기본 사용에 필요한 것**
@@ -199,15 +202,19 @@ test -L "$LINK" \
 
 현재 대화의 작업 위치가 설치한 프로젝트인지, `SKILL.md`가 위 경로에 있는지 확인한 후 새 대화를 엽니다. 계속 보이지 않으면 [문제 해결](troubleshooting.md#symptoms)의 인식 점검을 따릅니다.
 
+### 호출 기호 없이 요청하면 스킬이 쓰이지 않아요
+
+자연어 요청에서는 호스트가 스킬 선택을 판단합니다. 맨 앞에 `$game-balance-bible`(Codex) 또는 `/game-balance-bible`(Claude Code·Antigravity)을 붙이거나, 요청 문장에 스킬 이름 `game-balance-bible`을 넣어 다시 요청합니다. 자세한 순서는 [자연어 요청으로 스킬이 호출되지 않을 때](troubleshooting.md#explicit-invocation)에 있습니다.
+
 ### 원문 PDF나 Python이 있어야 하나요
 
-아니요. 포함된 장·참고 파일을 바탕으로 질문하고 계산을 검토하는 기본 사용에는 필요하지 않습니다. Python은 설치 폴더를 안전하게 복사하는 방법 중 하나입니다.
+아니요. 포함된 장·참고 파일을 바탕으로 질문하고 계산을 검토하는 기본 사용에는 필요하지 않습니다. Python은 설치 폴더를 안전하게 복사하는 방법 중 하나입니다. 원문 사본이 있고 스킬의 서술을 원문과 맞춰 보고 싶다면 [원문과 대조하고 싶을 때](troubleshooting.md#source-comparison)를 봅니다.
 
 ### 새 프로젝트에 어떤 파일을 올려야 하나요
 
 `.agents/skills/game-balance-bible/`의 17개 파일 전체와, Claude Code 지원이 필요하면 `.claude/skills/game-balance-bible` 상대 링크를 함께 올립니다.
 
-[← README](../README.md) · [다음: 고급 활용법](advanced-usage.md) →
+[← 이전: 문서 지도](index.md) · [다음: 장별 고급 활용법 →](advanced-usage.md)
 
 ---
 
