@@ -2,7 +2,7 @@
 
 <a id="document-top"></a>
 
-[문서 지도](index.md) · [README](../README.md)
+[가이드 홈](index.md) · [README](../README.md) · [릴리스 안내](../release/README.md) · [GitHub Releases](https://github.com/freelife1191/game-balance-bible/releases)
 
 검토일: 2026-10-12. 대상은 [game-balance-bible](../.agents/skills/game-balance-bible/SKILL.md)과 로컬 원문 PDF 290쪽입니다. 원문 SHA-256은 [원문 페이지 지도](../.agents/skills/game-balance-bible/references/source-map.md)에 기록돼 있습니다.
 

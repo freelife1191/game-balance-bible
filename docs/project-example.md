@@ -2,7 +2,7 @@
 
 <a id="document-top"></a>
 
-[문서 지도](index.md) · [README](../README.md)
+[가이드 홈](index.md) · [README](../README.md) · [릴리스 안내](../release/README.md) · [GitHub Releases](https://github.com/freelife1191/game-balance-bible/releases)
 
 > [!NOTE]
 > **이 문서가 설명하는 검수 기록**

@@ -2,7 +2,7 @@
 
 <a id="document-top"></a>
 
-[README로 돌아가기](../README.md)
+[가이드 홈](index.md) · [README](../README.md) · [릴리스 안내](../release/README.md) · [GitHub Releases](https://github.com/freelife1191/game-balance-bible/releases)
 
 이 문서는 《게임 밸런스 수치 기획 바이블》에 근거한 `game-balance-bible` 스킬의 설치, 활용, 검수 방법을 안내합니다. 셸 명령은 별도 표시가 없으면 **프로젝트 루트**에서 실행하고, `$game-balance-bible` 또는 `/game-balance-bible` 예시는 **에이전트 대화창**에 입력합니다.
 
@@ -19,6 +19,9 @@
 | 자연어 요청에 스킬이 쓰이지 않음 | [자연어 요청으로 스킬이 호출되지 않을 때](troubleshooting.md#explicit-invocation) | 호스트별 명시 호출과 스킬 이름을 넣은 요청 |
 | 스킬의 서술을 원문과 대조 | [원문과 대조하고 싶을 때](troubleshooting.md#source-comparison) | 확인할 원문 위치와 대조 요청 방법 |
 | 이 프로젝트의 검수 기록 살펴보기 | [프로젝트 사례](project-example.md) | 파일 구성·검수 결과·호환성 상태 이해 |
+| 릴리스 노트를 작성하거나 GitHub Release를 배포 | [릴리스 안내](../release/README.md) | 파일명 규칙·초안 생성·공개 절차 |
+| 이번 문서 변경의 내역 확인 | [2026-10-15 릴리스 노트](../release/2026-10-15-documentation-and-release-guide.md) | 변경·검증 범위·호환성 |
+| 다음 릴리스 노트 작성 | [작성 템플릿](../release/_template.md) | 날짜별 새 파일로 복사 |
 
 원문 재확인의 근거는 [원문 재확인 감사 기록](../output/skill-review/source-recheck-audit.json)입니다. 표 113개·그림 51개를 목록화하고 원문 109쪽을 이미지로 대조한 범위와, 원문에 남은 불일치를 구분해 기록했습니다.
 

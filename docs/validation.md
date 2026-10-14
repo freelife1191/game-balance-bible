@@ -2,7 +2,7 @@
 
 <a id="document-top"></a>
 
-[문서 지도](index.md) · [README](../README.md) · [장별 고급 활용법](advanced-usage.md)
+[가이드 홈](index.md) · [README](../README.md) · [릴리스 안내](../release/README.md) · [장별 고급 활용법](advanced-usage.md)
 
 > [!IMPORTANT]
 > **검증 결과의 범위**

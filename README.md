@@ -1,8 +1,29 @@
-# 게임 밸런스 수치 기획 스킬
+<a id="게임-밸런스-수치-기획-스킬"></a>
 
 <a id="document-top"></a>
 
-《게임 밸런스 수치 기획 바이블》의 지식을 전투·성장·경제·수익화 설계와 학습에 사용하는 **`game-balance-bible`** 스킬입니다.
+<p align="center">
+  <a href="https://github.com/freelife1191/game-balance-bible">
+    <img src="docs/assets/banner.svg" alt="Game Balance Bible — Combat, Growth, Economy, Monetization" width="900">
+  </a>
+</p>
+
+<h1 align="center">게임 밸런스 수치 기획 스킬</h1>
+
+<p align="center">《게임 밸런스 수치 기획 바이블》의 지식을 전투·성장·경제·수익화 설계와 학습에 연결하는 <code>game-balance-bible</code> 스킬</p>
+
+<p align="center">
+  <a href="https://github.com/freelife1191/game-balance-bible"><img src="https://img.shields.io/github/stars/freelife1191/game-balance-bible?style=flat-square&amp;label=GitHub" alt="GitHub stars"></a>
+  <a href="https://github.com/freelife1191/game-balance-bible/releases"><img src="https://img.shields.io/badge/GitHub-Releases-243f7a?style=flat-square" alt="GitHub release"></a>
+  <a href="docs/index.md"><img src="https://img.shields.io/badge/docs-guide-2f5f9f?style=flat-square" alt="Documentation"></a>
+</p>
+
+<p align="center">
+  <a href="#quick-start">시작하기</a> ·
+  <a href="#usage">사용 예시</a> ·
+  <a href="#documentation">문서</a> ·
+  <a href="release/README.md">릴리스</a>
+</p>
 
 <a id="toc"></a>
 
@@ -16,6 +37,7 @@
 - [책의 8개 장이 스킬에 포함된 방식](#book-chapters)
 - [스킬과 파일 구성](#skill-structure)
 - [필요한 경우 상세 가이드 보기](#documentation)
+- [릴리스 노트와 GitHub Release](#releases)
 - [검수 결과와 재현](#development)
 - [원본·라이선스·포함 범위](#copyright)
 
@@ -255,6 +277,17 @@ Claude Code의 연결은 `.agents/skills/game-balance-bible` 폴더를 가리키
 | 책 내용과 참고 자료의 반영 범위 | [책 내용과 레퍼런스 재검토](docs/reference-review.md) |
 | 인식·연결·근거·인증 오류 | [문제 해결](docs/troubleshooting.md) |
 | 실제 생성 결과와 검수 기록 | [프로젝트 사례](docs/project-example.md) |
+| 릴리스 노트 규칙과 GitHub Release 배포 | [릴리스 안내](release/README.md) · [현재 노트](release/2026-10-15-documentation-and-release-guide.md) · [GitHub Releases](https://github.com/freelife1191/game-balance-bible/releases) |
+
+---
+
+<a id="releases"></a>
+
+## 릴리스 노트와 GitHub Release
+
+릴리스 노트는 [release/](release/README.md)에 KST 작성일과 영문 kebab-case 제목을 사용해 보관합니다. 원고 파일을 저장소에 추가하는 것만으로 공개 릴리스가 생성되지는 않으며, 검토 후 [`gh release create`](release/README.md#배포-절차)의 `--notes-file`로 지정했을 때 GitHub Release 설명에 게시됩니다.
+
+현재 문서 변경의 원고는 [2026-10-15 documentation and release guide](release/2026-10-15-documentation-and-release-guide.md)입니다. 새 원고는 [템플릿](release/_template.md)에서 시작합니다.
 
 ---
 

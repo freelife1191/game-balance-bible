@@ -2,7 +2,7 @@
 
 <a id="document-top"></a>
 
-[문서 지도](index.md) · [README](../README.md) · [검수와 테스트](validation.md) · [프로젝트 사례](project-example.md)
+[가이드 홈](index.md) · [README](../README.md) · [릴리스 안내](../release/README.md) · [검수와 테스트](validation.md) · [프로젝트 사례](project-example.md)
 
 이 문서는 포함된 `game-balance-bible` 스킬을 책의 8개 장에 따라 실무 설계·학습·장별 참고에 사용하는 방법을 정리합니다. 장별 기본 요청 8개에 더해 **공통 고급 예시 4개, 장별 고급 예시 32개와 보완 예시 1개, 장별 후속 요청 8개, 장 연결 통합 요청 3개**를 제공합니다. 여러 요청 앞에 보낼 공통 맥락 요청과 실행 검산 요청도 하나씩 둡니다. 필요한 상황을 골라 입력값을 바꾸고 결과를 다음 요청으로 이어갑니다. Codex에서는 `$game-balance-bible`, Claude Code와 Antigravity에서는 `/game-balance-bible`로 시작합니다. 아래 프롬프트의 `$`는 Codex 표기이므로 다른 호스트에서는 `/`로 바꿉니다.
 
